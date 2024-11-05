@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="WEB-INF/src"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/FET_code_fat.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/json-20160810.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/avdbop-rt-08.00.22.01.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/adminvar-rt-08.00.22.01.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/avwsop-rt-08.00.22.01.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/aesclient-08.00.22.01.jar"/>
+	<classpathentry kind="lib" path="C:/AOD-8.0/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="C:/AOD-8.0/gson-2.8.6.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/scert-08.00.22.01.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/servlet-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jasper.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jsp-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/scertcommon-08.00.22.01.jar"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>

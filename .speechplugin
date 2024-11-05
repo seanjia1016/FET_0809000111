@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<propertystore id="sage" version="1.0">
+    <propertymap/>
+    <nestedpropertystore>
+        <propertystore id="general" version="1.0">
+            <propertymap/>
+            <nestedpropertystore>
+                <propertystore id="project" version="1.0">
+                    <propertymap>
+                        <property name="iconlg" value="icons/defaultapplicationlg.gif" version="1.0"/>
+                        <property name="logpropertiesupdated" value="3.0.17x2" version="1.0"/>
+                        <property name="iconsm" value="icons/defaultapplicationsm.gif" version="1.0"/>
+                        <property name="name" value="FET_Donation" version="1.0"/>
+                        <property name="dtmfVarsEnabled" value="false" version="1.0"/>
+                        <property name="version" value="1.0.0" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+                <propertystore id="ide" version="1.0">
+                    <propertymap>
+                        <property name="version" value="419" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+            </nestedpropertystore>
+        </propertystore>
+        <propertystore id="grammars" version="1.0">
+            <propertymap>
+                <property name="caching" value="none" version="1.0"/>
+            </propertymap>
+            <nestedpropertystore/>
+        </propertystore>
+        <propertystore id="datasource" version="1.0">
+            <propertymap/>
+            <nestedpropertystore>
+                <propertystore id="notification" version="1.0">
+                    <propertymap>
+                        <property name="notificationappnamecavenabled" value="false" version="1.0"/>
+                        <property name="cavenabled" value="false" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+                <propertystore id="cti" version="1.0">
+                    <propertymap>
+                        <property name="ctienabled" value="true" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+                <propertystore id="ic" version="1.0">
+                    <propertymap>
+                        <property name="enabled" value="false" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+                <propertystore id="jdbc" version="1.0">
+                    <propertymap/>
+                    <nestedpropertystore>
+                        <propertystore id="FETIVRDB" version="1.0">
+                            <propertymap>
+                                <property name="validationQuery" value="select 1 from AnyTable" version="1.0"/>
+                                <property name="defaultMaxActive" value="10" version="1.0"/>
+                                <property name="defaultMaxIdle" value="5" version="1.0"/>
+                                <property name="url" value="jdbc:oracle:thin:@10.64.16.48:1521/FETIVR5" version="1.0"/>
+                                <property name="logAbandoned" value="true" version="1.0"/>
+                                <property name="testOnBorrow" value="false" version="1.0"/>
+                                <property name="removeAbandoned" value="true" version="1.0"/>
+                                <property name="driver" value="oracle.jdbc.OracleDriver" version="1.0"/>
+                                <property name="name" value="FETIVRDB" version="1.0"/>
+                                <property name="removeAbandonedTimeout" value="300" version="1.0"/>
+                                <property name="defaultMaxWait" value="10000" version="1.0"/>
+                                <property name="userpasswd" value="jgq+SdjMk2mLn8+iU0612g==" version="1.0"/>
+                                <property name="username" value="AIRAP" version="1.0"/>
+                            </propertymap>
+                            <nestedpropertystore/>
+                        </propertystore>
+                        <propertystore id="AIRAP" version="1.0">
+                            <propertymap>
+                                <property name="validationQuery" value="select 1 from AnyTable" version="1.0"/>
+                                <property name="defaultMaxActive" value="10" version="1.0"/>
+                                <property name="defaultMaxIdle" value="5" version="1.0"/>
+                                <property name="url" value="jdbc:oracle:thin:@10.64.16.48:1521/FETIVR5" version="1.0"/>
+                                <property name="logAbandoned" value="true" version="1.0"/>
+                                <property name="testOnBorrow" value="false" version="1.0"/>
+                                <property name="removeAbandoned" value="true" version="1.0"/>
+                                <property name="driver" value="oracle.jdbc.driver.OracleDriver" version="1.0"/>
+                                <property name="name" value="AIRAP" version="1.0"/>
+                                <property name="removeAbandonedTimeout" value="300" version="1.0"/>
+                                <property name="defaultMaxWait" value="10000" version="1.0"/>
+                                <property name="userpasswd" value="Y7r0zvOCa+6Ln8+iU0612g==" version="1.0"/>
+                                <property name="username" value="AIRAP" version="1.0"/>
+                            </propertymap>
+                            <nestedpropertystore/>
+                        </propertystore>
+                    </nestedpropertystore>
+                </propertystore>
+                <propertystore id="ic_vrusm" version="1.0">
+                    <propertymap>
+                        <property name="enabled" value="false" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+            </nestedpropertystore>
+        </propertystore>
+        <propertystore id="runtimecommon" version="1.0">
+            <propertymap/>
+            <nestedpropertystore>
+                <propertystore id="scert" version="1.0">
+                    <propertymap>
+                        <property name="version" value="08.00.22.01" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+            </nestedpropertystore>
+        </propertystore>
+        <propertystore id="runtime" version="1.0">
+            <propertymap/>
+            <nestedpropertystore>
+                <propertystore id="scert" version="1.0">
+                    <propertymap>
+                        <property name="version" value="08.00.22.01" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+                <propertystore id="tomcat" version="1.0">
+                    <propertymap>
+                        <property name="version" value="tomcatv9" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+            </nestedpropertystore>
+        </propertystore>
+        <propertystore id="pluggableconnectors" version="1.0">
+            <propertymap/>
+            <nestedpropertystore>
+                <propertystore id="comavayascedatabaseoperations" version="1.0">
+                    <propertymap>
+                        <property name="connectorId" value="com.avaya.sce.databaseoperations" version="1.0"/>
+                        <property name="displayName" value="Database" version="1.0"/>
+                        <property name="currentVersion" value="1" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+                <propertystore id="comavayavpadminVariables" version="1.0">
+                    <propertymap>
+                        <property name="connectorId" value="com.avaya.vp.adminVariables" version="1.0"/>
+                        <property name="displayName" value="AVP/AEP Configurable Application Variables" version="1.0"/>
+                        <property name="currentVersion" value="1" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+                <propertystore id="comavayascewebserviceoperations" version="1.0">
+                    <propertymap>
+                        <property name="connectorId" value="com.avaya.sce.webserviceoperations" version="1.0"/>
+                        <property name="displayName" value="Web Services (Axis 1.4)" version="1.0"/>
+                        <property name="currentVersion" value="1" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+                <propertystore id="comavayascectictiConnector" version="1.0">
+                    <propertymap>
+                        <property name="connectorId" value="com.avaya.sce.cti.ctiConnector" version="1.0"/>
+                        <property name="displayName" value="Avaya AES Connector" version="1.0"/>
+                        <property name="currentVersion" value="1" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+            </nestedpropertystore>
+        </propertystore>
+        <propertystore id="prompts" version="1.0">
+            <propertymap>
+                <property name="timeout_presentation" value="constant" version="1.0"/>
+                <property name="timeout_constant_number" value="8" version="1.0"/>
+                <property name="timeout_constant_unit" value="0" version="1.0"/>
+            </propertymap>
+            <nestedpropertystore/>
+        </propertystore>
+    </nestedpropertystore>
+</propertystore>

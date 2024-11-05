@@ -1,0 +1,2244 @@
+23/08/2017 09:40:27:956  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : SCESession bound to HttpSession AAB883227FBFB88363A4257B49AB496D
+23/08/2017 09:40:27:959  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Browser Version 2.1.4, terminationURL enabled : true
+23/08/2017 09:40:27:977  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : Start
+23/08/2017 09:40:28:030  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : ** Pushed Stack Frame [/DonationActivities_2]
+23/08/2017 09:40:28:045 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Creating variable [DOMAINID] from factory [com.avaya.vp.admin.variables.runtime.AdminVariableFactory]
+23/08/2017 09:40:28:054 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Not able to save posted variable information [call_classification]
+23/08/2017 09:40:28:054  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___sessionid to complex: session:sessionid  as [sess6799850]
+23/08/2017 09:40:28:055  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___vpconverseondata to complex: session:vpconverseondata  as []
+23/08/2017 09:40:28:709  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : runtime_platform : Desktop
+23/08/2017 09:40:28:709  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : runtime_asr : Desktop Microsoft Speech SAPI
+23/08/2017 09:40:28:726 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Acquiring initial License
+23/08/2017 09:40:28:731  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Acquiring Desktop runtime license
+23/08/2017 09:40:28:731  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Runtime :true
+23/08/2017 09:40:28:731  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : IC :true
+23/08/2017 09:40:28:731  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : CTI :true
+23/08/2017 09:40:28:747 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Grace Period timer cleared
+23/08/2017 09:40:28:751 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : License refresh timer started
+23/08/2017 09:40:28:757  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : MessageType is speech
+23/08/2017 09:40:28:765 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Initializer:applicationStarted:Initializing admin variables...
+23/08/2017 09:40:28:765 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Initializer:applicationStarted:__VPVarAppDate is 1503452428765
+23/08/2017 09:40:28:765 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Initializer:applicationStarted:Timestamp is 08/23/17 9:40:28
+23/08/2017 09:40:28:765 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Initializer:applicationStarted:Appname is DonationActivities_2
+23/08/2017 09:40:28:766 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : AdminVarCache:init: Timestamp is different; Load parameters....
+23/08/2017 09:40:28:766 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : AdminVarCache:init: Module? false
+23/08/2017 09:40:28:766 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : AdminVarCache:init: loading simulation data...
+23/08/2017 09:40:28:770 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : AdminVarCache:init: no data comes back from proxy.
+23/08/2017 09:40:28:770 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : app params: {}
+23/08/2017 09:40:28:770 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : AdminVarCache:init: Finish loading.
+23/08/2017 09:40:28:776 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : *** Reply for [/DonationActivities_2/Start] ***
+23/08/2017 09:40:28:778 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : 0:<?xml version="1.0" encoding="UTF-8"?> 
+1:<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="zh-tw"> 
+2:<meta name="author" content="Avaya Aura Orchestration Designer"/> 
+3:<meta name="runtime-version" content="07.01.08.04"/> 
+4:<meta name="runtimecommon-version" content="07.01.08.04"/> 
+5:<meta name="copyright" content="Copyright (c) 2002-2011, Avaya"/> 
+6:<script> 
+7:function getnbest(  item, nbest ) { 
+8:    var len = application.lastresult$.length; 
+9:    var result = ""; 
+10:     
+11:    if ( len &gt; nbest) { 
+12:        len = nbest; 
+13:    } 
+14:    for (var i = 0; i &lt; len; i++) { 
+15:        if (i &gt; 0) { 
+16:            result += " |"; 
+17:        } 
+18:        var temp  =  "application.lastresult$[" + i + "]." + item; 
+19:        result += extractprops( "", eval(temp)); 
+20:    } 
+21:    return result; 
+22:} 
+23: 
+24:function getnbestnmni(  item, nbest ) { 
+25:    var len = application.lastresult$.length; 
+26:    var result = ""; 
+27:     
+28:    if ( len &gt; nbest) { 
+29:        len = nbest; 
+30:    } 
+31:    for (var i = 0; i &lt; len; i++) { 
+32:        if (i &gt; 0) { 
+33:            result += " |"; 
+34:        } 
+35:        result += item; 
+36:    } 
+37:    return result; 
+38:} 
+39: 
+40:function extractprops ( parent, obj ) { 
+41:    var prop, name, result = ""; 
+42:    var count = 1; 
+43:    if ( typeof ( obj ) == "object" ) { 
+44:        for ( prop in obj ) { 
+45:            name = parent + prop; 
+46:            if ( typeof ( obj [ prop ] ) == "object" ) { 
+47:                result += extractprops( name+".", obj [ prop ] ); 
+48:            } else { 
+49:                if (count == 1) { 
+50:                    result = obj [ prop ]; 
+51:                } else { 
+52:                    result += " " + obj [ prop ]; 
+53:                } 
+54:            } 
+55:            count = count + 1; 
+56:        } 
+57:    } else { 
+58:        if (obj == undefined ) { 
+59:            result +=  "undefined"; 
+60:        } else { 
+61:            result +=  obj; 
+62:        } 
+63:    } 
+64:    return result; 
+65:} 
+66: 
+67:function startswith ( value, startwith ) { 
+68:    var index; 
+69:    index = value.indexOf(startwith, 0); 
+70:    if ( index == 0 ) { 
+71:       return true; 
+72:    } else { 
+73:       return false; 
+74:    } 
+75:} 
+76: 
+77:function containsUndefined ( value ) { 
+78:    var index; 
+79:    index = value.indexOf('undefined', 0); 
+80:    if ( index == -1 ) { 
+81:       return false; 
+82:    } else { 
+83:       return true; 
+84:    } 
+85:} 
+86: 
+87:</script> 
+88:<script> 
+89:function objectToString(  obj ) { 
+90:    try { 
+91:    var result = ""; 
+92:    result += getobjectprops( "", obj); 
+93:    if (result.charAt(0) == '|' ) { 
+94:        result = result.substring(1); 
+95:    }  
+96:    } catch (errMsg) { 
+97:        return("undefined"); 
+98:    } 
+99:    return result; 
+100:} 
+101: 
+102:function getobjectprops ( parent, obj ) { 
+103:    var prop, name, result = ""; 
+104:    if ( typeof ( obj ) == "object" ) {  
+105:        for ( prop in obj ) {  
+106:            name = parent + prop; 
+107:            if ( typeof ( obj [ prop ] ) == "object" ) { 
+108:                result += extractprops( name+".", obj [ prop ] ); 
+109:            } else {  
+110:                result +=   "|"  + obj [ prop ];  
+111:            }  
+112:        }  
+113:    } else {  
+114:        if (obj == undefined ) {  
+115:           result +=  "undefined";  
+116:        } else {  
+117:           result +=  obj;  
+118:        }  
+119:    }  
+120:    return result; 
+121:} 
+122:</script> 
+123:<var name="_avayaExitReason" expr="''"/> 
+124:<var name="_avayaExitInfo1" expr="''"/> 
+125:<var name="_avayaExitInfo2" expr="''"/> 
+126:<var name="_avayaExitCustomerId" expr="''"/> 
+127:<var name="_avayaExitPreferredPath" expr="'1'"/> 
+128:<var name="_avayaExitTopic" expr="''"/> 
+129:<var name="_avayaNoinputCounter" expr="0"/> 
+130:<var name="_avayaNomatchCounter" expr="0"/> 
+131:<catch event="error.runtime"> 
+132:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+133:<submit next="Disconnect?___DDSESSIONID=AAB883227FBFB88363A4257B49AB496D%3A%2FDonationActivities_2" namelist="event_message" method="post" enctype="multipart/form-data"/> 
+134:</catch> 
+135:<catch event="error.badfetch.http.404"> 
+136:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+137:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+138:<submit next="Disconnect?___DDSESSIONID=AAB883227FBFB88363A4257B49AB496D%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+139:</catch> 
+140:<catch event="error.badfetch.http.404" count="2"> 
+141:    <throw event="app.fatal" message="Problems on application server"/> 
+142:</catch> 
+143:<catch event="error.badfetch.http.500"> 
+144:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+145:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+146:<submit next="Disconnect?___DDSESSIONID=AAB883227FBFB88363A4257B49AB496D%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+147:</catch> 
+148:<catch event="error.badfetch.http.500" count="2"> 
+149:    <throw event="app.fatal" message="Problems on application server"/> 
+150:</catch> 
+151:<catch event="error.badfetch"> 
+152:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+153:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+154:<submit next="Disconnect?___DDSESSIONID=AAB883227FBFB88363A4257B49AB496D%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+155:</catch> 
+156:<catch event="error.badfetch" count="2"> 
+157:    <throw event="app.fatal" message="Problems on application server"/> 
+158:</catch> 
+159:<catch event="error" count="1"> 
+160:<reprompt/> 
+161:</catch> 
+162:<catch event="error" count="2"> 
+163:    <throw event="app.fatal" message="Problems on application server"/> 
+164:</catch> 
+165:<catch event="connection.disconnect"> 
+166:<var name="avayadonotsave___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+167:<var name="avayadonotsave___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+168:<submit next="End?___DDSESSIONID=AAB883227FBFB88363A4257B49AB496D%3A%2FDonationActivities_2" namelist="avayadonotsave___noinputcount avayadonotsave___nomatchcount" method="get"/> 
+169:</catch> 
+170:<meta name="marker" content="Avaya Aura Orchestration Designer Root End"/> 
+171:<form id="Start"> 
+172:<script> 
+173:function getArray( arrayName, item ) { 
+174:    try { 
+175:        var len = eval( arrayName +'.length;'); 
+176:        var result = ""; 
+177:     
+178:        for (var i = 0; i &lt; len; i++) { 
+179:            if (i &gt; 0) { 
+180:                result += " |"; 
+181:            } 
+182:            var temp  =  arrayName + "[" + i + "]." + item; 
+183:            result += eval(temp); 
+184:        } 
+185:        return result; 
+186:    } catch (errMsg) { 
+187:            return('unknown'); 
+188:    } 
+189:} 
+190:function getRedirect( item ) { 
+191:    return(getArray('session.connection.redirect', item)); 
+192:} 
+193:function getShareduui( item ) { 
+194:    return(getArray('session.avaya.uui.shared', item)); 
+195:} 
+196:function getScriptItem( item ) { 
+197:    try { 
+198:        var result = ""; 
+199:        result += eval(item); 
+200:        return result; 
+201:    } catch (errMsg) { 
+202:        return('unknown'); 
+203:    } 
+204:} 
+205:function getSIPCallID() { 
+206:    try { 
+207:        var protocol = getScriptItem( 'session.connection.protocol.name' ); 
+208:        if ( protocol == 'sip'  || protocol == 'SIP' ) { 
+209:            var temp = getScriptItem( 'session.connection.protocol.sip.callid' ); 
+210:            return(temp); 
+211:        } else { 
+212:            return('unknown'); 
+213:        } 
+214:    } catch (errMsg) { 
+215:            return('unknown'); 
+216:    } 
+217:} 
+218:</script> 
+219:<var name="session___aai" expr="getScriptItem( 'session.connection.aai' )"/> 
+220:<var name="session___ani" expr="getScriptItem( 'session.connection.remote.uri' )"/> 
+221:<var name="session___dnis" expr="getScriptItem( 'session.connection.local.uri' )"/> 
+222:<var name="session___protocolname" expr="getScriptItem( 'session.connection.protocol.name' )"/> 
+223:<var name="session___protocolversion" expr="getScriptItem( 'session.connection.protocol.version' )"/> 
+224:<var name="session___uui" expr="'unknown'"/> 
+225:<var name="session___calltag" expr="'unknown'"/> 
+226:<var name="session___channel" expr="getScriptItem( 'session.avaya.telephone.channel' )"/> 
+227:<var name="session___vpcalledextension" expr="'unknown'"/> 
+228:<var name="session___vpcoveragereason" expr="'unknown'"/> 
+229:<var name="session___vpcoveragetype" expr="'unknown'"/> 
+230:<var name="session___vprdnis" expr="'unknown'"/> 
+231:<var name="redirectinfo___uri" expr="getRedirect('uri')"/> 
+232:<var name="redirectinfo___presentationinfo" expr="getRedirect('pi')"/> 
+233:<var name="redirectinfo___screeninginfo" expr="getRedirect('si')"/> 
+234:<var name="redirectinfo___reason" expr="getRedirect('reason')"/> 
+235:<var name="session___sharedmode" expr="getScriptItem( 'session.avaya.uui.mode' )"/> 
+236:<var name="shareduui___id" expr="getShareduui('id')"/> 
+237:<var name="shareduui___value" expr="getShareduui('value')"/> 
+238:<var name="session___sessionlabel" expr="getScriptItem( 'session.avaya.ucid' )"/> 
+239:<var name="_sipcallid" expr="getSIPCallID()"/> 
+240:<var name="session___mediatype" expr="getScriptItem( 'session.connection.protocol.sip.media[1].type' )"/> 
+241:<var name="session___videoenabled" expr="getScriptItem( 'session.connection.video.enabled' )"/> 
+242:<var name="session___videocodec" expr="getScriptItem( 'session.connection.video.codec' )"/> 
+243:<var name="session___videoformat" expr="getScriptItem( 'session.connection.video.format' )"/> 
+244:<var name="session___videowidth" expr="getScriptItem( 'session.connection.video.width' )"/> 
+245:<var name="session___videoheight" expr="getScriptItem( 'session.connection.video.height' )"/> 
+246:<var name="session___videofps" expr="getScriptItem( 'session.connection.video.fps' )"/> 
+247:<var name="session___videobitrate" expr="getScriptItem( 'session.connection.video.bitrate' )"/> 
+248:<var name="session___videonearfmtp" expr="getScriptItem( 'session.connection.video.nearfmtp' )"/> 
+249:<var name="session___videofarfmtp" expr="getScriptItem( 'session.connection.video.farfmtp' )"/> 
+250:<var name="session___ucid" expr="getScriptItem( 'session.avaya.ucid' )"/> 
+251:<var name="session___conversefirst" expr="'unknown'"/> 
+252:<var name="session___conversesecond" expr="'unknown'"/> 
+253:<block> 
+254:<submit next="ddlog4j?___DDSESSIONID=AAB883227FBFB88363A4257B49AB496D%3A%2FDonationActivities_2" namelist="session___aai session___ani session___dnis session___protocolname session___protocolversion session___uui session___calltag session___channel session___vpcalledextension session___vpcoveragereason session___vpcoveragetype session___vprdnis redirectinfo___uri redirectinfo___presentationinfo redirectinfo___screeninginfo redirectinfo___reason session___sharedmode shareduui___id shareduui___value session___sessionlabel _sipcallid session___mediatype session___videoenabled session___videocodec session___videoformat session___videowidth session___videoheight session___videofps session___videobitrate session___videonearfmtp session___videofarfmtp session___ucid session___conversefirst session___conversesecond" method="post"/> 
+255:</block> 
+256:</form> 
+257:</vxml> 
+258:
+
+23/08/2017 09:40:28:805  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : ddlog4j
+23/08/2017 09:40:28:807  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :_sipcallid to simple: _sipcallid  as [unknown]
+23/08/2017 09:40:28:807  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :redirectinfo___presentationinfo to complex: redirectinfo:presentationinfo  as [undefined]
+23/08/2017 09:40:28:807  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :redirectinfo___reason to complex: redirectinfo:reason  as [unknown]
+23/08/2017 09:40:28:807  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :redirectinfo___screeninginfo to complex: redirectinfo:screeninginfo  as [undefined]
+23/08/2017 09:40:28:808  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :redirectinfo___uri to complex: redirectinfo:uri  as []
+23/08/2017 09:40:28:808  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___aai to complex: session:aai  as []
+23/08/2017 09:40:28:808  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___ani to complex: session:ani  as [undefined]
+23/08/2017 09:40:28:808  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___calltag to complex: session:calltag  as [unknown]
+23/08/2017 09:40:28:808  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___channel to complex: session:channel  as [0]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___conversefirst to complex: session:conversefirst  as [unknown]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___conversesecond to complex: session:conversesecond  as [unknown]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___dnis to complex: session:dnis  as [undefined]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___mediatype to complex: session:mediatype  as [unknown]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___protocolname to complex: session:protocolname  as [pots]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___protocolversion to complex: session:protocolversion  as [1]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___sessionlabel to complex: session:sessionlabel  as [undefined]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___sharedmode to complex: session:sharedmode  as [shared]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___ucid to complex: session:ucid  as [undefined]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___uui to complex: session:uui  as [unknown]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___videobitrate to complex: session:videobitrate  as [unknown]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___videocodec to complex: session:videocodec  as [unknown]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___videoenabled to complex: session:videoenabled  as [unknown]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___videofarfmtp to complex: session:videofarfmtp  as [unknown]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___videoformat to complex: session:videoformat  as [unknown]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___videofps to complex: session:videofps  as [unknown]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___videoheight to complex: session:videoheight  as [unknown]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___videonearfmtp to complex: session:videonearfmtp  as [unknown]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___videowidth to complex: session:videowidth  as [unknown]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___vpcalledextension to complex: session:vpcalledextension  as [unknown]
+23/08/2017 09:40:28:809  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___vpcoveragereason to complex: session:vpcoveragereason  as [unknown]
+23/08/2017 09:40:28:810  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___vpcoveragetype to complex: session:vpcoveragetype  as [unknown]
+23/08/2017 09:40:28:818  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :session___vprdnis to complex: session:vprdnis  as [unknown]
+23/08/2017 09:40:28:818  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :shareduui___id to complex: shareduui:id  as [unknown]
+23/08/2017 09:40:28:818  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :shareduui___value to complex: shareduui:value  as [unknown]
+23/08/2017 09:40:28:850 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : CTICallOperation Request: callinfoInitialCall
+23/08/2017 09:40:28:864 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : CTICallOperation Response: okay
+23/08/2017 09:40:28:915 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Admin VariableField:getStringValue(): return string value for DOMAINID:ID
+23/08/2017 09:40:28:921 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : get param for app: DonationActivities_2
+23/08/2017 09:40:28:927  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : JNDINAME Response:null
+23/08/2017 09:40:28:928  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : IdType Response:null
+23/08/2017 09:40:28:938  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : DonationToRedCrossByPhone Response:null
+23/08/2017 09:40:28:938  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : DonationToChildWelfareLeague Response:null
+23/08/2017 09:40:28:938  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : DonationToPaperWindmillTroupe Response:null
+23/08/2017 09:40:28:939  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : DonationToTeacherChang Response:null
+23/08/2017 09:40:28:939  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : FarEastOneSmallAmount Response:null
+23/08/2017 09:40:28:973  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : get_BpId
+23/08/2017 09:40:29:049  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : cticallinfo
+23/08/2017 09:40:29:115 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : CTICallOperation Request: callinfoInitialCall
+23/08/2017 09:40:29:116 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : CTICallOperation Response: okay
+23/08/2017 09:40:29:117  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Assigning [cticallinfo:ani] to [S_USERDATA:ANI]
+23/08/2017 09:40:29:118  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Assigning [cticallinfo:dnis] to [S_USERDATA:DNIS]
+23/08/2017 09:40:29:119  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : check_testModeAND_anilenght
+23/08/2017 09:40:29:183  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : session id:sess6799850 | DonationActivities_2:check_testModeAND_anilenght | #####test_mode##### | properties:test_mode : null
+23/08/2017 09:40:29:189  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : [condition1] Expression [properties:test_mode] String Equal [1]
+23/08/2017 09:40:29:194  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : AN_991225
+23/08/2017 09:40:29:458 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : *** Reply for [/DonationActivities_2/AN_991225] ***
+23/08/2017 09:40:29:459 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : 0:<?xml version="1.0" encoding="UTF-8"?> 
+1:<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="zh-tw"> 
+2:<meta name="author" content="Avaya Aura Orchestration Designer"/> 
+3:<meta name="runtime-version" content="07.01.08.04"/> 
+4:<meta name="runtimecommon-version" content="07.01.08.04"/> 
+5:<meta name="copyright" content="Copyright (c) 2002-2011, Avaya"/> 
+6:<form id="AN_991225"> 
+7:<property name="maxnbest" value="1"/> 
+8:<var name="nbest" expr="1"/> 
+9:<var name="AN_991225___value"/> 
+10:<var name="AN_991225___confidence"/> 
+11:<var name="AN_991225___utterance"/> 
+12:<var name="AN_991225___inputmode"/> 
+13:<var name="AN_991225___interpretation" expr="'undefined'"/> 
+14:<var name="AN_991225___noinputcount" expr="'0'"/> 
+15:<var name="AN_991225___nomatchcount" expr="'0'"/> 
+16:<var name="graminterp___input_ANI" expr="'undefined'"/> 
+17:<field name="AN_991225" modal="false"> 
+18:<prompt bargein="true" bargeintype="speech" timeout="8000ms"> 
+19:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0001.wav">:a</audio> 
+20:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0014.wav">:n</audio> 
+21:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0009.wav">:i</audio> 
+22:</prompt> 
+23:<grammar  mode="dtmf" xml:lang="en-us" weight="1.0" src="builtin:dtmf/number" maxage="0"/> 
+24:<catch event="noinput" count="1"> 
+25:<assign name="_avayaNoinputCounter" expr="_avayaNoinputCounter + 1"/> 
+26:<reprompt/> 
+27:</catch> 
+28:<catch event="noinput" count="3"> 
+29:<assign name="_avayaNoinputCounter" expr="_avayaNoinputCounter + 1"/> 
+30:<assign name="AN_991225___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+31:<assign name="AN_991225___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+32:<submit next="AN_015333?___DDSESSIONID=AAB883227FBFB88363A4257B49AB496D%3A%2FDonationActivities_2" namelist="AN_991225___noinputcount AN_991225___nomatchcount" method="post" enctype="multipart/form-data"/> 
+33:</catch> 
+34:<catch event="nomatch" count="1"> 
+35:<assign name="_avayaNomatchCounter" expr="_avayaNomatchCounter + 1"/> 
+36:<reprompt/> 
+37:</catch> 
+38:<catch event="nomatch" count="3"> 
+39:<assign name="_avayaNomatchCounter" expr="_avayaNomatchCounter + 1"/> 
+40:<assign name="AN_991225___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+41:<assign name="AN_991225___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+42:<submit next="AN_015333?___DDSESSIONID=AAB883227FBFB88363A4257B49AB496D%3A%2FDonationActivities_2" namelist="AN_991225___noinputcount AN_991225___nomatchcount" method="post" enctype="multipart/form-data"/> 
+43:</catch> 
+44:<filled> 
+45:<assign name="AN_991225___confidence" expr="getnbest('confidence', nbest)"/> 
+46:<assign name="AN_991225___utterance" expr="getnbest('utterance', nbest)"/> 
+47:<assign name="AN_991225___inputmode" expr="getnbest('inputmode', nbest)"/> 
+48:<assign name="AN_991225___interpretation" expr="getnbest('interpretation', nbest)"/> 
+49:<if cond="startswith(AN_991225___interpretation, 'undefined') == true "> 
+50:    <assign name="AN_991225___interpretation" expr="getnbest('interpretation', nbest)"/> 
+51:</if> 
+52:<assign name="AN_991225___value" expr="AN_991225___interpretation"/> 
+53:<assign name="AN_991225___noinputcount" expr="getnbestnmni(_avayaNoinputCounter, nbest)"/> 
+54:<assign name="AN_991225___nomatchcount" expr="getnbestnmni(_avayaNomatchCounter, nbest)"/> 
+55:</filled> 
+56:</field> 
+57:<block> 
+58:<submit next="assign_Variable?___DDSESSIONID=AAB883227FBFB88363A4257B49AB496D%3A%2FDonationActivities_2" namelist="AN_991225___value AN_991225___confidence AN_991225___utterance AN_991225___inputmode AN_991225___interpretation AN_991225___noinputcount AN_991225___nomatchcount" method="post"/> 
+59:</block> 
+60:</form> 
+61:</vxml> 
+62:
+
+23/08/2017 09:40:51:633  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : assign_Variable
+23/08/2017 09:40:51:634  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :AN_991225___confidence to complex: AN_991225:confidence  as [0.949999988079071]
+23/08/2017 09:40:51:634  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :AN_991225___inputmode to complex: AN_991225:inputmode  as [dtmf]
+23/08/2017 09:40:51:635  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :AN_991225___interpretation to complex: AN_991225:interpretation  as [903192000]
+23/08/2017 09:40:51:635  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :AN_991225___noinputcount to complex: AN_991225:noinputcount  as [0]
+23/08/2017 09:40:51:635  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :AN_991225___nomatchcount to complex: AN_991225:nomatchcount  as [0]
+23/08/2017 09:40:51:635  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :AN_991225___utterance to complex: AN_991225:utterance  as [0903191575]
+23/08/2017 09:40:51:635  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Storing :AN_991225___value to complex: AN_991225:value  as [903192000]
+23/08/2017 09:40:51:688  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Assigning [AN_991225:utterance] to [S_USERDATA:ANI]
+23/08/2017 09:40:51:688  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Assigning [IVR] to [S_USERDATA:channelForCfg]
+23/08/2017 09:40:51:688  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Assigning [DonationActivities] to [S_USERDATA:FlowName]
+23/08/2017 09:40:51:691  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : CheckAni
+23/08/2017 09:40:51:752  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Assiging length of [S_USERDATA:ANI] to [S_OD:ANI_length]
+23/08/2017 09:40:51:753  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Substring [S_USERDATA:ANI] to [S_OD:AniFirstNumber] start [0] number of characters [1]
+23/08/2017 09:40:51:753  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Substring [S_USERDATA:ANI] to [S_OD:AniFourNumber] start [0] number of characters [4]
+23/08/2017 09:40:51:753  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Substring [S_USERDATA:ANI] to [S_OD:AniTwoNumber] start [1] number of characters [1]
+23/08/2017 09:40:51:753  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : [expression1] Expression [S_OD:AniFirstNumber] Numeric Equal [9]
+23/08/2017 09:40:51:753  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : [expression2] Expression [S_OD:ANI_length] Numeric Equal [9]
+23/08/2017 09:40:51:753  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : [expression3] Expression [S_OD:ANI_length] Numeric Greater Than [10]
+23/08/2017 09:40:51:753  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : [expression4] Expression [S_OD:AniFourNumber] Numeric Equal [8869]
+23/08/2017 09:40:51:754  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : [expression5] Expression [S_OD:AniTwoNumber] Numeric Equal [9]
+23/08/2017 09:40:51:754  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : [expression6] Expression [S_OD:ANI_length] Numeric Equal [10]
+23/08/2017 09:40:51:755  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : CF_check_mobile
+23/08/2017 09:40:51:810  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : CF_check_mobile-Begin
+23/08/2017 09:40:51:870  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : CF_check_mobile-select_FE_MSIS_CB2_TBL2
+23/08/2017 09:40:51:927  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : select_FE_MSIS_CB2_TBL2-Begin
+23/08/2017 09:40:51:983  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : select_FE_MSIS_CB2_TBL2-assign_FE_MSIS_CB2_TBL2
+23/08/2017 09:40:52:041  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : SQL Response([]Select FE_MSIS_CB2_TBL):select FE_MSIS_TELE_NUMB,lpad(rtrim(fe_msis_puk1,'   '),8,'0')fe_msis_puk1,lpad(rtrim(fe_msis_puk2,'   '),8,'0')fe_msis_puk2,fe_msis_sim_no,FE_MSIS_cb_account_id,fe_msis_act_date,fe_msis_promo_code,fe_msis_start_date,FE_msis_bill_plan,fe_msis_status,fe_msis_reason_code,fe_msis_cb_service_type,FE_MSIS_CB_MVPN_FLAG,FE_MSIS_CB_HYBRID_FLAG,FE_MSIS_CB_CUSTOMER_ID,FE_MSIS_CB_SUBR_PWD,FE_MSIS_CB_SUBSCRIBER_ID FROM FE_MSIS_CB2_TBL WHERE FE_MSIS_TELE_NUMB='0903191575' AND FE_MSIS_STATUS !='5'
+23/08/2017 09:40:52:042  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Table Response([]Select FE_MSIS_CB2_TBL):FE_MSIS_CB2_TBL
+23/08/2017 09:40:52:045  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : select_FE_MSIS_CB2_TBL2-CF_selectDBAPI
+23/08/2017 09:40:52:105  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : CF_selectDBAPI-Begin
+23/08/2017 09:40:52:167  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : CF_selectDBAPI-selectDBAPI
+23/08/2017 09:40:52:227  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : url Response(TID:[]):http://null/CommonDBAPI/doSelect
+23/08/2017 09:40:52:251  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : urlParameters Response(TID:[]):{"TABLE":"FE_MSIS_CB2_TBL","SQL":"select FE_MSIS_TELE_NUMB,lpad(rtrim(fe_msis_puk1,'   '),8,'0')fe_msis_puk1,lpad(rtrim(fe_msis_puk2,'   '),8,'0')fe_msis_puk2,fe_msis_sim_no,FE_MSIS_cb_account_id,fe_msis_act_date,fe_msis_promo_code,fe_msis_start_date,FE_msis_bill_plan,fe_msis_status,fe_msis_reason_code,fe_msis_cb_service_type,FE_MSIS_CB_MVPN_FLAG,FE_MSIS_CB_HYBRID_FLAG,FE_MSIS_CB_CUSTOMER_ID,FE_MSIS_CB_SUBR_PWD,FE_MSIS_CB_SUBSCRIBER_ID FROM FE_MSIS_CB2_TBL WHERE FE_MSIS_TELE_NUMB='0903191575' AND FE_MSIS_STATUS !='5'"}
+23/08/2017 09:40:54:824 ERROR - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : IOException Response(TID:[]):null
+23/08/2017 09:40:54:824 ERROR - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : exectureAddItemsEx END
+23/08/2017 09:40:54:825  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : CF_selectDBAPI-next
+23/08/2017 09:40:54:875 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Subflow return node "CF_selectDBAPI-next" forwarding to "select_FE_MSIS_CB2_TBL2-next"
+23/08/2017 09:40:54:876  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : select_FE_MSIS_CB2_TBL2-next
+23/08/2017 09:40:54:928 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Subflow return node "select_FE_MSIS_CB2_TBL2-next" forwarding to "CF_check_mobile-select_FE_CUST_CB2_TBL"
+23/08/2017 09:40:54:930  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : CF_check_mobile-select_FE_CUST_CB2_TBL
+23/08/2017 09:40:54:982  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : select_FE_CUST_CB2_TBL-Begin
+23/08/2017 09:40:55:035  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : select_FE_CUST_CB2_TBL-assign_FE_CUST_CB2_TBL
+23/08/2017 09:40:55:086  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : SQL Response(TID:[]Select FE_CUST_CB2_TBL):SELECT FE_CUST_DEMO_ID_TYPE,FE_CUST_SSN,FE_CUST_CUST_STATUS,FE_CUST_INVC_OUT_AMOUNT, FE_CUST_INVC_PAY_DUE_DAT,FE_CUST_LAST_BILLED,FE_CUST_PAY_AMOUNT,FE_CUST_PAY_MADE_DATE,FE_CUST_CURRENT_BALANCE,FE_CUST_INVOICE_CHECKSUM,fe_cust_BILL_NAME,FE_CUST_SOCIAL_NUM,FE_MKTG_MSG_ID,LPAD(FE_CUST_PAYMENT_RULE,2),TO_CHAR(FE_CUST_LAST_INVOICE),FE_CUST_CUSTOMER_TYPE FROM   FE_CUST_CB2_TBL WHERE FE_ACCOUNT_CB_ID=''
+23/08/2017 09:40:55:086  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Table Response(TID:[]Select FE_CUST_CB2_TBL):FE_CUST_CB2_TBL
+23/08/2017 09:40:55:087  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : select_FE_CUST_CB2_TBL-CF_selectDBAPI
+23/08/2017 09:40:55:142  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : CF_selectDBAPI-Begin
+23/08/2017 09:40:55:196  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : CF_selectDBAPI-selectDBAPI
+23/08/2017 09:40:55:251  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : url Response(TID:[]):http://null/CommonDBAPI/doSelect
+23/08/2017 09:40:55:251  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : urlParameters Response(TID:[]):{"TABLE":"FE_CUST_CB2_TBL","SQL":"SELECT FE_CUST_DEMO_ID_TYPE,FE_CUST_SSN,FE_CUST_CUST_STATUS,FE_CUST_INVC_OUT_AMOUNT, FE_CUST_INVC_PAY_DUE_DAT,FE_CUST_LAST_BILLED,FE_CUST_PAY_AMOUNT,FE_CUST_PAY_MADE_DATE,FE_CUST_CURRENT_BALANCE,FE_CUST_INVOICE_CHECKSUM,fe_cust_BILL_NAME,FE_CUST_SOCIAL_NUM,FE_MKTG_MSG_ID,LPAD(FE_CUST_PAYMENT_RULE,2),TO_CHAR(FE_CUST_LAST_INVOICE),FE_CUST_CUSTOMER_TYPE FROM   FE_CUST_CB2_TBL WHERE FE_ACCOUNT_CB_ID=''"}
+23/08/2017 09:40:55:256 ERROR - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : IOException Response(TID:[]):null
+23/08/2017 09:40:55:256 ERROR - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : exectureAddItemsEx END
+23/08/2017 09:40:55:256  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : CF_selectDBAPI-next
+23/08/2017 09:40:55:309 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Subflow return node "CF_selectDBAPI-next" forwarding to "select_FE_CUST_CB2_TBL-next"
+23/08/2017 09:40:55:310  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : select_FE_CUST_CB2_TBL-next
+23/08/2017 09:40:55:362 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Subflow return node "select_FE_CUST_CB2_TBL-next" forwarding to "CF_check_mobile-next"
+23/08/2017 09:40:55:364  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : CF_check_mobile-next
+23/08/2017 09:40:55:417 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Subflow return node "CF_check_mobile-next" forwarding to "Check_VDN"
+23/08/2017 09:40:55:419  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : Check_VDN
+23/08/2017 09:40:55:470  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : [condition1] Expression [S_USERDATA:DNIS] String Equal [49913]
+23/08/2017 09:40:55:470  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : [condition2] Expression [S_USERDATA:DNIS] String Equal [49380]
+23/08/2017 09:40:55:470  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : [condition3] Expression [S_USERDATA:DNIS] String Equal [49467]
+23/08/2017 09:40:55:470  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : [condition4] Expression [S_USERDATA:DNIS] String Equal [49470]
+23/08/2017 09:40:55:470  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : [condition5] Expression [S_USERDATA:DNIS] String Equal [49469]
+23/08/2017 09:40:55:472  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : Disconnect
+23/08/2017 09:40:55:525 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : *** Reply for [/DonationActivities_2/Disconnect] ***
+23/08/2017 09:40:55:525 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : 0:<?xml version="1.0" encoding="UTF-8"?> 
+1:<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="zh-tw"> 
+2:<meta name="author" content="Avaya Aura Orchestration Designer"/> 
+3:<meta name="runtime-version" content="07.01.08.04"/> 
+4:<meta name="runtimecommon-version" content="07.01.08.04"/> 
+5:<meta name="copyright" content="Copyright (c) 2002-2011, Avaya"/> 
+6:<form id="Disconnect"> 
+7:<block> 
+8:<disconnect/> 
+9:</block> 
+10:<catch event="connection.disconnect"> 
+11:<var name="avayadonotsave___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+12:<var name="avayadonotsave___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+13:<submit next="End?___DDSESSIONID=AAB883227FBFB88363A4257B49AB496D%3A%2FDonationActivities_2" namelist="avayadonotsave___noinputcount avayadonotsave___nomatchcount" method="get"/> 
+14:</catch> 
+15:</form> 
+16:</vxml> 
+17:
+
+23/08/2017 09:40:55:556  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Using SCESession AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 servlet : End
+23/08/2017 09:40:55:612 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : *** Reply for [/DonationActivities_2/End] ***
+23/08/2017 09:40:55:612 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : 0:<?xml version="1.0" encoding="UTF-8"?> 
+1:<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="zh-tw"> 
+2:<meta name="author" content="Avaya Aura Orchestration Designer"/> 
+3:<meta name="runtime-version" content="07.01.08.04"/> 
+4:<meta name="runtimecommon-version" content="07.01.08.04"/> 
+5:<meta name="copyright" content="Copyright (c) 2002-2011, Avaya"/> 
+6:<var name="_avayaExitReason" expr="''"/> 
+7:<var name="_avayaExitInfo1" expr="''"/> 
+8:<var name="_avayaExitInfo2" expr="''"/> 
+9:<var name="_avayaExitCustomerId" expr="''"/> 
+10:<var name="_avayaExitPreferredPath" expr="'1'"/> 
+11:<var name="_avayaExitTopic" expr="''"/> 
+12:<form id="End"> 
+13:<block> 
+14:<exit namelist="_avayaExitReason _avayaExitInfo1 _avayaExitInfo2 _avayaExitCustomerId _avayaExitPreferredPath _avayaExitTopic"/> 
+15:</block> 
+16:</form> 
+17:</vxml> 
+18:
+
+23/08/2017 09:45:42:463  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : HTTP Session lost removing SCESession AAB883227FBFB88363A4257B49AB496D
+23/08/2017 09:45:42:464  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : SCESession Removed
+23/08/2017 09:45:42:464 DEBUG - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : Removing 1 session stack frames.
+23/08/2017 09:45:42:464  INFO - AAB883227FBFB88363A4257B49AB496D:/DonationActivities_2 : ** Popped Stack Frame [/DonationActivities_2]
+23/08/2017 09:48:00:347  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : SCESession bound to HttpSession F6AA61C814FE69A5FA2951C7ABE591A8
+23/08/2017 09:48:00:347  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Browser Version 2.1.4, terminationURL enabled : true
+23/08/2017 09:48:00:350  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Using SCESession F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 servlet : Start
+23/08/2017 09:48:00:383  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : ** Pushed Stack Frame [/DonationActivities_2]
+23/08/2017 09:48:00:396 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Creating variable [DOMAINID] from factory [com.avaya.vp.admin.variables.runtime.AdminVariableFactory]
+23/08/2017 09:48:00:407 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Not able to save posted variable information [call_classification]
+23/08/2017 09:48:00:408  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___sessionid to complex: session:sessionid  as [sess2346348]
+23/08/2017 09:48:00:408  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___vpconverseondata to complex: session:vpconverseondata  as []
+23/08/2017 09:48:01:025  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : runtime_platform : Desktop
+23/08/2017 09:48:01:025  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : runtime_asr : Desktop Microsoft Speech SAPI
+23/08/2017 09:48:01:028  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : MessageType is speech
+23/08/2017 09:48:01:032 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Initializer:applicationStarted:Initializing admin variables...
+23/08/2017 09:48:01:032 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Initializer:applicationStarted:__VPVarAppDate is 1503452881032
+23/08/2017 09:48:01:034 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Initializer:applicationStarted:Timestamp is 08/23/17 9:48:01
+23/08/2017 09:48:01:034 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Initializer:applicationStarted:Appname is DonationActivities_2
+23/08/2017 09:48:01:035 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : AdminVarCache:init: Timestamp is different; Load parameters....
+23/08/2017 09:48:01:035 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : AdminVarCache:init: Module? false
+23/08/2017 09:48:01:035 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : AdminVarCache:init: loading simulation data...
+23/08/2017 09:48:01:037 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : AdminVarCache:init: no data comes back from proxy.
+23/08/2017 09:48:01:037 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : app params: {}
+23/08/2017 09:48:01:037 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : AdminVarCache:init: Finish loading.
+23/08/2017 09:48:01:039 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : *** Reply for [/DonationActivities_2/Start] ***
+23/08/2017 09:48:01:040 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : 0:<?xml version="1.0" encoding="UTF-8"?> 
+1:<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="zh-tw"> 
+2:<meta name="author" content="Avaya Aura Orchestration Designer"/> 
+3:<meta name="runtime-version" content="07.01.08.04"/> 
+4:<meta name="runtimecommon-version" content="07.01.08.04"/> 
+5:<meta name="copyright" content="Copyright (c) 2002-2011, Avaya"/> 
+6:<script> 
+7:function getnbest(  item, nbest ) { 
+8:    var len = application.lastresult$.length; 
+9:    var result = ""; 
+10:     
+11:    if ( len &gt; nbest) { 
+12:        len = nbest; 
+13:    } 
+14:    for (var i = 0; i &lt; len; i++) { 
+15:        if (i &gt; 0) { 
+16:            result += " |"; 
+17:        } 
+18:        var temp  =  "application.lastresult$[" + i + "]." + item; 
+19:        result += extractprops( "", eval(temp)); 
+20:    } 
+21:    return result; 
+22:} 
+23: 
+24:function getnbestnmni(  item, nbest ) { 
+25:    var len = application.lastresult$.length; 
+26:    var result = ""; 
+27:     
+28:    if ( len &gt; nbest) { 
+29:        len = nbest; 
+30:    } 
+31:    for (var i = 0; i &lt; len; i++) { 
+32:        if (i &gt; 0) { 
+33:            result += " |"; 
+34:        } 
+35:        result += item; 
+36:    } 
+37:    return result; 
+38:} 
+39: 
+40:function extractprops ( parent, obj ) { 
+41:    var prop, name, result = ""; 
+42:    var count = 1; 
+43:    if ( typeof ( obj ) == "object" ) { 
+44:        for ( prop in obj ) { 
+45:            name = parent + prop; 
+46:            if ( typeof ( obj [ prop ] ) == "object" ) { 
+47:                result += extractprops( name+".", obj [ prop ] ); 
+48:            } else { 
+49:                if (count == 1) { 
+50:                    result = obj [ prop ]; 
+51:                } else { 
+52:                    result += " " + obj [ prop ]; 
+53:                } 
+54:            } 
+55:            count = count + 1; 
+56:        } 
+57:    } else { 
+58:        if (obj == undefined ) { 
+59:            result +=  "undefined"; 
+60:        } else { 
+61:            result +=  obj; 
+62:        } 
+63:    } 
+64:    return result; 
+65:} 
+66: 
+67:function startswith ( value, startwith ) { 
+68:    var index; 
+69:    index = value.indexOf(startwith, 0); 
+70:    if ( index == 0 ) { 
+71:       return true; 
+72:    } else { 
+73:       return false; 
+74:    } 
+75:} 
+76: 
+77:function containsUndefined ( value ) { 
+78:    var index; 
+79:    index = value.indexOf('undefined', 0); 
+80:    if ( index == -1 ) { 
+81:       return false; 
+82:    } else { 
+83:       return true; 
+84:    } 
+85:} 
+86: 
+87:</script> 
+88:<script> 
+89:function objectToString(  obj ) { 
+90:    try { 
+91:    var result = ""; 
+92:    result += getobjectprops( "", obj); 
+93:    if (result.charAt(0) == '|' ) { 
+94:        result = result.substring(1); 
+95:    }  
+96:    } catch (errMsg) { 
+97:        return("undefined"); 
+98:    } 
+99:    return result; 
+100:} 
+101: 
+102:function getobjectprops ( parent, obj ) { 
+103:    var prop, name, result = ""; 
+104:    if ( typeof ( obj ) == "object" ) {  
+105:        for ( prop in obj ) {  
+106:            name = parent + prop; 
+107:            if ( typeof ( obj [ prop ] ) == "object" ) { 
+108:                result += extractprops( name+".", obj [ prop ] ); 
+109:            } else {  
+110:                result +=   "|"  + obj [ prop ];  
+111:            }  
+112:        }  
+113:    } else {  
+114:        if (obj == undefined ) {  
+115:           result +=  "undefined";  
+116:        } else {  
+117:           result +=  obj;  
+118:        }  
+119:    }  
+120:    return result; 
+121:} 
+122:</script> 
+123:<var name="_avayaExitReason" expr="''"/> 
+124:<var name="_avayaExitInfo1" expr="''"/> 
+125:<var name="_avayaExitInfo2" expr="''"/> 
+126:<var name="_avayaExitCustomerId" expr="''"/> 
+127:<var name="_avayaExitPreferredPath" expr="'1'"/> 
+128:<var name="_avayaExitTopic" expr="''"/> 
+129:<var name="_avayaNoinputCounter" expr="0"/> 
+130:<var name="_avayaNomatchCounter" expr="0"/> 
+131:<catch event="error.runtime"> 
+132:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+133:<submit next="Disconnect?___DDSESSIONID=F6AA61C814FE69A5FA2951C7ABE591A8%3A%2FDonationActivities_2" namelist="event_message" method="post" enctype="multipart/form-data"/> 
+134:</catch> 
+135:<catch event="error.badfetch.http.404"> 
+136:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+137:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+138:<submit next="Disconnect?___DDSESSIONID=F6AA61C814FE69A5FA2951C7ABE591A8%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+139:</catch> 
+140:<catch event="error.badfetch.http.404" count="2"> 
+141:    <throw event="app.fatal" message="Problems on application server"/> 
+142:</catch> 
+143:<catch event="error.badfetch.http.500"> 
+144:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+145:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+146:<submit next="Disconnect?___DDSESSIONID=F6AA61C814FE69A5FA2951C7ABE591A8%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+147:</catch> 
+148:<catch event="error.badfetch.http.500" count="2"> 
+149:    <throw event="app.fatal" message="Problems on application server"/> 
+150:</catch> 
+151:<catch event="error.badfetch"> 
+152:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+153:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+154:<submit next="Disconnect?___DDSESSIONID=F6AA61C814FE69A5FA2951C7ABE591A8%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+155:</catch> 
+156:<catch event="error.badfetch" count="2"> 
+157:    <throw event="app.fatal" message="Problems on application server"/> 
+158:</catch> 
+159:<catch event="error" count="1"> 
+160:<reprompt/> 
+161:</catch> 
+162:<catch event="error" count="2"> 
+163:    <throw event="app.fatal" message="Problems on application server"/> 
+164:</catch> 
+165:<catch event="connection.disconnect"> 
+166:<var name="avayadonotsave___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+167:<var name="avayadonotsave___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+168:<submit next="End?___DDSESSIONID=F6AA61C814FE69A5FA2951C7ABE591A8%3A%2FDonationActivities_2" namelist="avayadonotsave___noinputcount avayadonotsave___nomatchcount" method="get"/> 
+169:</catch> 
+170:<meta name="marker" content="Avaya Aura Orchestration Designer Root End"/> 
+171:<form id="Start"> 
+172:<script> 
+173:function getArray( arrayName, item ) { 
+174:    try { 
+175:        var len = eval( arrayName +'.length;'); 
+176:        var result = ""; 
+177:     
+178:        for (var i = 0; i &lt; len; i++) { 
+179:            if (i &gt; 0) { 
+180:                result += " |"; 
+181:            } 
+182:            var temp  =  arrayName + "[" + i + "]." + item; 
+183:            result += eval(temp); 
+184:        } 
+185:        return result; 
+186:    } catch (errMsg) { 
+187:            return('unknown'); 
+188:    } 
+189:} 
+190:function getRedirect( item ) { 
+191:    return(getArray('session.connection.redirect', item)); 
+192:} 
+193:function getShareduui( item ) { 
+194:    return(getArray('session.avaya.uui.shared', item)); 
+195:} 
+196:function getScriptItem( item ) { 
+197:    try { 
+198:        var result = ""; 
+199:        result += eval(item); 
+200:        return result; 
+201:    } catch (errMsg) { 
+202:        return('unknown'); 
+203:    } 
+204:} 
+205:function getSIPCallID() { 
+206:    try { 
+207:        var protocol = getScriptItem( 'session.connection.protocol.name' ); 
+208:        if ( protocol == 'sip'  || protocol == 'SIP' ) { 
+209:            var temp = getScriptItem( 'session.connection.protocol.sip.callid' ); 
+210:            return(temp); 
+211:        } else { 
+212:            return('unknown'); 
+213:        } 
+214:    } catch (errMsg) { 
+215:            return('unknown'); 
+216:    } 
+217:} 
+218:</script> 
+219:<var name="session___aai" expr="getScriptItem( 'session.connection.aai' )"/> 
+220:<var name="session___ani" expr="getScriptItem( 'session.connection.remote.uri' )"/> 
+221:<var name="session___dnis" expr="getScriptItem( 'session.connection.local.uri' )"/> 
+222:<var name="session___protocolname" expr="getScriptItem( 'session.connection.protocol.name' )"/> 
+223:<var name="session___protocolversion" expr="getScriptItem( 'session.connection.protocol.version' )"/> 
+224:<var name="session___uui" expr="'unknown'"/> 
+225:<var name="session___calltag" expr="'unknown'"/> 
+226:<var name="session___channel" expr="getScriptItem( 'session.avaya.telephone.channel' )"/> 
+227:<var name="session___vpcalledextension" expr="'unknown'"/> 
+228:<var name="session___vpcoveragereason" expr="'unknown'"/> 
+229:<var name="session___vpcoveragetype" expr="'unknown'"/> 
+230:<var name="session___vprdnis" expr="'unknown'"/> 
+231:<var name="redirectinfo___uri" expr="getRedirect('uri')"/> 
+232:<var name="redirectinfo___presentationinfo" expr="getRedirect('pi')"/> 
+233:<var name="redirectinfo___screeninginfo" expr="getRedirect('si')"/> 
+234:<var name="redirectinfo___reason" expr="getRedirect('reason')"/> 
+235:<var name="session___sharedmode" expr="getScriptItem( 'session.avaya.uui.mode' )"/> 
+236:<var name="shareduui___id" expr="getShareduui('id')"/> 
+237:<var name="shareduui___value" expr="getShareduui('value')"/> 
+238:<var name="session___sessionlabel" expr="getScriptItem( 'session.avaya.ucid' )"/> 
+239:<var name="_sipcallid" expr="getSIPCallID()"/> 
+240:<var name="session___mediatype" expr="getScriptItem( 'session.connection.protocol.sip.media[1].type' )"/> 
+241:<var name="session___videoenabled" expr="getScriptItem( 'session.connection.video.enabled' )"/> 
+242:<var name="session___videocodec" expr="getScriptItem( 'session.connection.video.codec' )"/> 
+243:<var name="session___videoformat" expr="getScriptItem( 'session.connection.video.format' )"/> 
+244:<var name="session___videowidth" expr="getScriptItem( 'session.connection.video.width' )"/> 
+245:<var name="session___videoheight" expr="getScriptItem( 'session.connection.video.height' )"/> 
+246:<var name="session___videofps" expr="getScriptItem( 'session.connection.video.fps' )"/> 
+247:<var name="session___videobitrate" expr="getScriptItem( 'session.connection.video.bitrate' )"/> 
+248:<var name="session___videonearfmtp" expr="getScriptItem( 'session.connection.video.nearfmtp' )"/> 
+249:<var name="session___videofarfmtp" expr="getScriptItem( 'session.connection.video.farfmtp' )"/> 
+250:<var name="session___ucid" expr="getScriptItem( 'session.avaya.ucid' )"/> 
+251:<var name="session___conversefirst" expr="'unknown'"/> 
+252:<var name="session___conversesecond" expr="'unknown'"/> 
+253:<block> 
+254:<submit next="ddlog4j?___DDSESSIONID=F6AA61C814FE69A5FA2951C7ABE591A8%3A%2FDonationActivities_2" namelist="session___aai session___ani session___dnis session___protocolname session___protocolversion session___uui session___calltag session___channel session___vpcalledextension session___vpcoveragereason session___vpcoveragetype session___vprdnis redirectinfo___uri redirectinfo___presentationinfo redirectinfo___screeninginfo redirectinfo___reason session___sharedmode shareduui___id shareduui___value session___sessionlabel _sipcallid session___mediatype session___videoenabled session___videocodec session___videoformat session___videowidth session___videoheight session___videofps session___videobitrate session___videonearfmtp session___videofarfmtp session___ucid session___conversefirst session___conversesecond" method="post"/> 
+255:</block> 
+256:</form> 
+257:</vxml> 
+258:
+
+23/08/2017 09:48:01:057  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Using SCESession F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 servlet : ddlog4j
+23/08/2017 09:48:01:058  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :_sipcallid to simple: _sipcallid  as [unknown]
+23/08/2017 09:48:01:059  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :redirectinfo___presentationinfo to complex: redirectinfo:presentationinfo  as [undefined]
+23/08/2017 09:48:01:059  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :redirectinfo___reason to complex: redirectinfo:reason  as [unknown]
+23/08/2017 09:48:01:059  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :redirectinfo___screeninginfo to complex: redirectinfo:screeninginfo  as [undefined]
+23/08/2017 09:48:01:059  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :redirectinfo___uri to complex: redirectinfo:uri  as []
+23/08/2017 09:48:01:059  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___aai to complex: session:aai  as []
+23/08/2017 09:48:01:059  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___ani to complex: session:ani  as [undefined]
+23/08/2017 09:48:01:059  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___calltag to complex: session:calltag  as [unknown]
+23/08/2017 09:48:01:059  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___channel to complex: session:channel  as [0]
+23/08/2017 09:48:01:059  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___conversefirst to complex: session:conversefirst  as [unknown]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___conversesecond to complex: session:conversesecond  as [unknown]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___dnis to complex: session:dnis  as [undefined]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___mediatype to complex: session:mediatype  as [unknown]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___protocolname to complex: session:protocolname  as [pots]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___protocolversion to complex: session:protocolversion  as [1]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___sessionlabel to complex: session:sessionlabel  as [undefined]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___sharedmode to complex: session:sharedmode  as [shared]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___ucid to complex: session:ucid  as [undefined]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___uui to complex: session:uui  as [unknown]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___videobitrate to complex: session:videobitrate  as [unknown]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___videocodec to complex: session:videocodec  as [unknown]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___videoenabled to complex: session:videoenabled  as [unknown]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___videofarfmtp to complex: session:videofarfmtp  as [unknown]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___videoformat to complex: session:videoformat  as [unknown]
+23/08/2017 09:48:01:060  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___videofps to complex: session:videofps  as [unknown]
+23/08/2017 09:48:01:061  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___videoheight to complex: session:videoheight  as [unknown]
+23/08/2017 09:48:01:061  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___videonearfmtp to complex: session:videonearfmtp  as [unknown]
+23/08/2017 09:48:01:061  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___videowidth to complex: session:videowidth  as [unknown]
+23/08/2017 09:48:01:061  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___vpcalledextension to complex: session:vpcalledextension  as [unknown]
+23/08/2017 09:48:01:061  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___vpcoveragereason to complex: session:vpcoveragereason  as [unknown]
+23/08/2017 09:48:01:061  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___vpcoveragetype to complex: session:vpcoveragetype  as [unknown]
+23/08/2017 09:48:01:061  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :session___vprdnis to complex: session:vprdnis  as [unknown]
+23/08/2017 09:48:01:061  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :shareduui___id to complex: shareduui:id  as [unknown]
+23/08/2017 09:48:01:061  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Storing :shareduui___value to complex: shareduui:value  as [unknown]
+23/08/2017 09:48:01:069 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : CTICallOperation Request: callinfoInitialCall
+23/08/2017 09:48:01:071 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : CTICallOperation Response: okay
+23/08/2017 09:48:01:124 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Admin VariableField:getStringValue(): return string value for DOMAINID:ID
+23/08/2017 09:48:01:125 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : get param for app: DonationActivities_2
+23/08/2017 09:48:01:127  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : JNDINAME Response:null
+23/08/2017 09:48:01:127  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : IdType Response:null
+23/08/2017 09:48:01:127  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : DonationToRedCrossByPhone Response:null
+23/08/2017 09:48:01:127  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : DonationToChildWelfareLeague Response:null
+23/08/2017 09:48:01:127  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : DonationToPaperWindmillTroupe Response:null
+23/08/2017 09:48:01:128  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : DonationToTeacherChang Response:null
+23/08/2017 09:48:01:128  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : FarEastOneSmallAmount Response:null
+23/08/2017 09:48:01:130  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Using SCESession F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 servlet : get_BpId
+23/08/2017 09:48:01:188  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Using SCESession F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 servlet : cticallinfo
+23/08/2017 09:48:01:255 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : CTICallOperation Request: callinfoInitialCall
+23/08/2017 09:48:01:258 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : CTICallOperation Response: okay
+23/08/2017 09:48:01:260  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Assigning [cticallinfo:ani] to [S_USERDATA:ANI]
+23/08/2017 09:48:01:260  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Assigning [cticallinfo:dnis] to [S_USERDATA:DNIS]
+23/08/2017 09:48:01:262  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Using SCESession F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 servlet : check_testModeAND_anilenght
+23/08/2017 09:48:01:321  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : session id:sess2346348 | DonationActivities_2:check_testModeAND_anilenght | #####test_mode##### | properties:test_mode : null
+23/08/2017 09:48:01:327  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : [condition1] Expression [properties:test_mode] String Equal [1]
+23/08/2017 09:48:01:330  INFO - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : Using SCESession F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 servlet : AN_991225
+23/08/2017 09:48:01:440 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : *** Reply for [/DonationActivities_2/AN_991225] ***
+23/08/2017 09:48:01:441 DEBUG - F6AA61C814FE69A5FA2951C7ABE591A8:/DonationActivities_2 : 0:<?xml version="1.0" encoding="UTF-8"?> 
+1:<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="zh-tw"> 
+2:<meta name="author" content="Avaya Aura Orchestration Designer"/> 
+3:<meta name="runtime-version" content="07.01.08.04"/> 
+4:<meta name="runtimecommon-version" content="07.01.08.04"/> 
+5:<meta name="copyright" content="Copyright (c) 2002-2011, Avaya"/> 
+6:<form id="AN_991225"> 
+7:<property name="maxnbest" value="1"/> 
+8:<var name="nbest" expr="1"/> 
+9:<var name="AN_991225___value"/> 
+10:<var name="AN_991225___confidence"/> 
+11:<var name="AN_991225___utterance"/> 
+12:<var name="AN_991225___inputmode"/> 
+13:<var name="AN_991225___interpretation" expr="'undefined'"/> 
+14:<var name="AN_991225___noinputcount" expr="'0'"/> 
+15:<var name="AN_991225___nomatchcount" expr="'0'"/> 
+16:<var name="graminterp___input_ANI" expr="'undefined'"/> 
+17:<field name="AN_991225" modal="false"> 
+18:<prompt bargein="true" bargeintype="speech" timeout="8000ms"> 
+19:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0001.wav">:a</audio> 
+20:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0014.wav">:n</audio> 
+21:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0009.wav">:i</audio> 
+22:</prompt> 
+23:<grammar  mode="dtmf" xml:lang="en-us" weight="1.0" src="builtin:dtmf/number" maxage="0"/> 
+24:<catch event="noinput" count="1"> 
+25:<assign name="_avayaNoinputCounter" expr="_avayaNoinputCounter + 1"/> 
+26:<reprompt/> 
+27:</catch> 
+28:<catch event="noinput" count="3"> 
+29:<assign name="_avayaNoinputCounter" expr="_avayaNoinputCounter + 1"/> 
+30:<assign name="AN_991225___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+31:<assign name="AN_991225___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+32:<submit next="AN_015333?___DDSESSIONID=F6AA61C814FE69A5FA2951C7ABE591A8%3A%2FDonationActivities_2" namelist="AN_991225___noinputcount AN_991225___nomatchcount" method="post" enctype="multipart/form-data"/> 
+33:</catch> 
+34:<catch event="nomatch" count="1"> 
+35:<assign name="_avayaNomatchCounter" expr="_avayaNomatchCounter + 1"/> 
+36:<reprompt/> 
+37:</catch> 
+38:<catch event="nomatch" count="3"> 
+39:<assign name="_avayaNomatchCounter" expr="_avayaNomatchCounter + 1"/> 
+40:<assign name="AN_991225___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+41:<assign name="AN_991225___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+42:<submit next="AN_015333?___DDSESSIONID=F6AA61C814FE69A5FA2951C7ABE591A8%3A%2FDonationActivities_2" namelist="AN_991225___noinputcount AN_991225___nomatchcount" method="post" enctype="multipart/form-data"/> 
+43:</catch> 
+44:<filled> 
+45:<assign name="AN_991225___confidence" expr="getnbest('confidence', nbest)"/> 
+46:<assign name="AN_991225___utterance" expr="getnbest('utterance', nbest)"/> 
+47:<assign name="AN_991225___inputmode" expr="getnbest('inputmode', nbest)"/> 
+48:<assign name="AN_991225___interpretation" expr="getnbest('interpretation', nbest)"/> 
+49:<if cond="startswith(AN_991225___interpretation, 'undefined') == true "> 
+50:    <assign name="AN_991225___interpretation" expr="getnbest('interpretation', nbest)"/> 
+51:</if> 
+52:<assign name="AN_991225___value" expr="AN_991225___interpretation"/> 
+53:<assign name="AN_991225___noinputcount" expr="getnbestnmni(_avayaNoinputCounter, nbest)"/> 
+54:<assign name="AN_991225___nomatchcount" expr="getnbestnmni(_avayaNomatchCounter, nbest)"/> 
+55:</filled> 
+56:</field> 
+57:<block> 
+58:<submit next="assign_Variable?___DDSESSIONID=F6AA61C814FE69A5FA2951C7ABE591A8%3A%2FDonationActivities_2" namelist="AN_991225___value AN_991225___confidence AN_991225___utterance AN_991225___inputmode AN_991225___interpretation AN_991225___noinputcount AN_991225___nomatchcount" method="post"/> 
+59:</block> 
+60:</form> 
+61:</vxml> 
+62:
+
+23/08/2017 09:49:11:683  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : SCESession bound to HttpSession 2EA23831E12EBF6286E7F56A05E4C50C
+23/08/2017 09:49:11:684  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Browser Version 2.1.4, terminationURL enabled : true
+23/08/2017 09:49:11:692  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : Start
+23/08/2017 09:49:11:695  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : ** Pushed Stack Frame [/DonationActivities_2]
+23/08/2017 09:49:11:697 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Creating variable [DOMAINID] from factory [com.avaya.vp.admin.variables.runtime.AdminVariableFactory]
+23/08/2017 09:49:11:699 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Not able to save posted variable information [call_classification]
+23/08/2017 09:49:11:699  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___sessionid to complex: session:sessionid  as [sess6975491]
+23/08/2017 09:49:11:699  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___vpconverseondata to complex: session:vpconverseondata  as []
+23/08/2017 09:49:12:302  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : runtime_platform : Desktop
+23/08/2017 09:49:12:302  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : runtime_asr : Desktop Microsoft Speech SAPI
+23/08/2017 09:49:12:305  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : MessageType is speech
+23/08/2017 09:49:12:305 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Initializer:applicationStarted:Initializing admin variables...
+23/08/2017 09:49:12:305 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Initializer:applicationStarted:__VPVarAppDate is 1503452952305
+23/08/2017 09:49:12:305 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Initializer:applicationStarted:Timestamp is 08/23/17 9:49:12
+23/08/2017 09:49:12:305 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Initializer:applicationStarted:Appname is DonationActivities_2
+23/08/2017 09:49:12:305 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : AdminVarCache:init: Timestamp is different; Load parameters....
+23/08/2017 09:49:12:305 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : AdminVarCache:init: Module? false
+23/08/2017 09:49:12:305 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : AdminVarCache:init: loading simulation data...
+23/08/2017 09:49:12:307 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : AdminVarCache:init: no data comes back from proxy.
+23/08/2017 09:49:12:307 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : app params: {}
+23/08/2017 09:49:12:307 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : AdminVarCache:init: Finish loading.
+23/08/2017 09:49:12:308 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : *** Reply for [/DonationActivities_2/Start] ***
+23/08/2017 09:49:12:309 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : 0:<?xml version="1.0" encoding="UTF-8"?> 
+1:<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="zh-tw"> 
+2:<meta name="author" content="Avaya Aura Orchestration Designer"/> 
+3:<meta name="runtime-version" content="07.01.08.04"/> 
+4:<meta name="runtimecommon-version" content="07.01.08.04"/> 
+5:<meta name="copyright" content="Copyright (c) 2002-2011, Avaya"/> 
+6:<script> 
+7:function getnbest(  item, nbest ) { 
+8:    var len = application.lastresult$.length; 
+9:    var result = ""; 
+10:     
+11:    if ( len &gt; nbest) { 
+12:        len = nbest; 
+13:    } 
+14:    for (var i = 0; i &lt; len; i++) { 
+15:        if (i &gt; 0) { 
+16:            result += " |"; 
+17:        } 
+18:        var temp  =  "application.lastresult$[" + i + "]." + item; 
+19:        result += extractprops( "", eval(temp)); 
+20:    } 
+21:    return result; 
+22:} 
+23: 
+24:function getnbestnmni(  item, nbest ) { 
+25:    var len = application.lastresult$.length; 
+26:    var result = ""; 
+27:     
+28:    if ( len &gt; nbest) { 
+29:        len = nbest; 
+30:    } 
+31:    for (var i = 0; i &lt; len; i++) { 
+32:        if (i &gt; 0) { 
+33:            result += " |"; 
+34:        } 
+35:        result += item; 
+36:    } 
+37:    return result; 
+38:} 
+39: 
+40:function extractprops ( parent, obj ) { 
+41:    var prop, name, result = ""; 
+42:    var count = 1; 
+43:    if ( typeof ( obj ) == "object" ) { 
+44:        for ( prop in obj ) { 
+45:            name = parent + prop; 
+46:            if ( typeof ( obj [ prop ] ) == "object" ) { 
+47:                result += extractprops( name+".", obj [ prop ] ); 
+48:            } else { 
+49:                if (count == 1) { 
+50:                    result = obj [ prop ]; 
+51:                } else { 
+52:                    result += " " + obj [ prop ]; 
+53:                } 
+54:            } 
+55:            count = count + 1; 
+56:        } 
+57:    } else { 
+58:        if (obj == undefined ) { 
+59:            result +=  "undefined"; 
+60:        } else { 
+61:            result +=  obj; 
+62:        } 
+63:    } 
+64:    return result; 
+65:} 
+66: 
+67:function startswith ( value, startwith ) { 
+68:    var index; 
+69:    index = value.indexOf(startwith, 0); 
+70:    if ( index == 0 ) { 
+71:       return true; 
+72:    } else { 
+73:       return false; 
+74:    } 
+75:} 
+76: 
+77:function containsUndefined ( value ) { 
+78:    var index; 
+79:    index = value.indexOf('undefined', 0); 
+80:    if ( index == -1 ) { 
+81:       return false; 
+82:    } else { 
+83:       return true; 
+84:    } 
+85:} 
+86: 
+87:</script> 
+88:<script> 
+89:function objectToString(  obj ) { 
+90:    try { 
+91:    var result = ""; 
+92:    result += getobjectprops( "", obj); 
+93:    if (result.charAt(0) == '|' ) { 
+94:        result = result.substring(1); 
+95:    }  
+96:    } catch (errMsg) { 
+97:        return("undefined"); 
+98:    } 
+99:    return result; 
+100:} 
+101: 
+102:function getobjectprops ( parent, obj ) { 
+103:    var prop, name, result = ""; 
+104:    if ( typeof ( obj ) == "object" ) {  
+105:        for ( prop in obj ) {  
+106:            name = parent + prop; 
+107:            if ( typeof ( obj [ prop ] ) == "object" ) { 
+108:                result += extractprops( name+".", obj [ prop ] ); 
+109:            } else {  
+110:                result +=   "|"  + obj [ prop ];  
+111:            }  
+112:        }  
+113:    } else {  
+114:        if (obj == undefined ) {  
+115:           result +=  "undefined";  
+116:        } else {  
+117:           result +=  obj;  
+118:        }  
+119:    }  
+120:    return result; 
+121:} 
+122:</script> 
+123:<var name="_avayaExitReason" expr="''"/> 
+124:<var name="_avayaExitInfo1" expr="''"/> 
+125:<var name="_avayaExitInfo2" expr="''"/> 
+126:<var name="_avayaExitCustomerId" expr="''"/> 
+127:<var name="_avayaExitPreferredPath" expr="'1'"/> 
+128:<var name="_avayaExitTopic" expr="''"/> 
+129:<var name="_avayaNoinputCounter" expr="0"/> 
+130:<var name="_avayaNomatchCounter" expr="0"/> 
+131:<catch event="error.runtime"> 
+132:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+133:<submit next="Disconnect?___DDSESSIONID=2EA23831E12EBF6286E7F56A05E4C50C%3A%2FDonationActivities_2" namelist="event_message" method="post" enctype="multipart/form-data"/> 
+134:</catch> 
+135:<catch event="error.badfetch.http.404"> 
+136:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+137:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+138:<submit next="Disconnect?___DDSESSIONID=2EA23831E12EBF6286E7F56A05E4C50C%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+139:</catch> 
+140:<catch event="error.badfetch.http.404" count="2"> 
+141:    <throw event="app.fatal" message="Problems on application server"/> 
+142:</catch> 
+143:<catch event="error.badfetch.http.500"> 
+144:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+145:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+146:<submit next="Disconnect?___DDSESSIONID=2EA23831E12EBF6286E7F56A05E4C50C%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+147:</catch> 
+148:<catch event="error.badfetch.http.500" count="2"> 
+149:    <throw event="app.fatal" message="Problems on application server"/> 
+150:</catch> 
+151:<catch event="error.badfetch"> 
+152:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+153:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+154:<submit next="Disconnect?___DDSESSIONID=2EA23831E12EBF6286E7F56A05E4C50C%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+155:</catch> 
+156:<catch event="error.badfetch" count="2"> 
+157:    <throw event="app.fatal" message="Problems on application server"/> 
+158:</catch> 
+159:<catch event="error" count="1"> 
+160:<reprompt/> 
+161:</catch> 
+162:<catch event="error" count="2"> 
+163:    <throw event="app.fatal" message="Problems on application server"/> 
+164:</catch> 
+165:<catch event="connection.disconnect"> 
+166:<var name="avayadonotsave___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+167:<var name="avayadonotsave___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+168:<submit next="End?___DDSESSIONID=2EA23831E12EBF6286E7F56A05E4C50C%3A%2FDonationActivities_2" namelist="avayadonotsave___noinputcount avayadonotsave___nomatchcount" method="get"/> 
+169:</catch> 
+170:<meta name="marker" content="Avaya Aura Orchestration Designer Root End"/> 
+171:<form id="Start"> 
+172:<script> 
+173:function getArray( arrayName, item ) { 
+174:    try { 
+175:        var len = eval( arrayName +'.length;'); 
+176:        var result = ""; 
+177:     
+178:        for (var i = 0; i &lt; len; i++) { 
+179:            if (i &gt; 0) { 
+180:                result += " |"; 
+181:            } 
+182:            var temp  =  arrayName + "[" + i + "]." + item; 
+183:            result += eval(temp); 
+184:        } 
+185:        return result; 
+186:    } catch (errMsg) { 
+187:            return('unknown'); 
+188:    } 
+189:} 
+190:function getRedirect( item ) { 
+191:    return(getArray('session.connection.redirect', item)); 
+192:} 
+193:function getShareduui( item ) { 
+194:    return(getArray('session.avaya.uui.shared', item)); 
+195:} 
+196:function getScriptItem( item ) { 
+197:    try { 
+198:        var result = ""; 
+199:        result += eval(item); 
+200:        return result; 
+201:    } catch (errMsg) { 
+202:        return('unknown'); 
+203:    } 
+204:} 
+205:function getSIPCallID() { 
+206:    try { 
+207:        var protocol = getScriptItem( 'session.connection.protocol.name' ); 
+208:        if ( protocol == 'sip'  || protocol == 'SIP' ) { 
+209:            var temp = getScriptItem( 'session.connection.protocol.sip.callid' ); 
+210:            return(temp); 
+211:        } else { 
+212:            return('unknown'); 
+213:        } 
+214:    } catch (errMsg) { 
+215:            return('unknown'); 
+216:    } 
+217:} 
+218:</script> 
+219:<var name="session___aai" expr="getScriptItem( 'session.connection.aai' )"/> 
+220:<var name="session___ani" expr="getScriptItem( 'session.connection.remote.uri' )"/> 
+221:<var name="session___dnis" expr="getScriptItem( 'session.connection.local.uri' )"/> 
+222:<var name="session___protocolname" expr="getScriptItem( 'session.connection.protocol.name' )"/> 
+223:<var name="session___protocolversion" expr="getScriptItem( 'session.connection.protocol.version' )"/> 
+224:<var name="session___uui" expr="'unknown'"/> 
+225:<var name="session___calltag" expr="'unknown'"/> 
+226:<var name="session___channel" expr="getScriptItem( 'session.avaya.telephone.channel' )"/> 
+227:<var name="session___vpcalledextension" expr="'unknown'"/> 
+228:<var name="session___vpcoveragereason" expr="'unknown'"/> 
+229:<var name="session___vpcoveragetype" expr="'unknown'"/> 
+230:<var name="session___vprdnis" expr="'unknown'"/> 
+231:<var name="redirectinfo___uri" expr="getRedirect('uri')"/> 
+232:<var name="redirectinfo___presentationinfo" expr="getRedirect('pi')"/> 
+233:<var name="redirectinfo___screeninginfo" expr="getRedirect('si')"/> 
+234:<var name="redirectinfo___reason" expr="getRedirect('reason')"/> 
+235:<var name="session___sharedmode" expr="getScriptItem( 'session.avaya.uui.mode' )"/> 
+236:<var name="shareduui___id" expr="getShareduui('id')"/> 
+237:<var name="shareduui___value" expr="getShareduui('value')"/> 
+238:<var name="session___sessionlabel" expr="getScriptItem( 'session.avaya.ucid' )"/> 
+239:<var name="_sipcallid" expr="getSIPCallID()"/> 
+240:<var name="session___mediatype" expr="getScriptItem( 'session.connection.protocol.sip.media[1].type' )"/> 
+241:<var name="session___videoenabled" expr="getScriptItem( 'session.connection.video.enabled' )"/> 
+242:<var name="session___videocodec" expr="getScriptItem( 'session.connection.video.codec' )"/> 
+243:<var name="session___videoformat" expr="getScriptItem( 'session.connection.video.format' )"/> 
+244:<var name="session___videowidth" expr="getScriptItem( 'session.connection.video.width' )"/> 
+245:<var name="session___videoheight" expr="getScriptItem( 'session.connection.video.height' )"/> 
+246:<var name="session___videofps" expr="getScriptItem( 'session.connection.video.fps' )"/> 
+247:<var name="session___videobitrate" expr="getScriptItem( 'session.connection.video.bitrate' )"/> 
+248:<var name="session___videonearfmtp" expr="getScriptItem( 'session.connection.video.nearfmtp' )"/> 
+249:<var name="session___videofarfmtp" expr="getScriptItem( 'session.connection.video.farfmtp' )"/> 
+250:<var name="session___ucid" expr="getScriptItem( 'session.avaya.ucid' )"/> 
+251:<var name="session___conversefirst" expr="'unknown'"/> 
+252:<var name="session___conversesecond" expr="'unknown'"/> 
+253:<block> 
+254:<submit next="ddlog4j?___DDSESSIONID=2EA23831E12EBF6286E7F56A05E4C50C%3A%2FDonationActivities_2" namelist="session___aai session___ani session___dnis session___protocolname session___protocolversion session___uui session___calltag session___channel session___vpcalledextension session___vpcoveragereason session___vpcoveragetype session___vprdnis redirectinfo___uri redirectinfo___presentationinfo redirectinfo___screeninginfo redirectinfo___reason session___sharedmode shareduui___id shareduui___value session___sessionlabel _sipcallid session___mediatype session___videoenabled session___videocodec session___videoformat session___videowidth session___videoheight session___videofps session___videobitrate session___videonearfmtp session___videofarfmtp session___ucid session___conversefirst session___conversesecond" method="post"/> 
+255:</block> 
+256:</form> 
+257:</vxml> 
+258:
+
+23/08/2017 09:49:12:321  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : ddlog4j
+23/08/2017 09:49:12:322  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :_sipcallid to simple: _sipcallid  as [unknown]
+23/08/2017 09:49:12:322  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :redirectinfo___presentationinfo to complex: redirectinfo:presentationinfo  as [undefined]
+23/08/2017 09:49:12:322  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :redirectinfo___reason to complex: redirectinfo:reason  as [unknown]
+23/08/2017 09:49:12:324  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :redirectinfo___screeninginfo to complex: redirectinfo:screeninginfo  as [undefined]
+23/08/2017 09:49:12:324  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :redirectinfo___uri to complex: redirectinfo:uri  as []
+23/08/2017 09:49:12:324  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___aai to complex: session:aai  as []
+23/08/2017 09:49:12:324  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___ani to complex: session:ani  as [undefined]
+23/08/2017 09:49:12:324  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___calltag to complex: session:calltag  as [unknown]
+23/08/2017 09:49:12:324  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___channel to complex: session:channel  as [0]
+23/08/2017 09:49:12:325  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___conversefirst to complex: session:conversefirst  as [unknown]
+23/08/2017 09:49:12:325  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___conversesecond to complex: session:conversesecond  as [unknown]
+23/08/2017 09:49:12:325  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___dnis to complex: session:dnis  as [undefined]
+23/08/2017 09:49:12:325  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___mediatype to complex: session:mediatype  as [unknown]
+23/08/2017 09:49:12:325  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___protocolname to complex: session:protocolname  as [pots]
+23/08/2017 09:49:12:325  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___protocolversion to complex: session:protocolversion  as [1]
+23/08/2017 09:49:12:325  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___sessionlabel to complex: session:sessionlabel  as [undefined]
+23/08/2017 09:49:12:325  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___sharedmode to complex: session:sharedmode  as [shared]
+23/08/2017 09:49:12:325  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___ucid to complex: session:ucid  as [undefined]
+23/08/2017 09:49:12:325  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___uui to complex: session:uui  as [unknown]
+23/08/2017 09:49:12:325  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___videobitrate to complex: session:videobitrate  as [unknown]
+23/08/2017 09:49:12:325  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___videocodec to complex: session:videocodec  as [unknown]
+23/08/2017 09:49:12:326  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___videoenabled to complex: session:videoenabled  as [unknown]
+23/08/2017 09:49:12:326  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___videofarfmtp to complex: session:videofarfmtp  as [unknown]
+23/08/2017 09:49:12:326  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___videoformat to complex: session:videoformat  as [unknown]
+23/08/2017 09:49:12:326  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___videofps to complex: session:videofps  as [unknown]
+23/08/2017 09:49:12:326  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___videoheight to complex: session:videoheight  as [unknown]
+23/08/2017 09:49:12:326  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___videonearfmtp to complex: session:videonearfmtp  as [unknown]
+23/08/2017 09:49:12:326  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___videowidth to complex: session:videowidth  as [unknown]
+23/08/2017 09:49:12:326  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___vpcalledextension to complex: session:vpcalledextension  as [unknown]
+23/08/2017 09:49:12:326  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___vpcoveragereason to complex: session:vpcoveragereason  as [unknown]
+23/08/2017 09:49:12:326  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___vpcoveragetype to complex: session:vpcoveragetype  as [unknown]
+23/08/2017 09:49:12:326  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :session___vprdnis to complex: session:vprdnis  as [unknown]
+23/08/2017 09:49:12:326  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :shareduui___id to complex: shareduui:id  as [unknown]
+23/08/2017 09:49:12:326  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :shareduui___value to complex: shareduui:value  as [unknown]
+23/08/2017 09:49:12:327 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : CTICallOperation Request: callinfoInitialCall
+23/08/2017 09:49:12:328 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : CTICallOperation Response: okay
+23/08/2017 09:49:12:379 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Admin VariableField:getStringValue(): return string value for DOMAINID:ID
+23/08/2017 09:49:12:379 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : get param for app: DonationActivities_2
+23/08/2017 09:49:12:387  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : JNDINAME Response:null
+23/08/2017 09:49:12:387  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : IdType Response:null
+23/08/2017 09:49:12:387  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : DonationToRedCrossByPhone Response:null
+23/08/2017 09:49:12:387  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : DonationToChildWelfareLeague Response:null
+23/08/2017 09:49:12:387  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : DonationToPaperWindmillTroupe Response:null
+23/08/2017 09:49:12:387  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : DonationToTeacherChang Response:null
+23/08/2017 09:49:12:387  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : FarEastOneSmallAmount Response:null
+23/08/2017 09:49:12:387  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : get_BpId
+23/08/2017 09:49:12:438  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : cticallinfo
+23/08/2017 09:49:12:490 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : CTICallOperation Request: callinfoInitialCall
+23/08/2017 09:49:12:490 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : CTICallOperation Response: okay
+23/08/2017 09:49:12:491  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Assigning [cticallinfo:ani] to [S_USERDATA:ANI]
+23/08/2017 09:49:12:491  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Assigning [cticallinfo:dnis] to [S_USERDATA:DNIS]
+23/08/2017 09:49:12:491  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : check_testModeAND_anilenght
+23/08/2017 09:49:12:543  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : session id:sess6975491 | DonationActivities_2:check_testModeAND_anilenght | #####test_mode##### | properties:test_mode : null
+23/08/2017 09:49:12:543  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : [condition1] Expression [properties:test_mode] String Equal [1]
+23/08/2017 09:49:12:544  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : AN_991225
+23/08/2017 09:49:12:605 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : *** Reply for [/DonationActivities_2/AN_991225] ***
+23/08/2017 09:49:12:606 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : 0:<?xml version="1.0" encoding="UTF-8"?> 
+1:<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="zh-tw"> 
+2:<meta name="author" content="Avaya Aura Orchestration Designer"/> 
+3:<meta name="runtime-version" content="07.01.08.04"/> 
+4:<meta name="runtimecommon-version" content="07.01.08.04"/> 
+5:<meta name="copyright" content="Copyright (c) 2002-2011, Avaya"/> 
+6:<form id="AN_991225"> 
+7:<property name="maxnbest" value="1"/> 
+8:<var name="nbest" expr="1"/> 
+9:<var name="AN_991225___value"/> 
+10:<var name="AN_991225___confidence"/> 
+11:<var name="AN_991225___utterance"/> 
+12:<var name="AN_991225___inputmode"/> 
+13:<var name="AN_991225___interpretation" expr="'undefined'"/> 
+14:<var name="AN_991225___noinputcount" expr="'0'"/> 
+15:<var name="AN_991225___nomatchcount" expr="'0'"/> 
+16:<var name="graminterp___input_ANI" expr="'undefined'"/> 
+17:<field name="AN_991225" modal="false"> 
+18:<prompt bargein="true" bargeintype="speech" timeout="8000ms"> 
+19:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0001.wav">:a</audio> 
+20:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0014.wav">:n</audio> 
+21:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0009.wav">:i</audio> 
+22:</prompt> 
+23:<grammar  mode="dtmf" xml:lang="en-us" weight="1.0" src="builtin:dtmf/number" maxage="0"/> 
+24:<catch event="noinput" count="1"> 
+25:<assign name="_avayaNoinputCounter" expr="_avayaNoinputCounter + 1"/> 
+26:<reprompt/> 
+27:</catch> 
+28:<catch event="noinput" count="3"> 
+29:<assign name="_avayaNoinputCounter" expr="_avayaNoinputCounter + 1"/> 
+30:<assign name="AN_991225___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+31:<assign name="AN_991225___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+32:<submit next="AN_015333?___DDSESSIONID=2EA23831E12EBF6286E7F56A05E4C50C%3A%2FDonationActivities_2" namelist="AN_991225___noinputcount AN_991225___nomatchcount" method="post" enctype="multipart/form-data"/> 
+33:</catch> 
+34:<catch event="nomatch" count="1"> 
+35:<assign name="_avayaNomatchCounter" expr="_avayaNomatchCounter + 1"/> 
+36:<reprompt/> 
+37:</catch> 
+38:<catch event="nomatch" count="3"> 
+39:<assign name="_avayaNomatchCounter" expr="_avayaNomatchCounter + 1"/> 
+40:<assign name="AN_991225___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+41:<assign name="AN_991225___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+42:<submit next="AN_015333?___DDSESSIONID=2EA23831E12EBF6286E7F56A05E4C50C%3A%2FDonationActivities_2" namelist="AN_991225___noinputcount AN_991225___nomatchcount" method="post" enctype="multipart/form-data"/> 
+43:</catch> 
+44:<filled> 
+45:<assign name="AN_991225___confidence" expr="getnbest('confidence', nbest)"/> 
+46:<assign name="AN_991225___utterance" expr="getnbest('utterance', nbest)"/> 
+47:<assign name="AN_991225___inputmode" expr="getnbest('inputmode', nbest)"/> 
+48:<assign name="AN_991225___interpretation" expr="getnbest('interpretation', nbest)"/> 
+49:<if cond="startswith(AN_991225___interpretation, 'undefined') == true "> 
+50:    <assign name="AN_991225___interpretation" expr="getnbest('interpretation', nbest)"/> 
+51:</if> 
+52:<assign name="AN_991225___value" expr="AN_991225___interpretation"/> 
+53:<assign name="AN_991225___noinputcount" expr="getnbestnmni(_avayaNoinputCounter, nbest)"/> 
+54:<assign name="AN_991225___nomatchcount" expr="getnbestnmni(_avayaNomatchCounter, nbest)"/> 
+55:</filled> 
+56:</field> 
+57:<block> 
+58:<submit next="assign_Variable?___DDSESSIONID=2EA23831E12EBF6286E7F56A05E4C50C%3A%2FDonationActivities_2" namelist="AN_991225___value AN_991225___confidence AN_991225___utterance AN_991225___inputmode AN_991225___interpretation AN_991225___noinputcount AN_991225___nomatchcount" method="post"/> 
+59:</block> 
+60:</form> 
+61:</vxml> 
+62:
+
+23/08/2017 09:49:41:354  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : assign_Variable
+23/08/2017 09:49:41:361  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :AN_991225___confidence to complex: AN_991225:confidence  as [0.949999988079071]
+23/08/2017 09:49:41:361  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :AN_991225___inputmode to complex: AN_991225:inputmode  as [dtmf]
+23/08/2017 09:49:41:361  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :AN_991225___interpretation to complex: AN_991225:interpretation  as [903192000]
+23/08/2017 09:49:41:363  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :AN_991225___noinputcount to complex: AN_991225:noinputcount  as [0]
+23/08/2017 09:49:41:365  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :AN_991225___nomatchcount to complex: AN_991225:nomatchcount  as [0]
+23/08/2017 09:49:41:367  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :AN_991225___utterance to complex: AN_991225:utterance  as [0903191575]
+23/08/2017 09:49:41:367  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Storing :AN_991225___value to complex: AN_991225:value  as [903192000]
+23/08/2017 09:49:41:482  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Assigning [AN_991225:utterance] to [S_USERDATA:ANI]
+23/08/2017 09:49:41:483  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Assigning [IVR] to [S_USERDATA:channelForCfg]
+23/08/2017 09:49:41:484  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Assigning [DonationActivities] to [S_USERDATA:FlowName]
+23/08/2017 09:49:41:486  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : CheckAni
+23/08/2017 09:49:41:675  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Assiging length of [S_USERDATA:ANI] to [S_OD:ANI_length]
+23/08/2017 09:49:41:675  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Substring [S_USERDATA:ANI] to [S_OD:AniFirstNumber] start [0] number of characters [1]
+23/08/2017 09:49:41:675  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Substring [S_USERDATA:ANI] to [S_OD:AniFourNumber] start [0] number of characters [4]
+23/08/2017 09:49:41:675  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Substring [S_USERDATA:ANI] to [S_OD:AniTwoNumber] start [1] number of characters [1]
+23/08/2017 09:49:41:676  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : [expression1] Expression [S_OD:AniFirstNumber] Numeric Equal [9]
+23/08/2017 09:49:41:676  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : [expression2] Expression [S_OD:ANI_length] Numeric Equal [9]
+23/08/2017 09:49:41:676  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : [expression3] Expression [S_OD:ANI_length] Numeric Greater Than [10]
+23/08/2017 09:49:41:676  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : [expression4] Expression [S_OD:AniFourNumber] Numeric Equal [8869]
+23/08/2017 09:49:41:676  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : [expression5] Expression [S_OD:AniTwoNumber] Numeric Equal [9]
+23/08/2017 09:49:41:676  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : [expression6] Expression [S_OD:ANI_length] Numeric Equal [10]
+23/08/2017 09:49:41:681  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : CF_check_mobile
+23/08/2017 09:49:41:748  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : CF_check_mobile-Begin
+23/08/2017 09:49:42:004  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : CF_check_mobile-select_FE_MSIS_CB2_TBL2
+23/08/2017 09:49:42:119  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : select_FE_MSIS_CB2_TBL2-Begin
+23/08/2017 09:49:42:221  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : select_FE_MSIS_CB2_TBL2-assign_FE_MSIS_CB2_TBL2
+23/08/2017 09:49:42:380  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : SQL Response([]Select FE_MSIS_CB2_TBL):select FE_MSIS_TELE_NUMB,lpad(rtrim(fe_msis_puk1,'   '),8,'0')fe_msis_puk1,lpad(rtrim(fe_msis_puk2,'   '),8,'0')fe_msis_puk2,fe_msis_sim_no,FE_MSIS_cb_account_id,fe_msis_act_date,fe_msis_promo_code,fe_msis_start_date,FE_msis_bill_plan,fe_msis_status,fe_msis_reason_code,fe_msis_cb_service_type,FE_MSIS_CB_MVPN_FLAG,FE_MSIS_CB_HYBRID_FLAG,FE_MSIS_CB_CUSTOMER_ID,FE_MSIS_CB_SUBR_PWD,FE_MSIS_CB_SUBSCRIBER_ID FROM FE_MSIS_CB2_TBL WHERE FE_MSIS_TELE_NUMB='0903191575' AND FE_MSIS_STATUS !='5'
+23/08/2017 09:49:42:380  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Table Response([]Select FE_MSIS_CB2_TBL):FE_MSIS_CB2_TBL
+23/08/2017 09:49:42:394  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : select_FE_MSIS_CB2_TBL2-CF_selectDBAPI
+23/08/2017 09:49:42:511  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : CF_selectDBAPI-Begin
+23/08/2017 09:49:42:633  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : CF_selectDBAPI-selectDBAPI
+23/08/2017 09:49:42:703  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : url Response(TID:[]):http://null/CommonDBAPI/doSelect
+23/08/2017 09:49:42:716  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : urlParameters Response(TID:[]):{"TABLE":"FE_MSIS_CB2_TBL","SQL":"select FE_MSIS_TELE_NUMB,lpad(rtrim(fe_msis_puk1,'   '),8,'0')fe_msis_puk1,lpad(rtrim(fe_msis_puk2,'   '),8,'0')fe_msis_puk2,fe_msis_sim_no,FE_MSIS_cb_account_id,fe_msis_act_date,fe_msis_promo_code,fe_msis_start_date,FE_msis_bill_plan,fe_msis_status,fe_msis_reason_code,fe_msis_cb_service_type,FE_MSIS_CB_MVPN_FLAG,FE_MSIS_CB_HYBRID_FLAG,FE_MSIS_CB_CUSTOMER_ID,FE_MSIS_CB_SUBR_PWD,FE_MSIS_CB_SUBSCRIBER_ID FROM FE_MSIS_CB2_TBL WHERE FE_MSIS_TELE_NUMB='0903191575' AND FE_MSIS_STATUS !='5'"}
+23/08/2017 09:49:44:973 ERROR - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : IOException Response(TID:[]):null
+23/08/2017 09:49:44:973 ERROR - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : exectureAddItemsEx END
+23/08/2017 09:49:44:974  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : CF_selectDBAPI-next
+23/08/2017 09:49:45:031 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Subflow return node "CF_selectDBAPI-next" forwarding to "select_FE_MSIS_CB2_TBL2-next"
+23/08/2017 09:49:45:034  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : select_FE_MSIS_CB2_TBL2-next
+23/08/2017 09:49:45:086 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Subflow return node "select_FE_MSIS_CB2_TBL2-next" forwarding to "CF_check_mobile-select_FE_CUST_CB2_TBL"
+23/08/2017 09:49:45:101  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : CF_check_mobile-select_FE_CUST_CB2_TBL
+23/08/2017 09:49:45:157  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : select_FE_CUST_CB2_TBL-Begin
+23/08/2017 09:49:45:209  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : select_FE_CUST_CB2_TBL-assign_FE_CUST_CB2_TBL
+23/08/2017 09:49:45:261  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : SQL Response(TID:[]Select FE_CUST_CB2_TBL):SELECT FE_CUST_DEMO_ID_TYPE,FE_CUST_SSN,FE_CUST_CUST_STATUS,FE_CUST_INVC_OUT_AMOUNT, FE_CUST_INVC_PAY_DUE_DAT,FE_CUST_LAST_BILLED,FE_CUST_PAY_AMOUNT,FE_CUST_PAY_MADE_DATE,FE_CUST_CURRENT_BALANCE,FE_CUST_INVOICE_CHECKSUM,fe_cust_BILL_NAME,FE_CUST_SOCIAL_NUM,FE_MKTG_MSG_ID,LPAD(FE_CUST_PAYMENT_RULE,2),TO_CHAR(FE_CUST_LAST_INVOICE),FE_CUST_CUSTOMER_TYPE FROM   FE_CUST_CB2_TBL WHERE FE_ACCOUNT_CB_ID=''
+23/08/2017 09:49:45:262  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Table Response(TID:[]Select FE_CUST_CB2_TBL):FE_CUST_CB2_TBL
+23/08/2017 09:49:45:267  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : select_FE_CUST_CB2_TBL-CF_selectDBAPI
+23/08/2017 09:49:45:322  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : CF_selectDBAPI-Begin
+23/08/2017 09:49:45:375  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : CF_selectDBAPI-selectDBAPI
+23/08/2017 09:49:45:427  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : url Response(TID:[]):http://null/CommonDBAPI/doSelect
+23/08/2017 09:49:45:427  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : urlParameters Response(TID:[]):{"TABLE":"FE_CUST_CB2_TBL","SQL":"SELECT FE_CUST_DEMO_ID_TYPE,FE_CUST_SSN,FE_CUST_CUST_STATUS,FE_CUST_INVC_OUT_AMOUNT, FE_CUST_INVC_PAY_DUE_DAT,FE_CUST_LAST_BILLED,FE_CUST_PAY_AMOUNT,FE_CUST_PAY_MADE_DATE,FE_CUST_CURRENT_BALANCE,FE_CUST_INVOICE_CHECKSUM,fe_cust_BILL_NAME,FE_CUST_SOCIAL_NUM,FE_MKTG_MSG_ID,LPAD(FE_CUST_PAYMENT_RULE,2),TO_CHAR(FE_CUST_LAST_INVOICE),FE_CUST_CUSTOMER_TYPE FROM   FE_CUST_CB2_TBL WHERE FE_ACCOUNT_CB_ID=''"}
+23/08/2017 09:49:45:437 ERROR - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : IOException Response(TID:[]):null
+23/08/2017 09:49:45:437 ERROR - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : exectureAddItemsEx END
+23/08/2017 09:49:45:437  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : CF_selectDBAPI-next
+23/08/2017 09:49:45:488 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Subflow return node "CF_selectDBAPI-next" forwarding to "select_FE_CUST_CB2_TBL-next"
+23/08/2017 09:49:45:489  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : select_FE_CUST_CB2_TBL-next
+23/08/2017 09:49:45:540 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Subflow return node "select_FE_CUST_CB2_TBL-next" forwarding to "CF_check_mobile-next"
+23/08/2017 09:49:45:542  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : CF_check_mobile-next
+23/08/2017 09:49:45:597 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Subflow return node "CF_check_mobile-next" forwarding to "Check_VDN"
+23/08/2017 09:49:45:600  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : Check_VDN
+23/08/2017 09:49:45:653  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : [condition1] Expression [S_USERDATA:DNIS] String Equal [49913]
+23/08/2017 09:49:45:653  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : [condition2] Expression [S_USERDATA:DNIS] String Equal [49380]
+23/08/2017 09:49:45:653  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : [condition3] Expression [S_USERDATA:DNIS] String Equal [49467]
+23/08/2017 09:49:45:653  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : [condition4] Expression [S_USERDATA:DNIS] String Equal [49470]
+23/08/2017 09:49:45:653  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : [condition5] Expression [S_USERDATA:DNIS] String Equal [49469]
+23/08/2017 09:49:45:655  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : Disconnect
+23/08/2017 09:49:45:708 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : *** Reply for [/DonationActivities_2/Disconnect] ***
+23/08/2017 09:49:45:708 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : 0:<?xml version="1.0" encoding="UTF-8"?> 
+1:<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="zh-tw"> 
+2:<meta name="author" content="Avaya Aura Orchestration Designer"/> 
+3:<meta name="runtime-version" content="07.01.08.04"/> 
+4:<meta name="runtimecommon-version" content="07.01.08.04"/> 
+5:<meta name="copyright" content="Copyright (c) 2002-2011, Avaya"/> 
+6:<form id="Disconnect"> 
+7:<block> 
+8:<disconnect/> 
+9:</block> 
+10:<catch event="connection.disconnect"> 
+11:<var name="avayadonotsave___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+12:<var name="avayadonotsave___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+13:<submit next="End?___DDSESSIONID=2EA23831E12EBF6286E7F56A05E4C50C%3A%2FDonationActivities_2" namelist="avayadonotsave___noinputcount avayadonotsave___nomatchcount" method="get"/> 
+14:</catch> 
+15:</form> 
+16:</vxml> 
+17:
+
+23/08/2017 09:49:45:749  INFO - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : Using SCESession 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 servlet : End
+23/08/2017 09:49:45:807 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : *** Reply for [/DonationActivities_2/End] ***
+23/08/2017 09:49:45:807 DEBUG - 2EA23831E12EBF6286E7F56A05E4C50C:/DonationActivities_2 : 0:<?xml version="1.0" encoding="UTF-8"?> 
+1:<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="zh-tw"> 
+2:<meta name="author" content="Avaya Aura Orchestration Designer"/> 
+3:<meta name="runtime-version" content="07.01.08.04"/> 
+4:<meta name="runtimecommon-version" content="07.01.08.04"/> 
+5:<meta name="copyright" content="Copyright (c) 2002-2011, Avaya"/> 
+6:<var name="_avayaExitReason" expr="''"/> 
+7:<var name="_avayaExitInfo1" expr="''"/> 
+8:<var name="_avayaExitInfo2" expr="''"/> 
+9:<var name="_avayaExitCustomerId" expr="''"/> 
+10:<var name="_avayaExitPreferredPath" expr="'1'"/> 
+11:<var name="_avayaExitTopic" expr="''"/> 
+12:<form id="End"> 
+13:<block> 
+14:<exit namelist="_avayaExitReason _avayaExitInfo1 _avayaExitInfo2 _avayaExitCustomerId _avayaExitPreferredPath _avayaExitTopic"/> 
+15:</block> 
+16:</form> 
+17:</vxml> 
+18:
+
+23/08/2017 10:05:01:611  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : SCESession bound to HttpSession 006A8262365B1D58060E3ED90DBC5696
+23/08/2017 10:05:01:611  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Browser Version 2.1.4, terminationURL enabled : true
+23/08/2017 10:05:01:613  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Using SCESession 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 servlet : Start
+23/08/2017 10:05:01:617  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : ** Pushed Stack Frame [/DonationActivities_2]
+23/08/2017 10:05:01:618 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Creating variable [DOMAINID] from factory [com.avaya.vp.admin.variables.runtime.AdminVariableFactory]
+23/08/2017 10:05:01:618 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Not able to save posted variable information [call_classification]
+23/08/2017 10:05:01:618  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___sessionid to complex: session:sessionid  as [sess879519]
+23/08/2017 10:05:01:619  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___vpconverseondata to complex: session:vpconverseondata  as []
+23/08/2017 10:05:02:221  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : runtime_platform : Desktop
+23/08/2017 10:05:02:221  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : runtime_asr : Desktop Microsoft Speech SAPI
+23/08/2017 10:05:02:223  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : MessageType is speech
+23/08/2017 10:05:02:223 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Initializer:applicationStarted:Initializing admin variables...
+23/08/2017 10:05:02:223 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Initializer:applicationStarted:__VPVarAppDate is 1503453902223
+23/08/2017 10:05:02:223 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Initializer:applicationStarted:Timestamp is 08/23/17 10:05:02
+23/08/2017 10:05:02:223 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Initializer:applicationStarted:Appname is DonationActivities_2
+23/08/2017 10:05:02:223 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : AdminVarCache:init: Timestamp is different; Load parameters....
+23/08/2017 10:05:02:223 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : AdminVarCache:init: Module? false
+23/08/2017 10:05:02:223 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : AdminVarCache:init: loading simulation data...
+23/08/2017 10:05:02:227 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : AdminVarCache:init: no data comes back from proxy.
+23/08/2017 10:05:02:228 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : app params: {}
+23/08/2017 10:05:02:228 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : AdminVarCache:init: Finish loading.
+23/08/2017 10:05:02:230 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : *** Reply for [/DonationActivities_2/Start] ***
+23/08/2017 10:05:02:231 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : 0:<?xml version="1.0" encoding="UTF-8"?> 
+1:<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="zh-tw"> 
+2:<meta name="author" content="Avaya Aura Orchestration Designer"/> 
+3:<meta name="runtime-version" content="07.01.08.04"/> 
+4:<meta name="runtimecommon-version" content="07.01.08.04"/> 
+5:<meta name="copyright" content="Copyright (c) 2002-2011, Avaya"/> 
+6:<script> 
+7:function getnbest(  item, nbest ) { 
+8:    var len = application.lastresult$.length; 
+9:    var result = ""; 
+10:     
+11:    if ( len &gt; nbest) { 
+12:        len = nbest; 
+13:    } 
+14:    for (var i = 0; i &lt; len; i++) { 
+15:        if (i &gt; 0) { 
+16:            result += " |"; 
+17:        } 
+18:        var temp  =  "application.lastresult$[" + i + "]." + item; 
+19:        result += extractprops( "", eval(temp)); 
+20:    } 
+21:    return result; 
+22:} 
+23: 
+24:function getnbestnmni(  item, nbest ) { 
+25:    var len = application.lastresult$.length; 
+26:    var result = ""; 
+27:     
+28:    if ( len &gt; nbest) { 
+29:        len = nbest; 
+30:    } 
+31:    for (var i = 0; i &lt; len; i++) { 
+32:        if (i &gt; 0) { 
+33:            result += " |"; 
+34:        } 
+35:        result += item; 
+36:    } 
+37:    return result; 
+38:} 
+39: 
+40:function extractprops ( parent, obj ) { 
+41:    var prop, name, result = ""; 
+42:    var count = 1; 
+43:    if ( typeof ( obj ) == "object" ) { 
+44:        for ( prop in obj ) { 
+45:            name = parent + prop; 
+46:            if ( typeof ( obj [ prop ] ) == "object" ) { 
+47:                result += extractprops( name+".", obj [ prop ] ); 
+48:            } else { 
+49:                if (count == 1) { 
+50:                    result = obj [ prop ]; 
+51:                } else { 
+52:                    result += " " + obj [ prop ]; 
+53:                } 
+54:            } 
+55:            count = count + 1; 
+56:        } 
+57:    } else { 
+58:        if (obj == undefined ) { 
+59:            result +=  "undefined"; 
+60:        } else { 
+61:            result +=  obj; 
+62:        } 
+63:    } 
+64:    return result; 
+65:} 
+66: 
+67:function startswith ( value, startwith ) { 
+68:    var index; 
+69:    index = value.indexOf(startwith, 0); 
+70:    if ( index == 0 ) { 
+71:       return true; 
+72:    } else { 
+73:       return false; 
+74:    } 
+75:} 
+76: 
+77:function containsUndefined ( value ) { 
+78:    var index; 
+79:    index = value.indexOf('undefined', 0); 
+80:    if ( index == -1 ) { 
+81:       return false; 
+82:    } else { 
+83:       return true; 
+84:    } 
+85:} 
+86: 
+87:</script> 
+88:<script> 
+89:function objectToString(  obj ) { 
+90:    try { 
+91:    var result = ""; 
+92:    result += getobjectprops( "", obj); 
+93:    if (result.charAt(0) == '|' ) { 
+94:        result = result.substring(1); 
+95:    }  
+96:    } catch (errMsg) { 
+97:        return("undefined"); 
+98:    } 
+99:    return result; 
+100:} 
+101: 
+102:function getobjectprops ( parent, obj ) { 
+103:    var prop, name, result = ""; 
+104:    if ( typeof ( obj ) == "object" ) {  
+105:        for ( prop in obj ) {  
+106:            name = parent + prop; 
+107:            if ( typeof ( obj [ prop ] ) == "object" ) { 
+108:                result += extractprops( name+".", obj [ prop ] ); 
+109:            } else {  
+110:                result +=   "|"  + obj [ prop ];  
+111:            }  
+112:        }  
+113:    } else {  
+114:        if (obj == undefined ) {  
+115:           result +=  "undefined";  
+116:        } else {  
+117:           result +=  obj;  
+118:        }  
+119:    }  
+120:    return result; 
+121:} 
+122:</script> 
+123:<var name="_avayaExitReason" expr="''"/> 
+124:<var name="_avayaExitInfo1" expr="''"/> 
+125:<var name="_avayaExitInfo2" expr="''"/> 
+126:<var name="_avayaExitCustomerId" expr="''"/> 
+127:<var name="_avayaExitPreferredPath" expr="'1'"/> 
+128:<var name="_avayaExitTopic" expr="''"/> 
+129:<var name="_avayaNoinputCounter" expr="0"/> 
+130:<var name="_avayaNomatchCounter" expr="0"/> 
+131:<catch event="error.runtime"> 
+132:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+133:<submit next="Disconnect?___DDSESSIONID=006A8262365B1D58060E3ED90DBC5696%3A%2FDonationActivities_2" namelist="event_message" method="post" enctype="multipart/form-data"/> 
+134:</catch> 
+135:<catch event="error.badfetch.http.404"> 
+136:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+137:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+138:<submit next="Disconnect?___DDSESSIONID=006A8262365B1D58060E3ED90DBC5696%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+139:</catch> 
+140:<catch event="error.badfetch.http.404" count="2"> 
+141:    <throw event="app.fatal" message="Problems on application server"/> 
+142:</catch> 
+143:<catch event="error.badfetch.http.500"> 
+144:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+145:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+146:<submit next="Disconnect?___DDSESSIONID=006A8262365B1D58060E3ED90DBC5696%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+147:</catch> 
+148:<catch event="error.badfetch.http.500" count="2"> 
+149:    <throw event="app.fatal" message="Problems on application server"/> 
+150:</catch> 
+151:<catch event="error.badfetch"> 
+152:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+153:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+154:<submit next="Disconnect?___DDSESSIONID=006A8262365B1D58060E3ED90DBC5696%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+155:</catch> 
+156:<catch event="error.badfetch" count="2"> 
+157:    <throw event="app.fatal" message="Problems on application server"/> 
+158:</catch> 
+159:<catch event="error" count="1"> 
+160:<reprompt/> 
+161:</catch> 
+162:<catch event="error" count="2"> 
+163:    <throw event="app.fatal" message="Problems on application server"/> 
+164:</catch> 
+165:<catch event="connection.disconnect"> 
+166:<var name="avayadonotsave___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+167:<var name="avayadonotsave___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+168:<submit next="End?___DDSESSIONID=006A8262365B1D58060E3ED90DBC5696%3A%2FDonationActivities_2" namelist="avayadonotsave___noinputcount avayadonotsave___nomatchcount" method="get"/> 
+169:</catch> 
+170:<meta name="marker" content="Avaya Aura Orchestration Designer Root End"/> 
+171:<form id="Start"> 
+172:<script> 
+173:function getArray( arrayName, item ) { 
+174:    try { 
+175:        var len = eval( arrayName +'.length;'); 
+176:        var result = ""; 
+177:     
+178:        for (var i = 0; i &lt; len; i++) { 
+179:            if (i &gt; 0) { 
+180:                result += " |"; 
+181:            } 
+182:            var temp  =  arrayName + "[" + i + "]." + item; 
+183:            result += eval(temp); 
+184:        } 
+185:        return result; 
+186:    } catch (errMsg) { 
+187:            return('unknown'); 
+188:    } 
+189:} 
+190:function getRedirect( item ) { 
+191:    return(getArray('session.connection.redirect', item)); 
+192:} 
+193:function getShareduui( item ) { 
+194:    return(getArray('session.avaya.uui.shared', item)); 
+195:} 
+196:function getScriptItem( item ) { 
+197:    try { 
+198:        var result = ""; 
+199:        result += eval(item); 
+200:        return result; 
+201:    } catch (errMsg) { 
+202:        return('unknown'); 
+203:    } 
+204:} 
+205:function getSIPCallID() { 
+206:    try { 
+207:        var protocol = getScriptItem( 'session.connection.protocol.name' ); 
+208:        if ( protocol == 'sip'  || protocol == 'SIP' ) { 
+209:            var temp = getScriptItem( 'session.connection.protocol.sip.callid' ); 
+210:            return(temp); 
+211:        } else { 
+212:            return('unknown'); 
+213:        } 
+214:    } catch (errMsg) { 
+215:            return('unknown'); 
+216:    } 
+217:} 
+218:</script> 
+219:<var name="session___aai" expr="getScriptItem( 'session.connection.aai' )"/> 
+220:<var name="session___ani" expr="getScriptItem( 'session.connection.remote.uri' )"/> 
+221:<var name="session___dnis" expr="getScriptItem( 'session.connection.local.uri' )"/> 
+222:<var name="session___protocolname" expr="getScriptItem( 'session.connection.protocol.name' )"/> 
+223:<var name="session___protocolversion" expr="getScriptItem( 'session.connection.protocol.version' )"/> 
+224:<var name="session___uui" expr="'unknown'"/> 
+225:<var name="session___calltag" expr="'unknown'"/> 
+226:<var name="session___channel" expr="getScriptItem( 'session.avaya.telephone.channel' )"/> 
+227:<var name="session___vpcalledextension" expr="'unknown'"/> 
+228:<var name="session___vpcoveragereason" expr="'unknown'"/> 
+229:<var name="session___vpcoveragetype" expr="'unknown'"/> 
+230:<var name="session___vprdnis" expr="'unknown'"/> 
+231:<var name="redirectinfo___uri" expr="getRedirect('uri')"/> 
+232:<var name="redirectinfo___presentationinfo" expr="getRedirect('pi')"/> 
+233:<var name="redirectinfo___screeninginfo" expr="getRedirect('si')"/> 
+234:<var name="redirectinfo___reason" expr="getRedirect('reason')"/> 
+235:<var name="session___sharedmode" expr="getScriptItem( 'session.avaya.uui.mode' )"/> 
+236:<var name="shareduui___id" expr="getShareduui('id')"/> 
+237:<var name="shareduui___value" expr="getShareduui('value')"/> 
+238:<var name="session___sessionlabel" expr="getScriptItem( 'session.avaya.ucid' )"/> 
+239:<var name="_sipcallid" expr="getSIPCallID()"/> 
+240:<var name="session___mediatype" expr="getScriptItem( 'session.connection.protocol.sip.media[1].type' )"/> 
+241:<var name="session___videoenabled" expr="getScriptItem( 'session.connection.video.enabled' )"/> 
+242:<var name="session___videocodec" expr="getScriptItem( 'session.connection.video.codec' )"/> 
+243:<var name="session___videoformat" expr="getScriptItem( 'session.connection.video.format' )"/> 
+244:<var name="session___videowidth" expr="getScriptItem( 'session.connection.video.width' )"/> 
+245:<var name="session___videoheight" expr="getScriptItem( 'session.connection.video.height' )"/> 
+246:<var name="session___videofps" expr="getScriptItem( 'session.connection.video.fps' )"/> 
+247:<var name="session___videobitrate" expr="getScriptItem( 'session.connection.video.bitrate' )"/> 
+248:<var name="session___videonearfmtp" expr="getScriptItem( 'session.connection.video.nearfmtp' )"/> 
+249:<var name="session___videofarfmtp" expr="getScriptItem( 'session.connection.video.farfmtp' )"/> 
+250:<var name="session___ucid" expr="getScriptItem( 'session.avaya.ucid' )"/> 
+251:<var name="session___conversefirst" expr="'unknown'"/> 
+252:<var name="session___conversesecond" expr="'unknown'"/> 
+253:<block> 
+254:<submit next="ddlog4j?___DDSESSIONID=006A8262365B1D58060E3ED90DBC5696%3A%2FDonationActivities_2" namelist="session___aai session___ani session___dnis session___protocolname session___protocolversion session___uui session___calltag session___channel session___vpcalledextension session___vpcoveragereason session___vpcoveragetype session___vprdnis redirectinfo___uri redirectinfo___presentationinfo redirectinfo___screeninginfo redirectinfo___reason session___sharedmode shareduui___id shareduui___value session___sessionlabel _sipcallid session___mediatype session___videoenabled session___videocodec session___videoformat session___videowidth session___videoheight session___videofps session___videobitrate session___videonearfmtp session___videofarfmtp session___ucid session___conversefirst session___conversesecond" method="post"/> 
+255:</block> 
+256:</form> 
+257:</vxml> 
+258:
+
+23/08/2017 10:05:02:274  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Using SCESession 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 servlet : ddlog4j
+23/08/2017 10:05:02:276  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :_sipcallid to simple: _sipcallid  as [unknown]
+23/08/2017 10:05:02:276  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :redirectinfo___presentationinfo to complex: redirectinfo:presentationinfo  as [undefined]
+23/08/2017 10:05:02:276  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :redirectinfo___reason to complex: redirectinfo:reason  as [unknown]
+23/08/2017 10:05:02:276  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :redirectinfo___screeninginfo to complex: redirectinfo:screeninginfo  as [undefined]
+23/08/2017 10:05:02:276  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :redirectinfo___uri to complex: redirectinfo:uri  as []
+23/08/2017 10:05:02:276  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___aai to complex: session:aai  as []
+23/08/2017 10:05:02:276  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___ani to complex: session:ani  as [undefined]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___calltag to complex: session:calltag  as [unknown]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___channel to complex: session:channel  as [0]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___conversefirst to complex: session:conversefirst  as [unknown]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___conversesecond to complex: session:conversesecond  as [unknown]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___dnis to complex: session:dnis  as [undefined]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___mediatype to complex: session:mediatype  as [unknown]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___protocolname to complex: session:protocolname  as [pots]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___protocolversion to complex: session:protocolversion  as [1]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___sessionlabel to complex: session:sessionlabel  as [undefined]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___sharedmode to complex: session:sharedmode  as [shared]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___ucid to complex: session:ucid  as [undefined]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___uui to complex: session:uui  as [unknown]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___videobitrate to complex: session:videobitrate  as [unknown]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___videocodec to complex: session:videocodec  as [unknown]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___videoenabled to complex: session:videoenabled  as [unknown]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___videofarfmtp to complex: session:videofarfmtp  as [unknown]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___videoformat to complex: session:videoformat  as [unknown]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___videofps to complex: session:videofps  as [unknown]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___videoheight to complex: session:videoheight  as [unknown]
+23/08/2017 10:05:02:277  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___videonearfmtp to complex: session:videonearfmtp  as [unknown]
+23/08/2017 10:05:02:278  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___videowidth to complex: session:videowidth  as [unknown]
+23/08/2017 10:05:02:278  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___vpcalledextension to complex: session:vpcalledextension  as [unknown]
+23/08/2017 10:05:02:278  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___vpcoveragereason to complex: session:vpcoveragereason  as [unknown]
+23/08/2017 10:05:02:278  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___vpcoveragetype to complex: session:vpcoveragetype  as [unknown]
+23/08/2017 10:05:02:278  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :session___vprdnis to complex: session:vprdnis  as [unknown]
+23/08/2017 10:05:02:278  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :shareduui___id to complex: shareduui:id  as [unknown]
+23/08/2017 10:05:02:278  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Storing :shareduui___value to complex: shareduui:value  as [unknown]
+23/08/2017 10:05:02:279 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : CTICallOperation Request: callinfoInitialCall
+23/08/2017 10:05:02:279 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : CTICallOperation Response: okay
+23/08/2017 10:05:02:332 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Admin VariableField:getStringValue(): return string value for DOMAINID:ID
+23/08/2017 10:05:02:332 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : get param for app: DonationActivities_2
+23/08/2017 10:05:02:335  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : JNDINAME Response:null
+23/08/2017 10:05:02:335  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : IdType Response:null
+23/08/2017 10:05:02:335  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : DonationToRedCrossByPhone Response:null
+23/08/2017 10:05:02:335  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : DonationToChildWelfareLeague Response:null
+23/08/2017 10:05:02:335  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : DonationToPaperWindmillTroupe Response:null
+23/08/2017 10:05:02:335  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : DonationToTeacherChang Response:null
+23/08/2017 10:05:02:335  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : FarEastOneSmallAmount Response:null
+23/08/2017 10:05:02:336  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Using SCESession 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 servlet : get_BpId
+23/08/2017 10:05:02:407  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Using SCESession 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 servlet : cticallinfo
+23/08/2017 10:05:02:476 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : CTICallOperation Request: callinfoInitialCall
+23/08/2017 10:05:02:476 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : CTICallOperation Response: okay
+23/08/2017 10:05:02:478  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Assigning [cticallinfo:ani] to [S_USERDATA:ANI]
+23/08/2017 10:05:02:481  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Assigning [cticallinfo:dnis] to [S_USERDATA:DNIS]
+23/08/2017 10:05:02:485  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Using SCESession 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 servlet : check_testModeAND_anilenght
+23/08/2017 10:05:02:540  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : session id:sess879519 | DonationActivities_2:check_testModeAND_anilenght | #####test_mode##### | properties:test_mode : null
+23/08/2017 10:05:02:540  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : [condition1] Expression [properties:test_mode] String Equal [1]
+23/08/2017 10:05:02:547  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Using SCESession 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 servlet : AN_991225
+23/08/2017 10:05:02:602 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : *** Reply for [/DonationActivities_2/AN_991225] ***
+23/08/2017 10:05:02:603 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : 0:<?xml version="1.0" encoding="UTF-8"?> 
+1:<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="zh-tw"> 
+2:<meta name="author" content="Avaya Aura Orchestration Designer"/> 
+3:<meta name="runtime-version" content="07.01.08.04"/> 
+4:<meta name="runtimecommon-version" content="07.01.08.04"/> 
+5:<meta name="copyright" content="Copyright (c) 2002-2011, Avaya"/> 
+6:<form id="AN_991225"> 
+7:<property name="maxnbest" value="1"/> 
+8:<var name="nbest" expr="1"/> 
+9:<var name="AN_991225___value"/> 
+10:<var name="AN_991225___confidence"/> 
+11:<var name="AN_991225___utterance"/> 
+12:<var name="AN_991225___inputmode"/> 
+13:<var name="AN_991225___interpretation" expr="'undefined'"/> 
+14:<var name="AN_991225___noinputcount" expr="'0'"/> 
+15:<var name="AN_991225___nomatchcount" expr="'0'"/> 
+16:<var name="graminterp___input_ANI" expr="'undefined'"/> 
+17:<field name="AN_991225" modal="false"> 
+18:<prompt bargein="true" bargeintype="speech" timeout="8000ms"> 
+19:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0001.wav">:a</audio> 
+20:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0014.wav">:n</audio> 
+21:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0009.wav">:i</audio> 
+22:</prompt> 
+23:<grammar  mode="dtmf" xml:lang="en-us" weight="1.0" src="builtin:dtmf/number" maxage="0"/> 
+24:<catch event="noinput" count="1"> 
+25:<assign name="_avayaNoinputCounter" expr="_avayaNoinputCounter + 1"/> 
+26:<reprompt/> 
+27:</catch> 
+28:<catch event="noinput" count="3"> 
+29:<assign name="_avayaNoinputCounter" expr="_avayaNoinputCounter + 1"/> 
+30:<assign name="AN_991225___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+31:<assign name="AN_991225___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+32:<submit next="AN_015333?___DDSESSIONID=006A8262365B1D58060E3ED90DBC5696%3A%2FDonationActivities_2" namelist="AN_991225___noinputcount AN_991225___nomatchcount" method="post" enctype="multipart/form-data"/> 
+33:</catch> 
+34:<catch event="nomatch" count="1"> 
+35:<assign name="_avayaNomatchCounter" expr="_avayaNomatchCounter + 1"/> 
+36:<reprompt/> 
+37:</catch> 
+38:<catch event="nomatch" count="3"> 
+39:<assign name="_avayaNomatchCounter" expr="_avayaNomatchCounter + 1"/> 
+40:<assign name="AN_991225___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+41:<assign name="AN_991225___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+42:<submit next="AN_015333?___DDSESSIONID=006A8262365B1D58060E3ED90DBC5696%3A%2FDonationActivities_2" namelist="AN_991225___noinputcount AN_991225___nomatchcount" method="post" enctype="multipart/form-data"/> 
+43:</catch> 
+44:<filled> 
+45:<assign name="AN_991225___confidence" expr="getnbest('confidence', nbest)"/> 
+46:<assign name="AN_991225___utterance" expr="getnbest('utterance', nbest)"/> 
+47:<assign name="AN_991225___inputmode" expr="getnbest('inputmode', nbest)"/> 
+48:<assign name="AN_991225___interpretation" expr="getnbest('interpretation', nbest)"/> 
+49:<if cond="startswith(AN_991225___interpretation, 'undefined') == true "> 
+50:    <assign name="AN_991225___interpretation" expr="getnbest('interpretation', nbest)"/> 
+51:</if> 
+52:<assign name="AN_991225___value" expr="AN_991225___interpretation"/> 
+53:<assign name="AN_991225___noinputcount" expr="getnbestnmni(_avayaNoinputCounter, nbest)"/> 
+54:<assign name="AN_991225___nomatchcount" expr="getnbestnmni(_avayaNomatchCounter, nbest)"/> 
+55:</filled> 
+56:</field> 
+57:<block> 
+58:<submit next="assign_Variable?___DDSESSIONID=006A8262365B1D58060E3ED90DBC5696%3A%2FDonationActivities_2" namelist="AN_991225___value AN_991225___confidence AN_991225___utterance AN_991225___inputmode AN_991225___interpretation AN_991225___noinputcount AN_991225___nomatchcount" method="post"/> 
+59:</block> 
+60:</form> 
+61:</vxml> 
+62:
+
+23/08/2017 10:05:27:470  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : SCESession bound to HttpSession 320ED943BE6656F6C0B69A502E10BA3F
+23/08/2017 10:05:27:471  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Browser Version 2.1.4, terminationURL enabled : true
+23/08/2017 10:05:27:474  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Using SCESession 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 servlet : Start
+23/08/2017 10:05:27:486  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : ** Pushed Stack Frame [/DonationActivities_2]
+23/08/2017 10:05:27:486 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Creating variable [DOMAINID] from factory [com.avaya.vp.admin.variables.runtime.AdminVariableFactory]
+23/08/2017 10:05:27:487 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Not able to save posted variable information [call_classification]
+23/08/2017 10:05:27:487  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___sessionid to complex: session:sessionid  as [sess8734726]
+23/08/2017 10:05:27:487  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___vpconverseondata to complex: session:vpconverseondata  as []
+23/08/2017 10:05:28:091  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : runtime_platform : Desktop
+23/08/2017 10:05:28:091  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : runtime_asr : Desktop Microsoft Speech SAPI
+23/08/2017 10:05:28:095  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : MessageType is speech
+23/08/2017 10:05:28:096 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Initializer:applicationStarted:Initializing admin variables...
+23/08/2017 10:05:28:096 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Initializer:applicationStarted:__VPVarAppDate is 1503453928096
+23/08/2017 10:05:28:096 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Initializer:applicationStarted:Timestamp is 08/23/17 10:05:28
+23/08/2017 10:05:28:096 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Initializer:applicationStarted:Appname is DonationActivities_2
+23/08/2017 10:05:28:096 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : AdminVarCache:init: Timestamp is different; Load parameters....
+23/08/2017 10:05:28:096 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : AdminVarCache:init: Module? false
+23/08/2017 10:05:28:096 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : AdminVarCache:init: loading simulation data...
+23/08/2017 10:05:28:098 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : AdminVarCache:init: no data comes back from proxy.
+23/08/2017 10:05:28:098 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : app params: {}
+23/08/2017 10:05:28:098 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : AdminVarCache:init: Finish loading.
+23/08/2017 10:05:28:098 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : *** Reply for [/DonationActivities_2/Start] ***
+23/08/2017 10:05:28:099 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : 0:<?xml version="1.0" encoding="UTF-8"?> 
+1:<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="zh-tw"> 
+2:<meta name="author" content="Avaya Aura Orchestration Designer"/> 
+3:<meta name="runtime-version" content="07.01.08.04"/> 
+4:<meta name="runtimecommon-version" content="07.01.08.04"/> 
+5:<meta name="copyright" content="Copyright (c) 2002-2011, Avaya"/> 
+6:<script> 
+7:function getnbest(  item, nbest ) { 
+8:    var len = application.lastresult$.length; 
+9:    var result = ""; 
+10:     
+11:    if ( len &gt; nbest) { 
+12:        len = nbest; 
+13:    } 
+14:    for (var i = 0; i &lt; len; i++) { 
+15:        if (i &gt; 0) { 
+16:            result += " |"; 
+17:        } 
+18:        var temp  =  "application.lastresult$[" + i + "]." + item; 
+19:        result += extractprops( "", eval(temp)); 
+20:    } 
+21:    return result; 
+22:} 
+23: 
+24:function getnbestnmni(  item, nbest ) { 
+25:    var len = application.lastresult$.length; 
+26:    var result = ""; 
+27:     
+28:    if ( len &gt; nbest) { 
+29:        len = nbest; 
+30:    } 
+31:    for (var i = 0; i &lt; len; i++) { 
+32:        if (i &gt; 0) { 
+33:            result += " |"; 
+34:        } 
+35:        result += item; 
+36:    } 
+37:    return result; 
+38:} 
+39: 
+40:function extractprops ( parent, obj ) { 
+41:    var prop, name, result = ""; 
+42:    var count = 1; 
+43:    if ( typeof ( obj ) == "object" ) { 
+44:        for ( prop in obj ) { 
+45:            name = parent + prop; 
+46:            if ( typeof ( obj [ prop ] ) == "object" ) { 
+47:                result += extractprops( name+".", obj [ prop ] ); 
+48:            } else { 
+49:                if (count == 1) { 
+50:                    result = obj [ prop ]; 
+51:                } else { 
+52:                    result += " " + obj [ prop ]; 
+53:                } 
+54:            } 
+55:            count = count + 1; 
+56:        } 
+57:    } else { 
+58:        if (obj == undefined ) { 
+59:            result +=  "undefined"; 
+60:        } else { 
+61:            result +=  obj; 
+62:        } 
+63:    } 
+64:    return result; 
+65:} 
+66: 
+67:function startswith ( value, startwith ) { 
+68:    var index; 
+69:    index = value.indexOf(startwith, 0); 
+70:    if ( index == 0 ) { 
+71:       return true; 
+72:    } else { 
+73:       return false; 
+74:    } 
+75:} 
+76: 
+77:function containsUndefined ( value ) { 
+78:    var index; 
+79:    index = value.indexOf('undefined', 0); 
+80:    if ( index == -1 ) { 
+81:       return false; 
+82:    } else { 
+83:       return true; 
+84:    } 
+85:} 
+86: 
+87:</script> 
+88:<script> 
+89:function objectToString(  obj ) { 
+90:    try { 
+91:    var result = ""; 
+92:    result += getobjectprops( "", obj); 
+93:    if (result.charAt(0) == '|' ) { 
+94:        result = result.substring(1); 
+95:    }  
+96:    } catch (errMsg) { 
+97:        return("undefined"); 
+98:    } 
+99:    return result; 
+100:} 
+101: 
+102:function getobjectprops ( parent, obj ) { 
+103:    var prop, name, result = ""; 
+104:    if ( typeof ( obj ) == "object" ) {  
+105:        for ( prop in obj ) {  
+106:            name = parent + prop; 
+107:            if ( typeof ( obj [ prop ] ) == "object" ) { 
+108:                result += extractprops( name+".", obj [ prop ] ); 
+109:            } else {  
+110:                result +=   "|"  + obj [ prop ];  
+111:            }  
+112:        }  
+113:    } else {  
+114:        if (obj == undefined ) {  
+115:           result +=  "undefined";  
+116:        } else {  
+117:           result +=  obj;  
+118:        }  
+119:    }  
+120:    return result; 
+121:} 
+122:</script> 
+123:<var name="_avayaExitReason" expr="''"/> 
+124:<var name="_avayaExitInfo1" expr="''"/> 
+125:<var name="_avayaExitInfo2" expr="''"/> 
+126:<var name="_avayaExitCustomerId" expr="''"/> 
+127:<var name="_avayaExitPreferredPath" expr="'1'"/> 
+128:<var name="_avayaExitTopic" expr="''"/> 
+129:<var name="_avayaNoinputCounter" expr="0"/> 
+130:<var name="_avayaNomatchCounter" expr="0"/> 
+131:<catch event="error.runtime"> 
+132:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+133:<submit next="Disconnect?___DDSESSIONID=320ED943BE6656F6C0B69A502E10BA3F%3A%2FDonationActivities_2" namelist="event_message" method="post" enctype="multipart/form-data"/> 
+134:</catch> 
+135:<catch event="error.badfetch.http.404"> 
+136:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+137:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+138:<submit next="Disconnect?___DDSESSIONID=320ED943BE6656F6C0B69A502E10BA3F%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+139:</catch> 
+140:<catch event="error.badfetch.http.404" count="2"> 
+141:    <throw event="app.fatal" message="Problems on application server"/> 
+142:</catch> 
+143:<catch event="error.badfetch.http.500"> 
+144:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+145:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+146:<submit next="Disconnect?___DDSESSIONID=320ED943BE6656F6C0B69A502E10BA3F%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+147:</catch> 
+148:<catch event="error.badfetch.http.500" count="2"> 
+149:    <throw event="app.fatal" message="Problems on application server"/> 
+150:</catch> 
+151:<catch event="error.badfetch"> 
+152:<var name="event_message" expr="try {objectToString(_message)} catch (errMsg) {'undefined'}"/> 
+153:<var name="event_name" expr="try {objectToString(_event)} catch (errMsg) {'undefined'}"/> 
+154:<submit next="Disconnect?___DDSESSIONID=320ED943BE6656F6C0B69A502E10BA3F%3A%2FDonationActivities_2" namelist="event_message event_name" method="post" enctype="multipart/form-data"/> 
+155:</catch> 
+156:<catch event="error.badfetch" count="2"> 
+157:    <throw event="app.fatal" message="Problems on application server"/> 
+158:</catch> 
+159:<catch event="error" count="1"> 
+160:<reprompt/> 
+161:</catch> 
+162:<catch event="error" count="2"> 
+163:    <throw event="app.fatal" message="Problems on application server"/> 
+164:</catch> 
+165:<catch event="connection.disconnect"> 
+166:<var name="avayadonotsave___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+167:<var name="avayadonotsave___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+168:<submit next="End?___DDSESSIONID=320ED943BE6656F6C0B69A502E10BA3F%3A%2FDonationActivities_2" namelist="avayadonotsave___noinputcount avayadonotsave___nomatchcount" method="get"/> 
+169:</catch> 
+170:<meta name="marker" content="Avaya Aura Orchestration Designer Root End"/> 
+171:<form id="Start"> 
+172:<script> 
+173:function getArray( arrayName, item ) { 
+174:    try { 
+175:        var len = eval( arrayName +'.length;'); 
+176:        var result = ""; 
+177:     
+178:        for (var i = 0; i &lt; len; i++) { 
+179:            if (i &gt; 0) { 
+180:                result += " |"; 
+181:            } 
+182:            var temp  =  arrayName + "[" + i + "]." + item; 
+183:            result += eval(temp); 
+184:        } 
+185:        return result; 
+186:    } catch (errMsg) { 
+187:            return('unknown'); 
+188:    } 
+189:} 
+190:function getRedirect( item ) { 
+191:    return(getArray('session.connection.redirect', item)); 
+192:} 
+193:function getShareduui( item ) { 
+194:    return(getArray('session.avaya.uui.shared', item)); 
+195:} 
+196:function getScriptItem( item ) { 
+197:    try { 
+198:        var result = ""; 
+199:        result += eval(item); 
+200:        return result; 
+201:    } catch (errMsg) { 
+202:        return('unknown'); 
+203:    } 
+204:} 
+205:function getSIPCallID() { 
+206:    try { 
+207:        var protocol = getScriptItem( 'session.connection.protocol.name' ); 
+208:        if ( protocol == 'sip'  || protocol == 'SIP' ) { 
+209:            var temp = getScriptItem( 'session.connection.protocol.sip.callid' ); 
+210:            return(temp); 
+211:        } else { 
+212:            return('unknown'); 
+213:        } 
+214:    } catch (errMsg) { 
+215:            return('unknown'); 
+216:    } 
+217:} 
+218:</script> 
+219:<var name="session___aai" expr="getScriptItem( 'session.connection.aai' )"/> 
+220:<var name="session___ani" expr="getScriptItem( 'session.connection.remote.uri' )"/> 
+221:<var name="session___dnis" expr="getScriptItem( 'session.connection.local.uri' )"/> 
+222:<var name="session___protocolname" expr="getScriptItem( 'session.connection.protocol.name' )"/> 
+223:<var name="session___protocolversion" expr="getScriptItem( 'session.connection.protocol.version' )"/> 
+224:<var name="session___uui" expr="'unknown'"/> 
+225:<var name="session___calltag" expr="'unknown'"/> 
+226:<var name="session___channel" expr="getScriptItem( 'session.avaya.telephone.channel' )"/> 
+227:<var name="session___vpcalledextension" expr="'unknown'"/> 
+228:<var name="session___vpcoveragereason" expr="'unknown'"/> 
+229:<var name="session___vpcoveragetype" expr="'unknown'"/> 
+230:<var name="session___vprdnis" expr="'unknown'"/> 
+231:<var name="redirectinfo___uri" expr="getRedirect('uri')"/> 
+232:<var name="redirectinfo___presentationinfo" expr="getRedirect('pi')"/> 
+233:<var name="redirectinfo___screeninginfo" expr="getRedirect('si')"/> 
+234:<var name="redirectinfo___reason" expr="getRedirect('reason')"/> 
+235:<var name="session___sharedmode" expr="getScriptItem( 'session.avaya.uui.mode' )"/> 
+236:<var name="shareduui___id" expr="getShareduui('id')"/> 
+237:<var name="shareduui___value" expr="getShareduui('value')"/> 
+238:<var name="session___sessionlabel" expr="getScriptItem( 'session.avaya.ucid' )"/> 
+239:<var name="_sipcallid" expr="getSIPCallID()"/> 
+240:<var name="session___mediatype" expr="getScriptItem( 'session.connection.protocol.sip.media[1].type' )"/> 
+241:<var name="session___videoenabled" expr="getScriptItem( 'session.connection.video.enabled' )"/> 
+242:<var name="session___videocodec" expr="getScriptItem( 'session.connection.video.codec' )"/> 
+243:<var name="session___videoformat" expr="getScriptItem( 'session.connection.video.format' )"/> 
+244:<var name="session___videowidth" expr="getScriptItem( 'session.connection.video.width' )"/> 
+245:<var name="session___videoheight" expr="getScriptItem( 'session.connection.video.height' )"/> 
+246:<var name="session___videofps" expr="getScriptItem( 'session.connection.video.fps' )"/> 
+247:<var name="session___videobitrate" expr="getScriptItem( 'session.connection.video.bitrate' )"/> 
+248:<var name="session___videonearfmtp" expr="getScriptItem( 'session.connection.video.nearfmtp' )"/> 
+249:<var name="session___videofarfmtp" expr="getScriptItem( 'session.connection.video.farfmtp' )"/> 
+250:<var name="session___ucid" expr="getScriptItem( 'session.avaya.ucid' )"/> 
+251:<var name="session___conversefirst" expr="'unknown'"/> 
+252:<var name="session___conversesecond" expr="'unknown'"/> 
+253:<block> 
+254:<submit next="ddlog4j?___DDSESSIONID=320ED943BE6656F6C0B69A502E10BA3F%3A%2FDonationActivities_2" namelist="session___aai session___ani session___dnis session___protocolname session___protocolversion session___uui session___calltag session___channel session___vpcalledextension session___vpcoveragereason session___vpcoveragetype session___vprdnis redirectinfo___uri redirectinfo___presentationinfo redirectinfo___screeninginfo redirectinfo___reason session___sharedmode shareduui___id shareduui___value session___sessionlabel _sipcallid session___mediatype session___videoenabled session___videocodec session___videoformat session___videowidth session___videoheight session___videofps session___videobitrate session___videonearfmtp session___videofarfmtp session___ucid session___conversefirst session___conversesecond" method="post"/> 
+255:</block> 
+256:</form> 
+257:</vxml> 
+258:
+
+23/08/2017 10:05:28:109  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Using SCESession 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 servlet : ddlog4j
+23/08/2017 10:05:28:110  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :_sipcallid to simple: _sipcallid  as [unknown]
+23/08/2017 10:05:28:110  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :redirectinfo___presentationinfo to complex: redirectinfo:presentationinfo  as [undefined]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :redirectinfo___reason to complex: redirectinfo:reason  as [unknown]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :redirectinfo___screeninginfo to complex: redirectinfo:screeninginfo  as [undefined]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :redirectinfo___uri to complex: redirectinfo:uri  as []
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___aai to complex: session:aai  as []
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___ani to complex: session:ani  as [undefined]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___calltag to complex: session:calltag  as [unknown]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___channel to complex: session:channel  as [0]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___conversefirst to complex: session:conversefirst  as [unknown]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___conversesecond to complex: session:conversesecond  as [unknown]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___dnis to complex: session:dnis  as [undefined]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___mediatype to complex: session:mediatype  as [unknown]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___protocolname to complex: session:protocolname  as [pots]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___protocolversion to complex: session:protocolversion  as [1]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___sessionlabel to complex: session:sessionlabel  as [undefined]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___sharedmode to complex: session:sharedmode  as [shared]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___ucid to complex: session:ucid  as [undefined]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___uui to complex: session:uui  as [unknown]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___videobitrate to complex: session:videobitrate  as [unknown]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___videocodec to complex: session:videocodec  as [unknown]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___videoenabled to complex: session:videoenabled  as [unknown]
+23/08/2017 10:05:28:111  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___videofarfmtp to complex: session:videofarfmtp  as [unknown]
+23/08/2017 10:05:28:119  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___videoformat to complex: session:videoformat  as [unknown]
+23/08/2017 10:05:28:119  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___videofps to complex: session:videofps  as [unknown]
+23/08/2017 10:05:28:119  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___videoheight to complex: session:videoheight  as [unknown]
+23/08/2017 10:05:28:119  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___videonearfmtp to complex: session:videonearfmtp  as [unknown]
+23/08/2017 10:05:28:119  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___videowidth to complex: session:videowidth  as [unknown]
+23/08/2017 10:05:28:119  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___vpcalledextension to complex: session:vpcalledextension  as [unknown]
+23/08/2017 10:05:28:119  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___vpcoveragereason to complex: session:vpcoveragereason  as [unknown]
+23/08/2017 10:05:28:119  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___vpcoveragetype to complex: session:vpcoveragetype  as [unknown]
+23/08/2017 10:05:28:119  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :session___vprdnis to complex: session:vprdnis  as [unknown]
+23/08/2017 10:05:28:119  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :shareduui___id to complex: shareduui:id  as [unknown]
+23/08/2017 10:05:28:119  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Storing :shareduui___value to complex: shareduui:value  as [unknown]
+23/08/2017 10:05:28:120 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : CTICallOperation Request: callinfoInitialCall
+23/08/2017 10:05:28:121 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : CTICallOperation Response: okay
+23/08/2017 10:05:28:183 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Admin VariableField:getStringValue(): return string value for DOMAINID:ID
+23/08/2017 10:05:28:184 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : get param for app: DonationActivities_2
+23/08/2017 10:05:28:188  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : JNDINAME Response:null
+23/08/2017 10:05:28:188  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : IdType Response:null
+23/08/2017 10:05:28:188  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : DonationToRedCrossByPhone Response:null
+23/08/2017 10:05:28:188  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : DonationToChildWelfareLeague Response:null
+23/08/2017 10:05:28:188  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : DonationToPaperWindmillTroupe Response:null
+23/08/2017 10:05:28:190  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : DonationToTeacherChang Response:null
+23/08/2017 10:05:28:191  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : FarEastOneSmallAmount Response:null
+23/08/2017 10:05:28:192  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Using SCESession 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 servlet : get_BpId
+23/08/2017 10:05:28:245  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Using SCESession 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 servlet : cticallinfo
+23/08/2017 10:05:28:307 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : CTICallOperation Request: callinfoInitialCall
+23/08/2017 10:05:28:308 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : CTICallOperation Response: okay
+23/08/2017 10:05:28:308  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Assigning [cticallinfo:ani] to [S_USERDATA:ANI]
+23/08/2017 10:05:28:308  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Assigning [cticallinfo:dnis] to [S_USERDATA:DNIS]
+23/08/2017 10:05:28:308  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Using SCESession 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 servlet : check_testModeAND_anilenght
+23/08/2017 10:05:28:361  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : session id:sess8734726 | DonationActivities_2:check_testModeAND_anilenght | #####test_mode##### | properties:test_mode : null
+23/08/2017 10:05:28:361  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : [condition1] Expression [properties:test_mode] String Equal [1]
+23/08/2017 10:05:28:362  INFO - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : Using SCESession 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 servlet : AN_991225
+23/08/2017 10:05:28:415 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : *** Reply for [/DonationActivities_2/AN_991225] ***
+23/08/2017 10:05:28:415 DEBUG - 320ED943BE6656F6C0B69A502E10BA3F:/DonationActivities_2 : 0:<?xml version="1.0" encoding="UTF-8"?> 
+1:<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="zh-tw"> 
+2:<meta name="author" content="Avaya Aura Orchestration Designer"/> 
+3:<meta name="runtime-version" content="07.01.08.04"/> 
+4:<meta name="runtimecommon-version" content="07.01.08.04"/> 
+5:<meta name="copyright" content="Copyright (c) 2002-2011, Avaya"/> 
+6:<form id="AN_991225"> 
+7:<property name="maxnbest" value="1"/> 
+8:<var name="nbest" expr="1"/> 
+9:<var name="AN_991225___value"/> 
+10:<var name="AN_991225___confidence"/> 
+11:<var name="AN_991225___utterance"/> 
+12:<var name="AN_991225___inputmode"/> 
+13:<var name="AN_991225___interpretation" expr="'undefined'"/> 
+14:<var name="AN_991225___noinputcount" expr="'0'"/> 
+15:<var name="AN_991225___nomatchcount" expr="'0'"/> 
+16:<var name="graminterp___input_ANI" expr="'undefined'"/> 
+17:<field name="AN_991225" modal="false"> 
+18:<prompt bargein="true" bargeintype="speech" timeout="8000ms"> 
+19:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0001.wav">:a</audio> 
+20:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0014.wav">:n</audio> 
+21:<audio src="http://localhost:8080/DonationActivities_2/data/Chinese/phrases/0009.wav">:i</audio> 
+22:</prompt> 
+23:<grammar  mode="dtmf" xml:lang="en-us" weight="1.0" src="builtin:dtmf/number" maxage="0"/> 
+24:<catch event="noinput" count="1"> 
+25:<assign name="_avayaNoinputCounter" expr="_avayaNoinputCounter + 1"/> 
+26:<reprompt/> 
+27:</catch> 
+28:<catch event="noinput" count="3"> 
+29:<assign name="_avayaNoinputCounter" expr="_avayaNoinputCounter + 1"/> 
+30:<assign name="AN_991225___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+31:<assign name="AN_991225___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+32:<submit next="AN_015333?___DDSESSIONID=320ED943BE6656F6C0B69A502E10BA3F%3A%2FDonationActivities_2" namelist="AN_991225___noinputcount AN_991225___nomatchcount" method="post" enctype="multipart/form-data"/> 
+33:</catch> 
+34:<catch event="nomatch" count="1"> 
+35:<assign name="_avayaNomatchCounter" expr="_avayaNomatchCounter + 1"/> 
+36:<reprompt/> 
+37:</catch> 
+38:<catch event="nomatch" count="3"> 
+39:<assign name="_avayaNomatchCounter" expr="_avayaNomatchCounter + 1"/> 
+40:<assign name="AN_991225___noinputcount" expr="try {_avayaNoinputCounter} catch (errMsg) {'0'}"/> 
+41:<assign name="AN_991225___nomatchcount" expr="try {_avayaNomatchCounter} catch (errMsg) {'0'}"/> 
+42:<submit next="AN_015333?___DDSESSIONID=320ED943BE6656F6C0B69A502E10BA3F%3A%2FDonationActivities_2" namelist="AN_991225___noinputcount AN_991225___nomatchcount" method="post" enctype="multipart/form-data"/> 
+43:</catch> 
+44:<filled> 
+45:<assign name="AN_991225___confidence" expr="getnbest('confidence', nbest)"/> 
+46:<assign name="AN_991225___utterance" expr="getnbest('utterance', nbest)"/> 
+47:<assign name="AN_991225___inputmode" expr="getnbest('inputmode', nbest)"/> 
+48:<assign name="AN_991225___interpretation" expr="getnbest('interpretation', nbest)"/> 
+49:<if cond="startswith(AN_991225___interpretation, 'undefined') == true "> 
+50:    <assign name="AN_991225___interpretation" expr="getnbest('interpretation', nbest)"/> 
+51:</if> 
+52:<assign name="AN_991225___value" expr="AN_991225___interpretation"/> 
+53:<assign name="AN_991225___noinputcount" expr="getnbestnmni(_avayaNoinputCounter, nbest)"/> 
+54:<assign name="AN_991225___nomatchcount" expr="getnbestnmni(_avayaNomatchCounter, nbest)"/> 
+55:</filled> 
+56:</field> 
+57:<block> 
+58:<submit next="assign_Variable?___DDSESSIONID=320ED943BE6656F6C0B69A502E10BA3F%3A%2FDonationActivities_2" namelist="AN_991225___value AN_991225___confidence AN_991225___utterance AN_991225___inputmode AN_991225___interpretation AN_991225___noinputcount AN_991225___nomatchcount" method="post"/> 
+59:</block> 
+60:</form> 
+61:</vxml> 
+62:
+
+23/08/2017 10:07:29:138  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : HTTP Session lost removing SCESession 006A8262365B1D58060E3ED90DBC5696
+23/08/2017 10:07:29:139  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : SCESession Removed
+23/08/2017 10:07:29:139 DEBUG - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : Removing 1 session stack frames.
+23/08/2017 10:07:29:139  INFO - 006A8262365B1D58060E3ED90DBC5696:/DonationActivities_2 : ** Popped Stack Frame [/DonationActivities_2]

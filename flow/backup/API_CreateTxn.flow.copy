@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AppFlowDoc>
+    <ApplicationFlow nextObjectId="79" package="flow.subflow.API_CreateTxn" version="5.0">
+        <FlowGraph>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
+                <Property name="Name" value="Begin"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubEntry" id="2" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="3" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Start"/>
+                                <Property name="LinkedNodeID" value="5"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="4" version="3.1">
+                <Property name="Name" value="next"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="3"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="847"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="5" version="3.1">
+                <Property name="Name" value="assign_API_CreateTxn"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="9"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="163"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="6" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.LocalVariables" id="7" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="LocalVariables"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="9" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="getCashSubscriberInfoByKey_Output"/>
+                                <Property name="destFieldId" value="billSubscrId"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="subscriberId"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="10" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="properties"/>
+                                <Property name="destFieldId" value="channelForCfg"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="ChannelForCFG"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="11" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="AIR_MENU_MASTER"/>
+                                <Property name="destFieldId" value="createAgentCd"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="IVRFLOW"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="12" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceConstant" value="IVR"/>
+                                <Property name="destFieldId" value="createChannel"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="13" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceConstant" value="IVR"/>
+                                <Property name="destFieldId" value="createSystem"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="14" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="AIR_MENU_MASTER"/>
+                                <Property name="destFieldId" value="FlowName"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="IVRFLOW"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="15" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="getContractByAccountIdOrSubscriberId_Output"/>
+                                <Property name="destFieldId" value="identifierNum"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="IdentificationNumber"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="16" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="getCashSubscriberInfoByKey_Output"/>
+                                <Property name="destFieldId" value="mobileGenerationCodel"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="generationCode"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="17" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="getCashSubscriberInfoByKey_Output"/>
+                                <Property name="destFieldId" value="paymentCategory"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="paymentCategory"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="18" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="getCashSubscriberInfoByKey_Output"/>
+                                <Property name="destFieldId" value="serviceProvider"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="serviceProvider"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="19" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                <Property name="destFieldId" value="transBpId"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="BPID"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="20" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="date"/>
+                                <Property name="destFieldId" value="txnCompleteDt"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="audio"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="21" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceConstant" value="101"/>
+                                <Property name="destFieldId" value="txnTpCd"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="22" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="AIR_MENU_MASTER"/>
+                                <Property name="destFieldId" value="updateAgentCd"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="IVRFLOW"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="23" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceConstant" value="1"/>
+                                <Property name="destFieldId" value="txnStatusCd"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="24" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceConstant" value="1"/>
+                                <Property name="destFieldId" value="changeItemCDType"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="25" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceConstant" value="2"/>
+                                <Property name="destFieldId" value="temporalTPCDType"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="destVarId" value="CreateTxn_Input"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="33" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="##CreateTX_Input_billSubscrId"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="CreateTxn_Input"/>
+                                <Property name="trace.fieldId" value="billSubscrId"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="34" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="##CreateTX_Input_createAgentCd"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="CreateTxn_Input"/>
+                                <Property name="trace.fieldId" value="createAgentCd"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="35" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="##CreateTX_Input_flowName"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="CreateTxn_Input"/>
+                                <Property name="trace.fieldId" value="FlowName"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="36" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="##CreateTX_Input_identifierNum"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="CreateTxn_Input"/>
+                                <Property name="trace.fieldId" value="identifierNum"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="37" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="##CreateTX_Input_mobileGenerationCodel"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="CreateTxn_Input"/>
+                                <Property name="trace.fieldId" value="mobileGenerationCodel"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="38" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="##CreateTX_Input_paymentCategory"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="CreateTxn_Input"/>
+                                <Property name="trace.fieldId" value="paymentCategory"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="39" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="##CreateTX_Input_serviceProvider"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="CreateTxn_Input"/>
+                                <Property name="trace.fieldId" value="serviceProvider"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="26" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Default"/>
+                                <Property name="LinkedNodeID" value="28"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Servlet" id="28" version="3.1">
+                <Property name="Name" value="excuteCreateTxnServlet"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="6"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="503"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Servlet" id="29" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="30" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Default"/>
+                                <Property name="LinkedNodeID" value="4"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <NodeConnection id="27" version="1.2">
+                <SourceNode id="1"/>
+                <TargetNode id="5"/>
+                <Property name="Connection.SourceObjectID" value="3"/>
+                <Property name="Connection.TargetObjectID" value="5"/>
+            </NodeConnection>
+            <NodeConnection id="31" version="1.2">
+                <SourceNode id="5"/>
+                <TargetNode id="28"/>
+                <Property name="Connection.SourceObjectID" value="26"/>
+                <Property name="Connection.TargetObjectID" value="28"/>
+            </NodeConnection>
+            <NodeConnection id="47" version="1.2">
+                <SourceNode id="28"/>
+                <TargetNode id="4"/>
+                <Property name="Connection.SourceObjectID" value="30"/>
+                <Property name="Connection.TargetObjectID" value="4"/>
+            </NodeConnection>
+        </FlowGraph>
+        <ProjectEventTypes/>
+    </ApplicationFlow>
+</AppFlowDoc>

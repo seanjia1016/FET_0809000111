@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DbOp version="1.0">
+    <Datasource name="AIRAP"/>
+    <DbObject name="STI.IVR_DONATE_TRAN" returntype="-1" selectall="false" type="table">
+        <DbObjectParam datatype="12" field="DONATE_CD" function="" name="DONATE_CD" sqltype="" tablename="IVR_DONATE_TRAN" type="" typename="VARCHAR" variable="G_IVR_DONATE_TRAN"/>
+        <DbObjectParam datatype="12" field="MSISDN" function="" name="MSISDN" sqltype="" tablename="IVR_DONATE_TRAN" type="" typename="VARCHAR" variable="G_IVR_DONATE_TRAN"/>
+        <DbObjectParam datatype="12" field="DONATE_DATE" function="" name="DONATE_DATE" sqltype="" tablename="IVR_DONATE_TRAN" type="" typename="VARCHAR" variable="G_IVR_DONATE_TRAN"/>
+        <DbObjectParam datatype="3" field="DONATE_AMT" function="" name="DONATE_AMT" sqltype="" tablename="IVR_DONATE_TRAN" type="" typename="DECIMAL" variable="G_IVR_DONATE_TRAN"/>
+        <DbObjectParam datatype="12" field="CYCLY_DATE" function="" name="CYCLY_DATE" sqltype="" tablename="IVR_DONATE_TRAN" type="" typename="VARCHAR" variable="G_IVR_DONATE_TRAN"/>
+        <DbObjectParam datatype="12" field="BUSINESS_ENTITY" function="" name="BUSINESS_ENTITY" sqltype="" tablename="IVR_DONATE_TRAN" type="" typename="VARCHAR" variable="G_IVR_DONATE_TRAN"/>
+    </DbObject>
+    <Operation name="Add"/>
+    <Clause>
+        <Where/>
+    </Clause>
+    <Clause>
+        <Order/>
+    </Clause>
+    <SQLQuery>INSERT INTO STI.IVR_DONATE_TRAN ( DONATE_CD, MSISDN, DONATE_DATE, DONATE_AMT, CYCLY_DATE, BUSINESS_ENTITY ) VALUES ( ?, ?, ?, ?, ?, ? )</SQLQuery>
+</DbOp>

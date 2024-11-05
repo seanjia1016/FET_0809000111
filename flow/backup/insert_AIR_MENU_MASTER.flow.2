@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AppFlowDoc>
+    <ApplicationFlow nextObjectId="148" package="flow.subflow.insert_AIR_MENU_MASTER" version="5.0">
+        <FlowGraph>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
+                <Property name="Name" value="Begin"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="8"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="17"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubEntry" id="2" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="3" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Start"/>
+                                <Property name="LinkedNodeID" value="4"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Servlet" id="21" version="3.1">
+                <Property name="Name" value="insert_AIR_MENU_MASTER"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="8"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="502"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Servlet" id="22" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="23" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Default"/>
+                                <Property name="LinkedNodeID" value="24"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="4" version="3.1">
+                <Property name="Name" value="insert_Master_Log"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="8"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="178"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="5" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.LocalVariables" id="6" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="LocalVariables"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="9" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="S_TID"/>
+                                <Property name="destFieldId" value="TID"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="TID"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="10" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                <Property name="destFieldId" value="ANI"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="ANI"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="11" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                <Property name="destFieldId" value="MSISDN"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="ANI"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="12" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="properties"/>
+                                <Property name="destFieldId" value="CHANNEL"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="Channel"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="13" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceConstant" value="^"/>
+                                <Property name="destFieldId" value="CHANNEL"/>
+                                <Property name="type" value="concatenate"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="14" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="cticallinfo"/>
+                                <Property name="destFieldId" value="CHANNEL"/>
+                                <Property name="type" value="concatenate"/>
+                                <Property name="sourceFieldId" value="stationextension"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="15" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="date"/>
+                                <Property name="destFieldId" value="MENU_DATE"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="audio"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="16" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="insert_StartTime"/>
+                                <Property name="destFieldId" value="START_TIME"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="17" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="time"/>
+                                <Property name="destFieldId" value="END_TIME"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="audio"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="19" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="cticallinfo"/>
+                                <Property name="destFieldId" value="IVR_UCID"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="ucid"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="34" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceConstant" value="N"/>
+                                <Property name="destFieldId" value="IN_ENTERPRISE"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="35" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceConstant" value="1"/>
+                                <Property name="destFieldId" value="LANG"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="20" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="## UCID ##"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="AIR_MENU_MASTER"/>
+                                <Property name="trace.fieldId" value="IVR_UCID"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="7" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Default"/>
+                                <Property name="LinkedNodeID" value="21"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="36" version="3.1">
+                <Property name="Name" value="insert_Menu_Log"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="50"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="50"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="37" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.LocalVariables" id="38" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="LocalVariables"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SwitchItem" id="39" version="1.2">
+                            <ItemProperties>
+                                <Property name="switch.var" value="AIR_MENU_MASTER"/>
+                                <Property name="switch.field" value="IVRFLOW"/>
+                            </ItemProperties>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SwitchCase" id="53" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="case.val" value="380"/>
+                                    </ItemProperties>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="54" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_380_MENU_CELL_NUM"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_380_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="ANI"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="55" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="properties"/>
+                                                <Property name="destFieldId" value="AIR_380_MENU_Node_ID"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_380_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="Channel"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="56" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="cticallinfo"/>
+                                                <Property name="destFieldId" value="AIR_380_MENU_CHANNEL"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_380_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="stationextension"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="57" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="^"/>
+                                                <Property name="destFieldId" value="AIR_380_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="destVarId" value="AIR_380_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="58" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="AIR_380_MENU_TBL"/>
+                                                <Property name="destFieldId" value="AIR_380_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="destVarId" value="AIR_380_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="AIR_380_MENU_CHANNEL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="59" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="destFieldId" value="AIR_380_MENU_INDX"/>
+                                                <Property name="op2Constant" value="1"/>
+                                                <Property name="op1VarId" value="AIR_380_MENU_TBL"/>
+                                                <Property name="op1FieldId" value="AIR_380_MENU_INDX"/>
+                                                <Property name="type" value="add"/>
+                                                <Property name="destVarId" value="AIR_380_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="60" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="date"/>
+                                                <Property name="destFieldId" value="AIR_380_MENU_DATE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_380_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="61" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="trace.text" value="### 380_Menu_Date ###"/>
+                                                <Property name="trace.priority" value="info"/>
+                                                <Property name="trace.varId" value="AIR_380_MENU_TBL"/>
+                                                <Property name="trace.fieldId" value="AIR_380_MENU_DATE"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="62" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="insert_StartTime"/>
+                                                <Property name="destFieldId" value="AIR_380_MENU_STARTTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_380_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="63" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="time"/>
+                                                <Property name="destFieldId" value="AIR_380_MENU_ENDTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_380_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="64" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_380_MENU_IN_VDN"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_380_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="DNIS"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="65" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="N"/>
+                                                <Property name="destFieldId" value="AIR_380_MENU_IN_ENTERPRISE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_380_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="66" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="trace.text" value="### 380_SQL ###"/>
+                                                <Property name="trace.priority" value="info"/>
+                                                <Property name="trace.varId" value="S_DB_API"/>
+                                                <Property name="trace.fieldId" value="SQL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="67" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="trace.text" value="### 380_Table ###"/>
+                                                <Property name="trace.priority" value="info"/>
+                                                <Property name="trace.varId" value="S_DB_API"/>
+                                                <Property name="trace.fieldId" value="Table"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                    </ChildItems>
+                                </FlowItem>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SwitchCase" id="40" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="case.val" value="55135"/>
+                                    </ItemProperties>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="41" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_55135_MENU_CELL_NUM"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="ANI"/>
+                                                <Property name="destVarId" value="AIR_55135_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="42" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="properties"/>
+                                                <Property name="destFieldId" value="AIR_55135_MENU_Node_ID"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="Channel"/>
+                                                <Property name="destVarId" value="AIR_55135_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="43" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="cticallinfo"/>
+                                                <Property name="destFieldId" value="AIR_55135_MENU_CHANNEL"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="stationextension"/>
+                                                <Property name="destVarId" value="AIR_55135_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="44" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="^"/>
+                                                <Property name="destFieldId" value="AIR_55135_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="destVarId" value="AIR_55135_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="45" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="AIR_55135_MENU_TBL"/>
+                                                <Property name="destFieldId" value="AIR_55135_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="sourceFieldId" value="AIR_55135_MENU_CHANNEL"/>
+                                                <Property name="destVarId" value="AIR_55135_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="46" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="destFieldId" value="AIR_55135_MENU_INDX"/>
+                                                <Property name="op2Constant" value="1"/>
+                                                <Property name="op1FieldId" value="AIR_55135_MENU_INDX"/>
+                                                <Property name="op1VarId" value="AIR_55135_MENU_TBL"/>
+                                                <Property name="type" value="add"/>
+                                                <Property name="destVarId" value="AIR_55135_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="47" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="date"/>
+                                                <Property name="destFieldId" value="AIR_55135_MENU_DATE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                                <Property name="destVarId" value="AIR_55135_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="48" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="trace.text" value="### 55135_Menu_Date ###"/>
+                                                <Property name="trace.priority" value="info"/>
+                                                <Property name="trace.varId" value="AIR_55135_MENU_TBL"/>
+                                                <Property name="trace.fieldId" value="AIR_55135_MENU_DATE"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="49" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="insert_StartTime"/>
+                                                <Property name="destFieldId" value="AIR_55135_MENU_STARTTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_55135_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="50" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="time"/>
+                                                <Property name="destFieldId" value="AIR_55135_MENU_ENDTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                                <Property name="destVarId" value="AIR_55135_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="51" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_55135_MENU_IN_VDN"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="DNIS"/>
+                                                <Property name="destVarId" value="AIR_55135_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="52" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="N"/>
+                                                <Property name="destFieldId" value="AIR_55135_MENU_IN_ENTERPRISE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_55135_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                    </ChildItems>
+                                </FlowItem>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SwitchCase" id="94" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="case.val" value="591933"/>
+                                    </ItemProperties>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="95" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_591933_MENU_CELL_NUM"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591933_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="ANI"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="96" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="properties"/>
+                                                <Property name="destFieldId" value="AIR_591933_MENU_Node_ID"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591933_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="Channel"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="97" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="cticallinfo"/>
+                                                <Property name="destFieldId" value="AIR_591933_MENU_CHANNEL"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591933_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="stationextension"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="98" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="^"/>
+                                                <Property name="destFieldId" value="AIR_591933_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="destVarId" value="AIR_591933_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="99" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="AIR_591933_MENU_TBL"/>
+                                                <Property name="destFieldId" value="AIR_591933_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="destVarId" value="AIR_591933_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="AIR_591933_MENU_CHANNEL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="100" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="destFieldId" value="AIR_591933_MENU_INDX"/>
+                                                <Property name="op2Constant" value="1"/>
+                                                <Property name="op1VarId" value="AIR_591933_MENU_TBL"/>
+                                                <Property name="op1FieldId" value="AIR_591933_MENU_INDX"/>
+                                                <Property name="type" value="add"/>
+                                                <Property name="destVarId" value="AIR_591933_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="101" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="date"/>
+                                                <Property name="destFieldId" value="AIR_591933_MENU_DATE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591933_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="102" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="trace.text" value="### 591933_Menu_Date ###"/>
+                                                <Property name="trace.priority" value="info"/>
+                                                <Property name="trace.varId" value="AIR_591933_MENU_TBL"/>
+                                                <Property name="trace.fieldId" value="AIR_591933_MENU_DATE"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="103" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="insert_StartTime"/>
+                                                <Property name="destFieldId" value="AIR_591933_MENU_STARTTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591933_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="104" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="time"/>
+                                                <Property name="destFieldId" value="AIR_591933_MENU_ENDTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591933_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="105" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_591933_MENU_IN_VDN"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591933_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="DNIS"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="106" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="N"/>
+                                                <Property name="destFieldId" value="AIR_591933_MENU_IN_ENTERPRISE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591933_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                    </ChildItems>
+                                </FlowItem>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SwitchCase" id="68" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="case.val" value="591939"/>
+                                    </ItemProperties>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="69" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_591939_MENU_CELL_NUM"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591939_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="ANI"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="70" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="properties"/>
+                                                <Property name="destFieldId" value="AIR_591939_MENU_Node_ID"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="Channel"/>
+                                                <Property name="destVarId" value="AIR_591939_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="71" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="cticallinfo"/>
+                                                <Property name="destFieldId" value="AIR_591939_MENU_CHANNEL"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="stationextension"/>
+                                                <Property name="destVarId" value="AIR_591939_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="72" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="^"/>
+                                                <Property name="destFieldId" value="AIR_591939_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="destVarId" value="AIR_591939_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="73" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="AIR_591939_MENU_TBL"/>
+                                                <Property name="destFieldId" value="AIR_591939_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="sourceFieldId" value="AIR_591939_MENU_CHANNEL"/>
+                                                <Property name="destVarId" value="AIR_591939_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="74" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="destFieldId" value="AIR_591939_MENU_INDX"/>
+                                                <Property name="op2Constant" value="1"/>
+                                                <Property name="op1FieldId" value="AIR_591939_MENU_INDX"/>
+                                                <Property name="op1VarId" value="AIR_591939_MENU_TBL"/>
+                                                <Property name="type" value="add"/>
+                                                <Property name="destVarId" value="AIR_591939_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="75" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="date"/>
+                                                <Property name="destFieldId" value="AIR_591939_MENU_DATE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                                <Property name="destVarId" value="AIR_591939_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="76" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="trace.priority" value="info"/>
+                                                <Property name="trace.varId" value="AIR_591939_MENU_TBL"/>
+                                                <Property name="trace.fieldId" value="AIR_591939_MENU_DATE"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="77" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="insert_StartTime"/>
+                                                <Property name="destFieldId" value="AIR_591939_MENU_STARTTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591939_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="78" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="time"/>
+                                                <Property name="destFieldId" value="AIR_591939_MENU_ENDTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                                <Property name="destVarId" value="AIR_591939_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="79" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_591939_MENU_IN_VDN"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="DNIS"/>
+                                                <Property name="destVarId" value="AIR_591939_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="80" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="N"/>
+                                                <Property name="destFieldId" value="AIR_591939_MENU_IN_ENTERPRISE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591939_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                    </ChildItems>
+                                </FlowItem>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SwitchCase" id="81" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="case.val" value="591980"/>
+                                    </ItemProperties>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="82" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_591980_MENU_CELL_NUM"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591980_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="ANI"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="83" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="properties"/>
+                                                <Property name="destFieldId" value="AIR_591980_MENU_Node_ID"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591980_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="Channel"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="84" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="cticallinfo"/>
+                                                <Property name="destFieldId" value="AIR_591980_MENU_CHANNEL"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591980_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="stationextension"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="85" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="^"/>
+                                                <Property name="destFieldId" value="AIR_591980_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="destVarId" value="AIR_591980_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="86" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="AIR_591980_MENU_TBL"/>
+                                                <Property name="destFieldId" value="AIR_591980_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="destVarId" value="AIR_591980_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="AIR_591980_MENU_CHANNEL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="87" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="destFieldId" value="AIR_591980_MENU_INDX"/>
+                                                <Property name="op2Constant" value="1"/>
+                                                <Property name="op1VarId" value="AIR_591980_MENU_TBL"/>
+                                                <Property name="op1FieldId" value="AIR_591980_MENU_INDX"/>
+                                                <Property name="type" value="add"/>
+                                                <Property name="destVarId" value="AIR_591980_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="88" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="date"/>
+                                                <Property name="destFieldId" value="AIR_591980_MENU_DATE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591980_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="89" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="trace.text" value="### 591980_Menu_Date ###"/>
+                                                <Property name="trace.priority" value="info"/>
+                                                <Property name="trace.varId" value="AIR_591980_MENU_TBL"/>
+                                                <Property name="trace.fieldId" value="AIR_591980_MENU_DATE"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="90" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="insert_StartTime"/>
+                                                <Property name="destFieldId" value="AIR_591980_MENU_STARTTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591980_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="91" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="time"/>
+                                                <Property name="destFieldId" value="AIR_591980_MENU_ENDTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591980_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="92" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_591980_MENU_IN_VDN"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591980_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="DNIS"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="93" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="N"/>
+                                                <Property name="destFieldId" value="AIR_591980_MENU_IN_ENTERPRISE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591980_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                    </ChildItems>
+                                </FlowItem>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SwitchCase" id="107" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="case.val" value="591993"/>
+                                    </ItemProperties>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="108" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_591993_MENU_CELL_NUM"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="ANI"/>
+                                                <Property name="destVarId" value="AIR_591993_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="109" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="properties"/>
+                                                <Property name="destFieldId" value="AIR_591993_MENU_Node_ID"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="Channel"/>
+                                                <Property name="destVarId" value="AIR_591993_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="110" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="cticallinfo"/>
+                                                <Property name="destFieldId" value="AIR_591993_MENU_CHANNEL"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="stationextension"/>
+                                                <Property name="destVarId" value="AIR_591993_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="111" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="^"/>
+                                                <Property name="destFieldId" value="AIR_591993_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="destVarId" value="AIR_591993_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="112" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="AIR_591993_MENU_TBL"/>
+                                                <Property name="destFieldId" value="AIR_591993_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="sourceFieldId" value="AIR_591993_MENU_CHANNEL"/>
+                                                <Property name="destVarId" value="AIR_591993_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="113" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="destFieldId" value="AIR_591993_MENU_INDX"/>
+                                                <Property name="op2Constant" value="1"/>
+                                                <Property name="op1FieldId" value="AIR_591993_MENU_INDX"/>
+                                                <Property name="op1VarId" value="AIR_591993_MENU_TBL"/>
+                                                <Property name="type" value="add"/>
+                                                <Property name="destVarId" value="AIR_591993_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="114" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="date"/>
+                                                <Property name="destFieldId" value="AIR_591993_MENU_DATE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                                <Property name="destVarId" value="AIR_591993_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="115" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="trace.text" value="### 591933_Menu_Date ###"/>
+                                                <Property name="trace.priority" value="info"/>
+                                                <Property name="trace.varId" value="AIR_591980_MENU_TBL"/>
+                                                <Property name="trace.fieldId" value="AIR_591980_MENU_DATE"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="116" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="insert_StartTime"/>
+                                                <Property name="destFieldId" value="AIR_591993_MENU_STARTTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591993_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="117" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="time"/>
+                                                <Property name="destFieldId" value="AIR_591993_MENU_ENDTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                                <Property name="destVarId" value="AIR_591993_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="118" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_591993_MENU_IN_VDN"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="sourceFieldId" value="DNIS"/>
+                                                <Property name="destVarId" value="AIR_591993_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="119" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="N"/>
+                                                <Property name="destFieldId" value="AIR_591993_MENU_IN_ENTERPRISE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591993_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                    </ChildItems>
+                                </FlowItem>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SwitchCase" id="123" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="case.val" value="591999"/>
+                                    </ItemProperties>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="124" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_591999_MENU_CELL_NUM"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591999_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="ANI"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="125" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="properties"/>
+                                                <Property name="destFieldId" value="AIR_591999_MENU_Node_ID"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591999_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="Channel"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="126" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="cticallinfo"/>
+                                                <Property name="destFieldId" value="AIR_591999_MENU_CHANNEL"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591999_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="stationextension"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="127" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="^"/>
+                                                <Property name="destFieldId" value="AIR_591999_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="destVarId" value="AIR_591999_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="128" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="AIR_591999_MENU_TBL"/>
+                                                <Property name="destFieldId" value="AIR_591999_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="destVarId" value="AIR_591999_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="AIR_591999_MENU_CHANNEL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="129" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="destFieldId" value="AIR_591999_MENU_INDX"/>
+                                                <Property name="op2Constant" value="1"/>
+                                                <Property name="op1VarId" value="AIR_591999_MENU_TBL"/>
+                                                <Property name="op1FieldId" value="AIR_591999_MENU_INDX"/>
+                                                <Property name="type" value="add"/>
+                                                <Property name="destVarId" value="AIR_591999_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="130" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="date"/>
+                                                <Property name="destFieldId" value="AIR_591999_MENU_DATE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591999_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="131" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="trace.text" value="### 591999_Menu_Date ###"/>
+                                                <Property name="trace.priority" value="info"/>
+                                                <Property name="trace.varId" value="AIR_591999_MENU_TBL"/>
+                                                <Property name="trace.fieldId" value="AIR_591999_MENU_DATE"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="132" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="insert_StartTime"/>
+                                                <Property name="destFieldId" value="AIR_591999_MENU_STARTTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591999_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="133" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="time"/>
+                                                <Property name="destFieldId" value="AIR_591999_MENU_ENDTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591999_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="134" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_591999_MENU_IN_VDN"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591999_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="DNIS"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="135" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="N"/>
+                                                <Property name="destFieldId" value="AIR_591999_MENU_IN_ENTERPRISE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591999_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                    </ChildItems>
+                                </FlowItem>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SwitchDefault" id="120" version="1.2">
+                                    <ItemProperties/>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="121" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="Name" value="Default"/>
+                                                <Property name="LinkedNodeID" value="-1"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                    </ChildItems>
+                                </FlowItem>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SwitchCase" id="136" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="case.val" value="591919"/>
+                                    </ItemProperties>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="137" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_591919_MENU_CELL_NUM"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591919_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="ANI"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="138" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="properties"/>
+                                                <Property name="destFieldId" value="AIR_591919_MENU_Node_ID"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591919_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="Channel"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="139" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="cticallinfo"/>
+                                                <Property name="destFieldId" value="AIR_591919_MENU_CHANNEL"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591919_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="stationextension"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="140" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="^"/>
+                                                <Property name="destFieldId" value="AIR_591919_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="destVarId" value="AIR_591919_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="141" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="AIR_591919_MENU_TBL"/>
+                                                <Property name="destFieldId" value="AIR_591919_MENU_Node_ID"/>
+                                                <Property name="type" value="concatenate"/>
+                                                <Property name="destVarId" value="AIR_591919_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="AIR_591919_MENU_CHANNEL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="142" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="destFieldId" value="AIR_591919_MENU_INDX"/>
+                                                <Property name="op2Constant" value="1"/>
+                                                <Property name="op1VarId" value="AIR_591919_MENU_TBL"/>
+                                                <Property name="op1FieldId" value="AIR_591919_MENU_INDX"/>
+                                                <Property name="type" value="add"/>
+                                                <Property name="destVarId" value="AIR_591919_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="143" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="date"/>
+                                                <Property name="destFieldId" value="AIR_591919_MENU_DATE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591919_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="144" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="trace.text" value="### 591919_Menu_Date ###"/>
+                                                <Property name="trace.priority" value="info"/>
+                                                <Property name="trace.varId" value="AIR_591919_MENU_TBL"/>
+                                                <Property name="trace.fieldId" value="AIR_591919_MENU_DATE"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="145" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="insert_StartTime"/>
+                                                <Property name="destFieldId" value="AIR_591919_MENU_STARTTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591919_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="146" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="time"/>
+                                                <Property name="destFieldId" value="AIR_591919_MENU_ENDTIME"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591919_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="audio"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="147" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                                <Property name="destFieldId" value="AIR_591919_MENU_IN_VDN"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591919_MENU_TBL"/>
+                                                <Property name="sourceFieldId" value="DNIS"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="148" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="N"/>
+                                                <Property name="destFieldId" value="AIR_591919_MENU_IN_ENTERPRISE"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="AIR_591919_MENU_TBL"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                    </ChildItems>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="122" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Next"/>
+                                <Property name="LinkedNodeID" value="-1"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubFlowRef" id="24" version="3.1">
+                <Property name="Name" value="CF_insetDBAPI"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="8"/>
+                <Property name="flowID" value="CF_insetDBAPI"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="871"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubFlowRef" id="25" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubExitPoint" id="31" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="next"/>
+                                <Property name="LinkedNodeID" value="28"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="28" version="3.1">
+                <Property name="Name" value="End"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="7"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1119"/>
+            </FlowNode>
+            <NodeConnection id="8" version="1.2">
+                <SourceNode id="1"/>
+                <TargetNode id="4"/>
+                <Property name="Connection.SourceObjectID" value="3"/>
+                <Property name="Connection.TargetObjectID" value="4"/>
+            </NodeConnection>
+            <NodeConnection id="27" version="1.2">
+                <SourceNode id="21"/>
+                <TargetNode id="24"/>
+                <Property name="Connection.SourceObjectID" value="23"/>
+                <Property name="Connection.TargetObjectID" value="24"/>
+            </NodeConnection>
+            <NodeConnection id="30" version="1.2">
+                <SourceNode id="4"/>
+                <TargetNode id="21"/>
+                <Property name="Connection.SourceObjectID" value="7"/>
+                <Property name="Connection.TargetObjectID" value="21"/>
+            </NodeConnection>
+            <NodeConnection id="32" version="1.2">
+                <SourceNode id="24"/>
+                <TargetNode id="28"/>
+                <Property name="Connection.SourceObjectID" value="31"/>
+                <Property name="Connection.TargetObjectID" value="28"/>
+            </NodeConnection>
+        </FlowGraph>
+        <ProjectEventTypes/>
+    </ApplicationFlow>
+</AppFlowDoc>

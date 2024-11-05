@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AppFlowDoc>
+    <ApplicationFlow nextObjectId="20" package="flow.subflow.insert_Master_Log" version="5.0">
+        <FlowGraph>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
+                <Property name="Name" value="Begin"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubEntry" id="2" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="3" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Start"/>
+                                <Property name="LinkedNodeID" value="4"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="4" version="3.1">
+                <Property name="Name" value="insert_Master_Log"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="8"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="178"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="5" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.LocalVariables" id="6" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="LocalVariables"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="9" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="S_TID"/>
+                                <Property name="destFieldId" value="TID"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="TID"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="10" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                <Property name="destFieldId" value="ANI"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="ANI"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="11" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="S_USERDATA"/>
+                                <Property name="destFieldId" value="MSISDN"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="ANI"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="12" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="properties"/>
+                                <Property name="destFieldId" value="CHANNEL"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="Channel"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="13" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceConstant" value="^"/>
+                                <Property name="destFieldId" value="CHANNEL"/>
+                                <Property name="type" value="concatenate"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="14" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="cticallinfo"/>
+                                <Property name="destFieldId" value="CHANNEL"/>
+                                <Property name="type" value="concatenate"/>
+                                <Property name="sourceFieldId" value="stationextension"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="15" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="date"/>
+                                <Property name="destFieldId" value="MENU_DATE"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="audio"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="16" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="insert_StartTime"/>
+                                <Property name="destFieldId" value="START_TIME"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="17" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="time"/>
+                                <Property name="destFieldId" value="END_TIME"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="audio"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="18" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceConstant" value="Donation"/>
+                                <Property name="destFieldId" value="IVRFLOW"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="19" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="cticallinfo"/>
+                                <Property name="destFieldId" value="IVR_UCID"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="ucid"/>
+                                <Property name="destVarId" value="AIR_MENU_MASTER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="20" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="## UCID ##"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="AIR_MENU_MASTER"/>
+                                <Property name="trace.fieldId" value="IVR_UCID"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="7" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Default"/>
+                                <Property name="LinkedNodeID" value="-1"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <NodeConnection id="8" version="1.2">
+                <SourceNode id="1"/>
+                <TargetNode id="4"/>
+                <Property name="Connection.SourceObjectID" value="3"/>
+                <Property name="Connection.TargetObjectID" value="4"/>
+            </NodeConnection>
+        </FlowGraph>
+        <ProjectEventTypes/>
+    </ApplicationFlow>
+</AppFlowDoc>

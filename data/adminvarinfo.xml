@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Pagelet>
+    <DataPagelet>
+        <PageletHeader>
+            <PageletName>FET_Donation</PageletName>
+            <PageletDescription>FET_Donation</PageletDescription>
+            <PageletVersion>1.0</PageletVersion>
+        </PageletHeader>
+        <PageletBody>
+            <PageletFields>
+                <PageletField>
+                    <FieldOrderID>999</FieldOrderID>
+                    <FieldName>DOMAINID:ID</FieldName>
+                    <FieldDisplayName/>
+                    <FieldType>String</FieldType>
+                    <FieldValidation>
+                        <StringValidation>
+                            <MinLength>0</MinLength>
+                            <MaxLength>2147483647</MaxLength>
+                        </StringValidation>
+                    </FieldValidation>
+                    <FieldDefaultValue/>
+                    <IsFieldTemplatable>true</IsFieldTemplatable>
+                    <IsFieldMandatory>false</IsFieldMandatory>
+                    <FieldDescription/>
+                    <FieldAccessLevel>1</FieldAccessLevel>
+                    <FieldScope>Local</FieldScope>
+                </PageletField>
+            </PageletFields>
+        </PageletBody>
+    </DataPagelet>
+</Pagelet>

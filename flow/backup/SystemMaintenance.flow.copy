@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AppFlowDoc>
+    <ApplicationFlow nextObjectId="141" package="flow.subflow.SystemMaintenance" version="5.0">
+        <FlowGraph>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="103" version="3.1">
+                <Property name="ReferencedNodeID" value="31"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="-6"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="971"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
+                <Property name="Name" value="Begin"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubEntry" id="2" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="3" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Start"/>
+                                <Property name="LinkedNodeID" value="42"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Label" id="32" version="3.1">
+                <Property name="Name" value="Next"/>
+                <Property name="FlowNodeEditPart.Width" value="71"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="108"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="119"/>
+                <Property name="FlowNodeEditPart.Height" value="37"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Label" id="19" version="3.1">
+                <Property name="Name" value="掛斷"/>
+                <Property name="FlowNodeEditPart.Width" value="64"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="106"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="11"/>
+                <Property name="FlowNodeEditPart.Height" value="37"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="18" version="3.1">
+                <Property name="Name" value="End"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="171"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="23"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="4" version="3.1">
+                <Property name="Name" value="SystemMaintenance"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="11"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="500"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="5" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.LocalVariables" id="6" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="LocalVariables"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="48" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="time"/>
+                                <Property name="destFieldId" value="Operation_time_Now"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="destVarId" value="S_OD"/>
+                                <Property name="sourceFieldId" value="audio"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="49" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="date"/>
+                                <Property name="destFieldId" value="Operation_date_Start"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="sourceFieldId" value="audio"/>
+                                <Property name="destVarId" value="S_OD"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="106" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="###operation_finishDate_systemMaintenance"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="IVR_OPERATION_CTRL"/>
+                                <Property name="trace.fieldId" value="CTRL_FINISH_DATE"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="107" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="###operation_finishTime_systemMaintenance"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="IVR_OPERATION_CTRL"/>
+                                <Property name="trace.fieldId" value="CTRL_FINISH_TIME"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="108" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="###operation_startDate_systemMaintenance"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="IVR_OPERATION_CTRL"/>
+                                <Property name="trace.fieldId" value="CTRL_START_DATE"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="109" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="###operation_startTime_systemMaintenance"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="IVR_OPERATION_CTRL"/>
+                                <Property name="trace.fieldId" value="CTRL_START_TIME"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="112" version="1.2">
+                            <ItemProperties>
+                                <Property name="Operator" value="IsEmpty"/>
+                                <Property name="LeftOperandID" value="IVR_OPERATION_CTRL"/>
+                                <Property name="LeftOperandFieldID" value="CTRL_START_TIME"/>
+                            </ItemProperties>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="110" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="sourceConstant" value="235500"/>
+                                        <Property name="destFieldId" value="CTRL_START_TIME"/>
+                                        <Property name="type" value="assign"/>
+                                        <Property name="destVarId" value="IVR_OPERATION_CTRL"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="113" version="1.2">
+                            <ItemProperties>
+                                <Property name="Operator" value="IsEmpty"/>
+                                <Property name="LeftOperandID" value="IVR_OPERATION_CTRL"/>
+                                <Property name="LeftOperandFieldID" value="CTRL_FINISH_TIME"/>
+                            </ItemProperties>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="111" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="sourceConstant" value="003000"/>
+                                        <Property name="destFieldId" value="CTRL_FINISH_TIME"/>
+                                        <Property name="type" value="assign"/>
+                                        <Property name="destVarId" value="IVR_OPERATION_CTRL"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="114" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="###SystemCheck_Operation_time_now"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="S_OD"/>
+                                <Property name="trace.fieldId" value="Operation_time_Now"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="115" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="###SystemCheck_Operation_date_Start"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="S_OD"/>
+                                <Property name="trace.fieldId" value="Operation_date_Start"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="129" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="###SystemCheck_Operation_count"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="IVR_OPERATION_CTRL"/>
+                                <Property name="trace.fieldId" value="count"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="50" version="1.2">
+                            <ItemProperties>
+                                <Property name="RightConstOperand" value="1"/>
+                                <Property name="Operator" value="&lt;"/>
+                                <Property name="LeftOperandID" value="IVR_OPERATION_CTRL"/>
+                                <Property name="LeftOperandFieldID" value="count"/>
+                            </ItemProperties>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="137" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="Name" value="OFF"/>
+                                        <Property name="LinkedNodeID" value="13"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="122" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="S_OD"/>
+                                <Property name="destFieldId" value="Operation_date_Start"/>
+                                <Property name="type" value="concatenate"/>
+                                <Property name="destVarId" value="S_OD"/>
+                                <Property name="sourceFieldId" value="Operation_time_Now"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="130" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="IVR_OPERATION_CTRL"/>
+                                <Property name="destFieldId" value="CTRL_START_DATE"/>
+                                <Property name="type" value="concatenate"/>
+                                <Property name="destVarId" value="IVR_OPERATION_CTRL"/>
+                                <Property name="sourceFieldId" value="CTRL_START_TIME"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="123" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="IVR_OPERATION_CTRL"/>
+                                <Property name="destFieldId" value="CTRL_FINISH_DATE"/>
+                                <Property name="type" value="concatenate"/>
+                                <Property name="destVarId" value="IVR_OPERATION_CTRL"/>
+                                <Property name="sourceFieldId" value="CTRL_FINISH_TIME"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="127" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="###S_OD Operation_date+Time_Start"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="S_OD"/>
+                                <Property name="trace.fieldId" value="Operation_date_Start"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="128" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="###System operation_fisish date+time"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="IVR_OPERATION_CTRL"/>
+                                <Property name="trace.fieldId" value="CTRL_FINISH_DATE"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="131" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="###System operation_start date+time"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="IVR_OPERATION_CTRL"/>
+                                <Property name="trace.fieldId" value="CTRL_START_DATE"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="132" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="###System Operation Flag"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="IVR_OPERATION_CTRL"/>
+                                <Property name="trace.fieldId" value="OPERATION_CTRL_FLAG"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="125" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="###pass1"/>
+                                <Property name="trace.priority" value="info"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="51" version="1.2">
+                            <ItemProperties/>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanOperator" id="52" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="Operator" value="AND"/>
+                                    </ItemProperties>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="53" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="RightConstOperand" value="ON"/>
+                                                <Property name="Operator" value="Equal"/>
+                                                <Property name="LeftOperandID" value="IVR_OPERATION_CTRL"/>
+                                                <Property name="LeftOperandFieldID" value="OPERATION_CTRL_FLAG"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanOperator" id="141" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="Operator" value="OR"/>
+                                            </ItemProperties>
+                                            <ChildItems>
+                                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="133" version="1.2">
+                                                    <ItemProperties>
+                                                        <Property name="RightVarOperandID" value="IVR_OPERATION_CTRL"/>
+                                                        <Property name="Operator" value="&lt;"/>
+                                                        <Property name="RightVarOperandFieldID" value="CTRL_START_DATE"/>
+                                                        <Property name="LeftOperandID" value="S_OD"/>
+                                                        <Property name="LeftOperandFieldID" value="Operation_date_Start"/>
+                                                    </ItemProperties>
+                                                    <ChildItems/>
+                                                </FlowItem>
+                                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="134" version="1.2">
+                                                    <ItemProperties>
+                                                        <Property name="RightVarOperandID" value="IVR_OPERATION_CTRL"/>
+                                                        <Property name="Operator" value="&gt;"/>
+                                                        <Property name="RightVarOperandFieldID" value="CTRL_FINISH_DATE"/>
+                                                        <Property name="LeftOperandID" value="S_OD"/>
+                                                        <Property name="LeftOperandFieldID" value="Operation_date_Start"/>
+                                                    </ItemProperties>
+                                                    <ChildItems/>
+                                                </FlowItem>
+                                            </ChildItems>
+                                        </FlowItem>
+                                    </ChildItems>
+                                </FlowItem>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="135" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="Name" value="ON"/>
+                                        <Property name="LinkedNodeID" value="103"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.ElseCondition" id="59" version="1.2">
+                            <ItemProperties/>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="60" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="Name" value="Operation_time=OFF"/>
+                                        <Property name="LinkedNodeID" value="13"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="20" version="3.1">
+                <Property name="ReferencedNodeID" value="18"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="81"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1220"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubFlowRef" id="42" version="3.1">
+                <Property name="Name" value="select_IVR_Operation_CTRL"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="10"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="176"/>
+                <Property name="flowID" value="select_IVR_Operation_CTRL"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubFlowRef" id="43" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubExitPoint" id="45" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="next"/>
+                                <Property name="LinkedNodeID" value="4"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="13" version="3.1">
+                <Property name="Name" value="AN_888120"/>
+                <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="82"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1018"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="14" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="15" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Voice_888120"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Submit" id="16" version="1.2">
+                            <ItemProperties>
+                                <Property name="LinkedNodeID" value="20"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="31" version="3.1">
+                <Property name="Name" value="Pass"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="169"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="133"/>
+            </FlowNode>
+            <NodeConnection id="21" version="1.2">
+                <SourceNode id="13"/>
+                <TargetNode id="20"/>
+                <Property name="Connection.SourceObjectID" value="16"/>
+                <Property name="Connection.TargetObjectID" value="20"/>
+            </NodeConnection>
+            <NodeConnection id="46" version="1.2">
+                <SourceNode id="1"/>
+                <TargetNode id="42"/>
+                <Property name="Connection.SourceObjectID" value="3"/>
+                <Property name="Connection.TargetObjectID" value="42"/>
+            </NodeConnection>
+            <NodeConnection id="47" version="1.2">
+                <SourceNode id="42"/>
+                <TargetNode id="4"/>
+                <Property name="Connection.SourceObjectID" value="45"/>
+                <Property name="Connection.TargetObjectID" value="4"/>
+            </NodeConnection>
+            <NodeConnection id="117" version="1.2">
+                <SourceNode id="4"/>
+                <TargetNode id="13"/>
+                <Property name="Connection.SourceObjectID" value="60"/>
+                <Property name="Connection.TargetObjectID" value="13"/>
+            </NodeConnection>
+            <NodeConnection id="136" version="1.2">
+                <SourceNode id="4"/>
+                <TargetNode id="103"/>
+                <Property name="Connection.SourceObjectID" value="135"/>
+                <Property name="Connection.TargetObjectID" value="103"/>
+            </NodeConnection>
+            <NodeConnection id="138" version="1.2">
+                <SourceNode id="4"/>
+                <TargetNode id="13"/>
+                <Property name="Connection.SourceObjectID" value="137"/>
+                <Property name="Connection.TargetObjectID" value="13"/>
+                <Bendpoint x="942" y="111"/>
+            </NodeConnection>
+        </FlowGraph>
+        <ProjectEventTypes/>
+    </ApplicationFlow>
+</AppFlowDoc>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsop version="1.0">
+    <servicename value="CIE_RecordService"/>
+    <endpoint value="CIE_RecordService_1508240783876_WS_ENDPOINT"/>
+    <authentication value="CIE_RecordService_1508240783876_WS_AUTHENTICATION"/>
+    <username value="CIE_RecordService_1508240783876_WS_USERNAME"/>
+    <password value="CIE_RecordService_1508240783876_WS_PASSWORD"/>
+    <_UserNameTokenTimeout value="CIE_RecordService_1508240783876_UserNameTokenTimeout"/>
+    <sendpasswordinclear value="CIE_RecordService_1508240783876_WS_SEND_PASSWORD_IN_CLEAR"/>
+    <packagename value="connectivity.ws.beans"/>
+    <targetns value="http://servicerun.webservice.fet/"/>
+    <operation value="CIErecord"/>
+    <style value="document"/>
+    <use value="literal"/>
+    <soapaction value=""/>
+    <soapversion value="soap11"/>
+    <inparam isarray="false" isbean="true" paramname="parameters" paramns="http://servicerun.webservice.fet/" paramtype="CIErecord" paramtypens="http://servicerun.webservice.fet/" paramvariable="CIE_RecordService_Input" usejavaobjects="false">
+        <field value="FlowName"/>
+        <field value="sessionId"/>
+        <field value="BpId"/>
+        <field value="msisdnNumber"/>
+        <field value="subscriber"/>
+        <field value="transPath"/>
+        <field value="cie_cieId"/>
+        <field value="cie_subscriberContactId"/>
+        <field value="cie_cieDetailId"/>
+        <field value="cie_startDate"/>
+        <field value="cie_endDate"/>
+        <field value="cie_createDate"/>
+        <field value="TID"/>
+        <field value="STR_LOGs"/>
+        <field value="MenuIDs"/>
+    </inparam>
+    <outprarm isarray="true" isbean="true" paramname="parameters" paramns="http://servicerun.webservice.fet/" paramtype="cieRecorditemlist" paramtypens="http://servicerun.webservice.fet/" paramvariable="CIE_RecordService_Output" usejavaobjects="false">
+        <field value="APIconnecttimelong"/>
+        <field value="ciechangeException"/>
+        <field value="ciechangeReturncode"/>
+        <field value="exception"/>
+        <field value="remarkResponse"/>
+    </outprarm>
+    <wsdlurl value="http://ODMIDDLEWARE_PO:7003/FETIVRCIEmiddleware/CIE_RecordService?WSDL"/>
+    <timeoutSeconds value="45"/>
+</wsop>

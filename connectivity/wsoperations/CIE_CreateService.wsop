@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsop version="1.0">
+    <servicename value="CIE_CreateService"/>
+    <endpoint value="CIE_CreateService_1508241166934_WS_ENDPOINT"/>
+    <authentication value="CIE_CreateService_1508241166934_WS_AUTHENTICATION"/>
+    <username value="CIE_CreateService_1508241166934_WS_USERNAME"/>
+    <password value="CIE_CreateService_1508241166934_WS_PASSWORD"/>
+    <_UserNameTokenTimeout value="CIE_CreateService_1508241166934_UserNameTokenTimeout"/>
+    <sendpasswordinclear value="CIE_CreateService_1508241166934_WS_SEND_PASSWORD_IN_CLEAR"/>
+    <packagename value="connectivity.ws.beans"/>
+    <targetns value="http://servicerun.webservice.fet/"/>
+    <operation value="CIEcreate"/>
+    <style value="document"/>
+    <use value="literal"/>
+    <soapaction value=""/>
+    <soapversion value="soap11"/>
+    <inparam isarray="false" isbean="true" paramname="parameters" paramns="http://servicerun.webservice.fet/" paramtype="CIEcreate" paramtypens="http://servicerun.webservice.fet/" paramvariable="CIE_CreateService_Input" usejavaobjects="false">
+        <field value="FlowName"/>
+        <field value="sessionId"/>
+        <field value="BpId"/>
+        <field value="msisdnNumber"/>
+        <field value="subscriber"/>
+        <field value="transPath"/>
+        <field value="cie_isNonFET"/>
+        <field value="cie_InOutbound"/>
+        <field value="cie_startDate"/>
+        <field value="cie_endDate"/>
+        <field value="cie_createDate"/>
+    </inparam>
+    <outprarm isarray="true" isbean="true" paramname="parameters" paramns="http://servicerun.webservice.fet/" paramtype="cieCreateitemlist" paramtypens="http://servicerun.webservice.fet/" paramvariable="CIE_CreateService_Output" usejavaobjects="false">
+        <field value="APIconnecttimelong"/>
+        <field value="accountContactId"/>
+        <field value="accountContractCompId"/>
+        <field value="billingAccountId"/>
+        <field value="billingSubscriberId"/>
+        <field value="CONTRACT_ID"/>
+        <field value="cacheSubscriberInfoException"/>
+        <field value="cacheSubscriberInfoResultCode"/>
+        <field value="cieDetailId"/>
+        <field value="cieId"/>
+        <field value="cieaddException"/>
+        <field value="cieaddReturncode"/>
+        <field value="exception"/>
+        <field value="IVR_LANG"/>
+        <field value="MSISDN"/>
+        <field value="mobileGenerationCode"/>
+        <field value="paymentCategory"/>
+        <field value="SUBSCRIBER_STATUS"/>
+        <field value="SUBSCRIBER_TYPE"/>
+        <field value="serviceProvider"/>
+        <field value="subscriberContactId"/>
+        <field value="subscriberContractCompId"/>
+    </outprarm>
+    <wsdlurl value="http://ODMIDDLEWARE_PO:7003/FETIVRCIEmiddleware/CIE_CreateService?WSDL"/>
+    <timeoutSeconds value="45"/>
+</wsop>

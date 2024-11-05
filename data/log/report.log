@@ -1,0 +1,80 @@
+23/08/2017 09:40:28:674  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:Start | Framework | Start |  |  | 
+23/08/2017 09:40:28:914  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:ddlog4j | Framework | ddlog4j |  |  | undefined
+23/08/2017 09:40:29:036  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:get_BpId | Framework | get_BpId |  |  | undefined
+23/08/2017 09:40:29:103  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:cticallinfo | Framework | cticallinfo |  |  | undefined
+23/08/2017 09:40:29:170  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:check_testModeAND_anilenght | Framework | check_testModeAND_anilenght |  |  | undefined
+23/08/2017 09:40:29:252  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:AN_991225 | Framework | AN_991225 |  |  | undefined
+23/08/2017 09:40:51:687  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:assign_Variable | Framework | assign_Variable | AN_991225___utterance | 0903191575^0.949999988079071^0^0 | undefined
+23/08/2017 09:40:51:741  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:CheckAni | Framework | CheckAni |  |  | undefined
+23/08/2017 09:40:51:805  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:CF_check_mobile | Framework | CF_check_mobile |  |  | undefined
+23/08/2017 09:40:51:860  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:CF_check_mobile-Begin | Framework | CF_check_mobile-Begin |  |  | undefined
+23/08/2017 09:40:51:923  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:CF_check_mobile-select_FE_MSIS_CB2_TBL2 | Framework | CF_check_mobile-select_FE_MSIS_CB2_TBL2 |  |  | undefined
+23/08/2017 09:40:51:979  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:select_FE_MSIS_CB2_TBL2-Begin | Framework | select_FE_MSIS_CB2_TBL2-Begin |  |  | undefined
+23/08/2017 09:40:52:040  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:select_FE_MSIS_CB2_TBL2-assign_FE_MSIS_CB2_TBL2 | Framework | select_FE_MSIS_CB2_TBL2-assign_FE_MSIS_CB2_TBL2 |  |  | undefined
+23/08/2017 09:40:52:101  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:select_FE_MSIS_CB2_TBL2-CF_selectDBAPI | Framework | select_FE_MSIS_CB2_TBL2-CF_selectDBAPI |  |  | undefined
+23/08/2017 09:40:52:163  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:CF_selectDBAPI-Begin | Framework | CF_selectDBAPI-Begin |  |  | undefined
+23/08/2017 09:40:52:227  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:CF_selectDBAPI-selectDBAPI | Framework | CF_selectDBAPI-selectDBAPI |  |  | undefined
+23/08/2017 09:40:54:875  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:CF_selectDBAPI-next | Framework | CF_selectDBAPI-next |  |  | undefined
+23/08/2017 09:40:54:927  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:select_FE_MSIS_CB2_TBL2-next | Framework | select_FE_MSIS_CB2_TBL2-next |  |  | undefined
+23/08/2017 09:40:54:981  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:CF_check_mobile-select_FE_CUST_CB2_TBL | Framework | CF_check_mobile-select_FE_CUST_CB2_TBL |  |  | undefined
+23/08/2017 09:40:55:033  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:select_FE_CUST_CB2_TBL-Begin | Framework | select_FE_CUST_CB2_TBL-Begin |  |  | undefined
+23/08/2017 09:40:55:086  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:select_FE_CUST_CB2_TBL-assign_FE_CUST_CB2_TBL | Framework | select_FE_CUST_CB2_TBL-assign_FE_CUST_CB2_TBL |  |  | undefined
+23/08/2017 09:40:55:141  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:select_FE_CUST_CB2_TBL-CF_selectDBAPI | Framework | select_FE_CUST_CB2_TBL-CF_selectDBAPI |  |  | undefined
+23/08/2017 09:40:55:195  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:CF_selectDBAPI-Begin | Framework | CF_selectDBAPI-Begin |  |  | undefined
+23/08/2017 09:40:55:250  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:CF_selectDBAPI-selectDBAPI | Framework | CF_selectDBAPI-selectDBAPI |  |  | undefined
+23/08/2017 09:40:55:309  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:CF_selectDBAPI-next | Framework | CF_selectDBAPI-next |  |  | undefined
+23/08/2017 09:40:55:362  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:select_FE_CUST_CB2_TBL-next | Framework | select_FE_CUST_CB2_TBL-next |  |  | undefined
+23/08/2017 09:40:55:416  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:CF_check_mobile-next | Framework | CF_check_mobile-next |  |  | undefined
+23/08/2017 09:40:55:470  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:Check_VDN | Framework | Check_VDN |  |  | undefined
+23/08/2017 09:40:55:525  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:Disconnect | Framework | Disconnect |  |  | undefined
+23/08/2017 09:40:55:609  INFO - Node Entry | session id:sess6799850 | DonationActivities_2:End | Framework | End |  | ^^0^0 | undefined
+23/08/2017 09:40:55:612  INFO - Application Exit | session id:sess6799850 | DonationActivities_2:End | Framework | Application Exiting |  |  | undefined
+23/08/2017 09:48:01:015  INFO - Node Entry | session id:sess2346348 | DonationActivities_2:Start | Framework | Start |  |  | 
+23/08/2017 09:48:01:122  INFO - Node Entry | session id:sess2346348 | DonationActivities_2:ddlog4j | Framework | ddlog4j |  |  | undefined
+23/08/2017 09:48:01:181  INFO - Node Entry | session id:sess2346348 | DonationActivities_2:get_BpId | Framework | get_BpId |  |  | undefined
+23/08/2017 09:48:01:250  INFO - Node Entry | session id:sess2346348 | DonationActivities_2:cticallinfo | Framework | cticallinfo |  |  | undefined
+23/08/2017 09:48:01:314  INFO - Node Entry | session id:sess2346348 | DonationActivities_2:check_testModeAND_anilenght | Framework | check_testModeAND_anilenght |  |  | undefined
+23/08/2017 09:48:01:381  INFO - Node Entry | session id:sess2346348 | DonationActivities_2:AN_991225 | Framework | AN_991225 |  |  | undefined
+23/08/2017 09:49:12:300  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:Start | Framework | Start |  |  | 
+23/08/2017 09:49:12:379  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:ddlog4j | Framework | ddlog4j |  |  | undefined
+23/08/2017 09:49:12:437  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:get_BpId | Framework | get_BpId |  |  | undefined
+23/08/2017 09:49:12:489  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:cticallinfo | Framework | cticallinfo |  |  | undefined
+23/08/2017 09:49:12:543  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:check_testModeAND_anilenght | Framework | check_testModeAND_anilenght |  |  | undefined
+23/08/2017 09:49:12:595  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:AN_991225 | Framework | AN_991225 |  |  | undefined
+23/08/2017 09:49:41:452  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:assign_Variable | Framework | assign_Variable | AN_991225___utterance | 0903191575^0.949999988079071^0^0 | undefined
+23/08/2017 09:49:41:585  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:CheckAni | Framework | CheckAni |  |  | undefined
+23/08/2017 09:49:41:739  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:CF_check_mobile | Framework | CF_check_mobile |  |  | undefined
+23/08/2017 09:49:42:003  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:CF_check_mobile-Begin | Framework | CF_check_mobile-Begin |  |  | undefined
+23/08/2017 09:49:42:060  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:CF_check_mobile-select_FE_MSIS_CB2_TBL2 | Framework | CF_check_mobile-select_FE_MSIS_CB2_TBL2 |  |  | undefined
+23/08/2017 09:49:42:200  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:select_FE_MSIS_CB2_TBL2-Begin | Framework | select_FE_MSIS_CB2_TBL2-Begin |  |  | undefined
+23/08/2017 09:49:42:377  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:select_FE_MSIS_CB2_TBL2-assign_FE_MSIS_CB2_TBL2 | Framework | select_FE_MSIS_CB2_TBL2-assign_FE_MSIS_CB2_TBL2 |  |  | undefined
+23/08/2017 09:49:42:494  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:select_FE_MSIS_CB2_TBL2-CF_selectDBAPI | Framework | select_FE_MSIS_CB2_TBL2-CF_selectDBAPI |  |  | undefined
+23/08/2017 09:49:42:597  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:CF_selectDBAPI-Begin | Framework | CF_selectDBAPI-Begin |  |  | undefined
+23/08/2017 09:49:42:702  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:CF_selectDBAPI-selectDBAPI | Framework | CF_selectDBAPI-selectDBAPI |  |  | undefined
+23/08/2017 09:49:45:028  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:CF_selectDBAPI-next | Framework | CF_selectDBAPI-next |  |  | undefined
+23/08/2017 09:49:45:086  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:select_FE_MSIS_CB2_TBL2-next | Framework | select_FE_MSIS_CB2_TBL2-next |  |  | undefined
+23/08/2017 09:49:45:154  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:CF_check_mobile-select_FE_CUST_CB2_TBL | Framework | CF_check_mobile-select_FE_CUST_CB2_TBL |  |  | undefined
+23/08/2017 09:49:45:208  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:select_FE_CUST_CB2_TBL-Begin | Framework | select_FE_CUST_CB2_TBL-Begin |  |  | undefined
+23/08/2017 09:49:45:260  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:select_FE_CUST_CB2_TBL-assign_FE_CUST_CB2_TBL | Framework | select_FE_CUST_CB2_TBL-assign_FE_CUST_CB2_TBL |  |  | undefined
+23/08/2017 09:49:45:320  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:select_FE_CUST_CB2_TBL-CF_selectDBAPI | Framework | select_FE_CUST_CB2_TBL-CF_selectDBAPI |  |  | undefined
+23/08/2017 09:49:45:374  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:CF_selectDBAPI-Begin | Framework | CF_selectDBAPI-Begin |  |  | undefined
+23/08/2017 09:49:45:427  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:CF_selectDBAPI-selectDBAPI | Framework | CF_selectDBAPI-selectDBAPI |  |  | undefined
+23/08/2017 09:49:45:488  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:CF_selectDBAPI-next | Framework | CF_selectDBAPI-next |  |  | undefined
+23/08/2017 09:49:45:540  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:select_FE_CUST_CB2_TBL-next | Framework | select_FE_CUST_CB2_TBL-next |  |  | undefined
+23/08/2017 09:49:45:597  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:CF_check_mobile-next | Framework | CF_check_mobile-next |  |  | undefined
+23/08/2017 09:49:45:652  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:Check_VDN | Framework | Check_VDN |  |  | undefined
+23/08/2017 09:49:45:706  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:Disconnect | Framework | Disconnect |  |  | undefined
+23/08/2017 09:49:45:801  INFO - Node Entry | session id:sess6975491 | DonationActivities_2:End | Framework | End |  | ^^0^0 | undefined
+23/08/2017 09:49:45:807  INFO - Application Exit | session id:sess6975491 | DonationActivities_2:End | Framework | Application Exiting |  |  | undefined
+23/08/2017 10:05:02:220  INFO - Node Entry | session id:sess879519 | DonationActivities_2:Start | Framework | Start |  |  | 
+23/08/2017 10:05:02:330  INFO - Node Entry | session id:sess879519 | DonationActivities_2:ddlog4j | Framework | ddlog4j |  |  | undefined
+23/08/2017 10:05:02:406  INFO - Node Entry | session id:sess879519 | DonationActivities_2:get_BpId | Framework | get_BpId |  |  | undefined
+23/08/2017 10:05:02:469  INFO - Node Entry | session id:sess879519 | DonationActivities_2:cticallinfo | Framework | cticallinfo |  |  | undefined
+23/08/2017 10:05:02:539  INFO - Node Entry | session id:sess879519 | DonationActivities_2:check_testModeAND_anilenght | Framework | check_testModeAND_anilenght |  |  | undefined
+23/08/2017 10:05:02:600  INFO - Node Entry | session id:sess879519 | DonationActivities_2:AN_991225 | Framework | AN_991225 |  |  | undefined
+23/08/2017 10:05:28:088  INFO - Node Entry | session id:sess8734726 | DonationActivities_2:Start | Framework | Start |  |  | 
+23/08/2017 10:05:28:182  INFO - Node Entry | session id:sess8734726 | DonationActivities_2:ddlog4j | Framework | ddlog4j |  |  | undefined
+23/08/2017 10:05:28:245  INFO - Node Entry | session id:sess8734726 | DonationActivities_2:get_BpId | Framework | get_BpId |  |  | undefined
+23/08/2017 10:05:28:304  INFO - Node Entry | session id:sess8734726 | DonationActivities_2:cticallinfo | Framework | cticallinfo |  |  | undefined
+23/08/2017 10:05:28:361  INFO - Node Entry | session id:sess8734726 | DonationActivities_2:check_testModeAND_anilenght | Framework | check_testModeAND_anilenght |  |  | undefined
+23/08/2017 10:05:28:413  INFO - Node Entry | session id:sess8734726 | DonationActivities_2:AN_991225 | Framework | AN_991225 |  |  | undefined

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DbOp version="1.0">
+    <Datasource name="FETIVRDB"/>
+    <DbObject name="STI.AIR_MENU_DETAIL" returntype="-1" selectall="false" type="table">
+        <DbObjectParam datatype="12" field="TID" function="" name="TID" sqltype="" tablename="AIR_MENU_DETAIL" type="" typename="VARCHAR" variable="AIR_MENU_DETAIL"/>
+        <DbObjectParam datatype="12" field="MENU_TIME" function="" name="MENU_TIME" sqltype="" tablename="AIR_MENU_DETAIL" type="" typename="VARCHAR" variable="AIR_MENU_DETAIL"/>
+        <DbObjectParam datatype="12" field="IVRFLOW" function="" name="IVRFLOW" sqltype="" tablename="AIR_MENU_DETAIL" type="" typename="VARCHAR" variable="AIR_MENU_DETAIL"/>
+        <DbObjectParam datatype="12" field="MENU_ID" function="" name="MENU_ID" sqltype="" tablename="AIR_MENU_DETAIL" type="" typename="VARCHAR" variable="AIR_MENU_DETAIL"/>
+        <DbObjectParam datatype="12" field="STR_LEVEL_DESC" function="" name="STR_LEVEL_DESC" sqltype="" tablename="AIR_MENU_DETAIL" type="" typename="VARCHAR" variable="AIR_MENU_DETAIL"/>
+        <DbObjectParam datatype="12" field="STR_LOG" function="" name="STR_LOG" sqltype="" tablename="AIR_MENU_DETAIL" type="" typename="VARCHAR" variable="AIR_MENU_DETAIL"/>
+    </DbObject>
+    <Operation name="Add"/>
+    <Clause>
+        <Where/>
+    </Clause>
+    <Clause>
+        <Order/>
+    </Clause>
+    <SQLQuery>INSERT INTO STI.AIR_MENU_DETAIL ( TID, MENU_TIME, IVRFLOW, MENU_ID, STR_LEVEL_DESC, STR_LOG ) VALUES ( ?, ?, ?, ?, ?, ? )</SQLQuery>
+</DbOp>

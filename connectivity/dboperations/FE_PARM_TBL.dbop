@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DbOp version="1.0">
+    <Datasource name="FETIVRDB"/>
+    <DbObject name="STI.FE_PARM_TBL" returntype="-1" selectall="false" type="table">
+        <DbObjectParam datatype="12" field="FE_PARM_PARM" function="" name="FE_PARM_PARM" sqltype="" tablename="FE_PARM_TBL" type="" typename="VARCHAR" variable="FE_PARM_TBL"/>
+        <DbObjectParam datatype="12" field="FE_PARM_VALUE" function="" name="FE_PARM_VALUE" sqltype="" tablename="FE_PARM_TBL" type="" typename="VARCHAR" variable="FE_PARM_TBL"/>
+    </DbObject>
+    <Operation name="Query">
+        <Qualifier name="distinct" value="false"/>
+    </Operation>
+    <Clause>
+        <Where>
+            <Condition name="Simple" type="Simple">
+                <Operand datatype="12" name="FE_PARM_PARM" tablename="STI.FE_PARM_TBL" type="column" typename="VARCHAR2"/>
+                <Operator type="Comparison" value="="/>
+                <Operand datatype="12" field="FE_PARM_PARM" name="CH_FE_PARM_TBL" type="variable" typename=""/>
+            </Condition>
+        </Where>
+    </Clause>
+    <Clause>
+        <Order/>
+    </Clause>
+    <SQLQuery>SELECT FE_PARM_TBL.FE_PARM_PARM, FE_PARM_TBL.FE_PARM_VALUE FROM STI.FE_PARM_TBL WHERE  ( FE_PARM_TBL.FE_PARM_PARM = ? )</SQLQuery>
+</DbOp>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AppFlowDoc>
+    <ApplicationFlow nextObjectId="778" package="flow.subflow.CF_check_IDforRedCross" version="5.0">
+        <FlowGraph>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
+                <Property name="Name" value="Begin"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubEntry" id="2" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="3" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Start"/>
+                                <Property name="LinkedNodeID" value="759"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="114" version="3.1">
+                <Property name="Name" value="Error"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="33"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="381"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="432" version="3.1">
+                <Property name="Name" value="next"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="9"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="464"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="759" version="3.1">
+                <Property name="Name" value="GetInputID"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="10"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="189"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="760" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.LocalVariables" id="761" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="LocalVariables"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="764" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="AN_015603_2"/>
+                                <Property name="destFieldId" value="IDENTIFIER"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="destVarId" value="S_USERDATA"/>
+                                <Property name="sourceFieldId" value="utterance"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="773" version="1.2">
+                            <ItemProperties>
+                                <Property name="numChars" value="9"/>
+                                <Property name="sourceVarId" value="FE_CUST_CB2_TBL"/>
+                                <Property name="start" value="1"/>
+                                <Property name="destFieldId" value="FE_CUST_SOCIAL_NUM_2"/>
+                                <Property name="type" value="substring"/>
+                                <Property name="sourceFieldId" value="FE_CUST_SOCIAL_NUM"/>
+                                <Property name="destVarId" value="FE_CUST_CB2_TBL"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="776" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="### Social_Number_subString ###"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="FE_CUST_CB2_TBL"/>
+                                <Property name="trace.fieldId" value="FE_CUST_SOCIAL_NUM"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="775" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.text" value="### UserData_Identification ###"/>
+                                <Property name="trace.priority" value="info"/>
+                                <Property name="trace.varId" value="S_USERDATA"/>
+                                <Property name="trace.fieldId" value="IDENTIFIER"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="766" version="1.2">
+                            <ItemProperties>
+                                <Property name="RightVarOperandID" value="S_USERDATA"/>
+                                <Property name="Operator" value="="/>
+                                <Property name="RightVarOperandFieldID" value="IDENTIFIER"/>
+                                <Property name="LeftOperandID" value="FE_CUST_CB2_TBL"/>
+                                <Property name="LeftOperandFieldID" value="FE_CUST_SOCIAL_NUM_2"/>
+                            </ItemProperties>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="762" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="Name" value="next"/>
+                                        <Property name="LinkedNodeID" value="432"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.ElseCondition" id="767" version="1.2">
+                            <ItemProperties/>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="768" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="Name" value="Fail"/>
+                                        <Property name="LinkedNodeID" value="114"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <NodeConnection id="763" version="1.2">
+                <SourceNode id="1"/>
+                <TargetNode id="759"/>
+                <Property name="Connection.SourceObjectID" value="3"/>
+                <Property name="Connection.TargetObjectID" value="759"/>
+            </NodeConnection>
+            <NodeConnection id="770" version="1.2">
+                <SourceNode id="759"/>
+                <TargetNode id="432"/>
+                <Property name="Connection.SourceObjectID" value="762"/>
+                <Property name="Connection.TargetObjectID" value="432"/>
+            </NodeConnection>
+            <NodeConnection id="771" version="1.2">
+                <SourceNode id="759"/>
+                <TargetNode id="114"/>
+                <Property name="Connection.SourceObjectID" value="768"/>
+                <Property name="Connection.TargetObjectID" value="114"/>
+            </NodeConnection>
+        </FlowGraph>
+        <ProjectEventTypes/>
+    </ApplicationFlow>
+</AppFlowDoc>
