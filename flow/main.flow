@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="1727" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="1736" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="19"/>
@@ -5436,6 +5436,68 @@
                 <Property name="FlowNodeEditPart.WidgetY" value="497"/>
                 <Property name="FlowNodeEditPart.Height" value="37"/>
                 <Property name="Name" value="輸入手機號碼(ANI)"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="1728" version="3.1">
+                <Property name="FlowNodeEditPart.WidgetX" value="983"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="1975"/>
+                <Property name="Name" value="ReinputTenantCount"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="1729" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.LocalVariables" id="1730" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="LocalVariables"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="1732" version="1.2">
+                            <ItemProperties>
+                                <Property name="op1FieldId" value="ReInputCountForPhoneNumber"/>
+                                <Property name="op1VarId" value="G_error_count"/>
+                                <Property name="destVarId" value="G_error_count"/>
+                                <Property name="destFieldId" value="ErrorCountforFarEastOne"/>
+                                <Property name="type" value="add"/>
+                                <Property name="op2Constant" value="1"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="1733" version="1.2">
+                            <ItemProperties>
+                                <Property name="Operator" value="&lt;"/>
+                                <Property name="LeftOperandID" value="G_error_count"/>
+                                <Property name="LeftOperandFieldID" value="ReInputCountForPhoneNumber"/>
+                                <Property name="RightConstOperand" value="2"/>
+                            </ItemProperties>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="1734" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="LinkedNodeID" value="-1"/>
+                                        <Property name="Name" value="&lt;2"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.ElseCondition" id="1735" version="1.2">
+                            <ItemProperties/>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="1736" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="LinkedNodeID" value="-1"/>
+                                        <Property name="Name" value="&gt;2"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="1731" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Default"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Label" id="449" version="3.1">
                 <Property name="FlowNodeEditPart.Width" value="120"/>
