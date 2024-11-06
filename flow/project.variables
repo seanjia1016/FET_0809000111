@@ -900,6 +900,7 @@
     <variable factoryID="" name="G_error_count:ErrorCountForTeacherChang" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="G_error_count:ReInputCountForPhoneNumber" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="G_error_count:ReInputFor380_ID_Check" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="G_error_count:ReInputTenantIDCount" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="G_IVR_DONATE_TRAN:BUSINESS_ENTITY" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="G_IVR_DONATE_TRAN:CYCLY_DATE" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="G_IVR_DONATE_TRAN:DONATE_AMT" owner="" type="" value="" version="1.0"/>
