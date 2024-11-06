@@ -2415,10 +2415,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>checkTenantID</servlet-name>
         <servlet-class>flow.checkTenantID</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1699">
-        <servlet-name>Voice_556024</servlet-name>
-        <servlet-class>flow.Voice_556024</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_1703">
         <servlet-name>Voice_556023</servlet-name>
         <servlet-class>flow.Voice_556023</servlet-class>
@@ -2446,6 +2443,40 @@ Copyright 2004-2011 Avaya Inc.
     <servlet id="SAGE-callflow-servlet_select_FET_0809000811_STORE_LST_15">
         <servlet-name>select_FET_0809000811_STORE_LST-CF_selectDBAPI</servlet-name>
         <servlet-class>flow.subflow.select_FET_0809000811_STORE_LST.CF_selectDBAPI</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1764">
+        <servlet-name>Voice_556024</servlet-name>
+        <servlet-class>flow.Voice_556024</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1782">
+        <servlet-name>Voice_556025</servlet-name>
+        <servlet-class>flow.Voice_556025</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_main_1798">
+        <servlet-name>Voice_556026</servlet-name>
+        <servlet-class>flow.Voice_556026</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_main_1814">
+        <servlet-name>checkICCard</servlet-name>
+        <servlet-class>flow.checkICCard</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_API_queryVoucherCard_1">
+        <servlet-name>API_queryVoucherCard-Begin</servlet-name>
+        <servlet-class>flow.subflow.API_queryVoucherCard.Begin</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_API_checkICCard_1">
+        <servlet-name>API_checkICCard-Begin</servlet-name>
+        <servlet-class>flow.subflow.API_checkICCard.Begin</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_API_checkICCard_4">
+        <servlet-name>API_checkICCard-queryVoucherCard</servlet-name>
+        <servlet-class>flow.subflow.API_checkICCard.queryVoucherCard</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_API_queryVoucherCard_4">
+        <servlet-name>API_queryVoucherCard-untitledServlet1</servlet-name>
+        <servlet-class>flow.subflow.API_queryVoucherCard.untitledServlet1</servlet-class>
     </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
@@ -4649,10 +4680,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>checkTenantID</servlet-name>
         <url-pattern>/checkTenantID</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1699">
-        <servlet-name>Voice_556024</servlet-name>
-        <url-pattern>/Voice_556024</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_1703">
         <servlet-name>Voice_556023</servlet-name>
         <url-pattern>/Voice_556023</url-pattern>
@@ -4681,6 +4709,39 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>select_FET_0809000811_STORE_LST-CF_selectDBAPI</servlet-name>
         <url-pattern>/select_FET_0809000811_STORE_LST-CF_selectDBAPI</url-pattern>
     </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1764">
+        <servlet-name>Voice_556024</servlet-name>
+        <url-pattern>/Voice_556024</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1782">
+        <servlet-name>Voice_556025</servlet-name>
+        <url-pattern>/Voice_556025</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1798">
+        <servlet-name>Voice_556026</servlet-name>
+        <url-pattern>/Voice_556026</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1814">
+        <servlet-name>checkICCard</servlet-name>
+        <url-pattern>/checkICCard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_API_queryVoucherCard_1">
+        <servlet-name>API_queryVoucherCard-Begin</servlet-name>
+        <url-pattern>/API_queryVoucherCard-Begin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_API_checkICCard_1">
+        <servlet-name>API_checkICCard-Begin</servlet-name>
+        <url-pattern>/API_checkICCard-Begin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_API_checkICCard_4">
+        <servlet-name>API_checkICCard-queryVoucherCard</servlet-name>
+        <url-pattern>/API_checkICCard-queryVoucherCard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_API_queryVoucherCard_4">
+        <servlet-name>API_queryVoucherCard-untitledServlet1</servlet-name>
+        <url-pattern>/API_queryVoucherCard-untitledServlet1</url-pattern>
+    </servlet-mapping>
+    
     
     
     
