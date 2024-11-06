@@ -880,6 +880,7 @@
     <variable factoryID="" name="FE_OFFER_PARM_TBL:SERVICE_TYPE" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="FE_PARM_TBL:FE_PARM_PARM" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="FE_PARM_TBL:FE_PARM_VALUE" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="FET_0809000811_STORE_LST:ENTERPRISE" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="FlowName:DonationToChildWelfareLeague" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="FlowName:DonationToChineseChristianReliefAssociation" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="FlowName:DonationToHomeSupport" owner="" type="" value="" version="1.0"/>
