@@ -2536,6 +2536,26 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>select_FET_0809000811_STORE_LST-assign_FET_0809000811_STORE_LST</servlet-name>
         <servlet-class>flow.subflow.select_FET_0809000811_STORE_LST.assign_FET_0809000811_STORE_LST</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1685">
+        <servlet-name>getStoreList</servlet-name>
+        <servlet-class>flow.getStoreList</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1690">
+        <servlet-name>checkTenantID</servlet-name>
+        <servlet-class>flow.checkTenantID</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1699">
+        <servlet-name>Voice_556024</servlet-name>
+        <servlet-class>flow.Voice_556024</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1703">
+        <servlet-name>Voice_556023</servlet-name>
+        <servlet-class>flow.Voice_556023</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1709">
+        <servlet-name>Voice_556021_2</servlet-name>
+        <servlet-class>flow.Voice_556021_2</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -4858,6 +4878,26 @@ Copyright 2004-2011 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_STORE_LST_4">
         <servlet-name>select_FET_0809000811_STORE_LST-assign_FET_0809000811_STORE_LST</servlet-name>
         <url-pattern>/select_FET_0809000811_STORE_LST-assign_FET_0809000811_STORE_LST</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1685">
+        <servlet-name>getStoreList</servlet-name>
+        <url-pattern>/getStoreList</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1690">
+        <servlet-name>checkTenantID</servlet-name>
+        <url-pattern>/checkTenantID</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1699">
+        <servlet-name>Voice_556024</servlet-name>
+        <url-pattern>/Voice_556024</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1703">
+        <servlet-name>Voice_556023</servlet-name>
+        <url-pattern>/Voice_556023</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1709">
+        <servlet-name>Voice_556021_2</servlet-name>
+        <url-pattern>/Voice_556021_2</url-pattern>
     </servlet-mapping>
     
     
