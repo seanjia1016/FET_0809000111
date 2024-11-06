@@ -168,6 +168,8 @@ public class selectDBAPI extends com.avaya.sce.runtime.BasicServlet {
 				resolveDBAPI.FE_NEWCASH_TBL(mySession, ResponseJsonObject);
 			}else if(TABLE.equals("IVR_DONATE_TRAN")){
 				resolveDBAPI.IVR_DONATE_TRAN(mySession, ResponseJsonObject);
+			}else if(TABLE.equals("FET_0809000811_STORE_LST")) {
+				resolveDBAPI.FET_0809000811_STORE_LST(mySession, ResponseJsonObject);
 			}
 			else{
 			}

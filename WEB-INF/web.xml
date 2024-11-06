@@ -222,35 +222,14 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-class>com.avaya.vp.admin.variables.runtime.AdminVariableInfo</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_92">
-        <servlet-name>cticallinfo</servlet-name>
-        <servlet-class>flow.cticallinfo</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_89">
-        <servlet-name>get_BpId</servlet-name>
-        <servlet-class>flow.get_BpId</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_103">
-        <servlet-name>check_testModeAND_anilenght</servlet-name>
-        <servlet-class>flow.check_testModeAND_anilenght</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_116">
-        <servlet-name>AN_VDN</servlet-name>
-        <servlet-class>flow.AN_VDN</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_111">
-        <servlet-name>assign_VDN</servlet-name>
-        <servlet-class>flow.assign_VDN</servlet-class>
-    </servlet>
     
-    <servlet id="SAGE-callflow-servlet_main_142">
-        <servlet-name>AN_991225</servlet-name>
-        <servlet-class>flow.AN_991225</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_135">
-        <servlet-name>assign_Variable</servlet-name>
-        <servlet-class>flow.assign_Variable</servlet-class>
-    </servlet>
+    
+    
+    
+    
+    
+    
+    
     <servlet id="SAGE-callflow-servlet_CF_check_mobile_17">
         <servlet-name>CF_check_mobile-next</servlet-name>
         <servlet-class>flow.subflow.CF_check_mobile.next</servlet-class>
@@ -311,30 +290,12 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>CF_selectDBAPI-next</servlet-name>
         <servlet-class>flow.subflow.CF_selectDBAPI.next</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_341">
-        <servlet-name>ReInputCount</servlet-name>
-        <servlet-class>flow.ReInputCount</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_338">
-        <servlet-name>CF_check_mobile</servlet-name>
-        <servlet-class>flow.CF_check_mobile</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_380">
-        <servlet-name>ReAssign_ANI</servlet-name>
-        <servlet-class>flow.ReAssign_ANI</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_349">
-        <servlet-name>CheckAni</servlet-name>
-        <servlet-class>flow.CheckAni</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_385">
-        <servlet-name>AN_881018</servlet-name>
-        <servlet-class>flow.AN_881018</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_410">
-        <servlet-name>Check_VDN</servlet-name>
-        <servlet-class>flow.Check_VDN</servlet-class>
-    </servlet>
+    
+    
+    
+    
+    
+    
     
     
     
@@ -500,10 +461,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>CF_insetDBAPI-next</servlet-name>
         <servlet-class>flow.subflow.CF_insetDBAPI.next</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_437">
-        <servlet-name>DonationToRedCross</servlet-name>
-        <servlet-class>flow.DonationToRedCross</servlet-class>
-    </servlet>
+    
     
     
     
@@ -705,26 +663,6 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_main_503">
-        <servlet-name>DonationToTeacherChang</servlet-name>
-        <servlet-class>flow.DonationToTeacherChang</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_510">
-        <servlet-name>DonationToChildWelfareLeague</servlet-name>
-        <servlet-class>flow.DonationToChildWelfareLeague</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_517">
-        <servlet-name>DonationToPaperWindmillTroupe</servlet-name>
-        <servlet-class>flow.DonationToPaperWindmillTroupe</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_524">
-        <servlet-name>FarEastOneSmallAmount</servlet-name>
-        <servlet-class>flow.FarEastOneSmallAmount</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_542">
-        <servlet-name>ddlog4j</servlet-name>
-        <servlet-class>flow.ddlog4j</servlet-class>
-    </servlet>
     
     
     
@@ -738,10 +676,12 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_main_600">
-        <servlet-name>insert_StartTime</servlet-name>
-        <servlet-class>flow.insert_StartTime</servlet-class>
-    </servlet>
+    
+    
+    
+    
+    
+    
     <servlet id="SAGE-callflow-servlet_insert_AIR_MENU_TBL_1">
         <servlet-name>insert_AIR_MENU_TBL-Begin</servlet-name>
         <servlet-class>flow.subflow.insert_AIR_MENU_TBL.Begin</servlet-class>
@@ -757,10 +697,7 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_main_672">
-        <servlet-name>Generate_TID</servlet-name>
-        <servlet-class>flow.Generate_TID</servlet-class>
-    </servlet>
+    
     
     
     
@@ -965,10 +902,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-class>flow.subflow.API_getCashSubscriberInfoByKey.check_ReturnCode</servlet-class>
     </servlet>
     
-    <servlet id="SAGE-callflow-servlet_main_728">
-        <servlet-name>insert_AIR_MENU_TBL</servlet-name>
-        <servlet-class>flow.insert_AIR_MENU_TBL</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_insert_AIR_MENU_TBL_14">
         <servlet-name>insert_AIR_MENU_TBL-insert_AIR_MENU_TBL</servlet-name>
         <servlet-class>flow.subflow.insert_AIR_MENU_TBL.insert_AIR_MENU_TBL</servlet-class>
@@ -1015,10 +949,7 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_main_749">
-        <servlet-name>insert_CIE_Record_log</servlet-name>
-        <servlet-class>flow.insert_CIE_Record_log</servlet-class>
-    </servlet>
+    
     
     
     
@@ -1134,19 +1065,10 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_main_994">
-        <servlet-name>CIE_error_check</servlet-name>
-        <servlet-class>flow.CIE_error_check</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1008">
-        <servlet-name>get_CIEID_again</servlet-name>
-        <servlet-class>flow.get_CIEID_again</servlet-class>
-    </servlet>
     
-    <servlet id="SAGE-callflow-servlet_main_1063">
-        <servlet-name>insert_CIE_Record_log2</servlet-name>
-        <servlet-class>flow.insert_CIE_Record_log2</servlet-class>
-    </servlet>
+    
+    
+    
     <servlet id="SAGE-callflow-servlet_API_CreateTxn_1">
         <servlet-name>API_CreateTxn-Begin</servlet-name>
         <servlet-class>flow.subflow.API_CreateTxn.Begin</servlet-class>
@@ -2243,35 +2165,11 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>CF_Menulog-Temp</servlet-name>
         <servlet-class>flow.subflow.CF_Menulog.Temp</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1281">
-        <servlet-name>DonationToHomeSupport</servlet-name>
-        <servlet-class>flow.DonationToHomeSupport</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1290">
-        <servlet-name>check_end</servlet-name>
-        <servlet-class>flow.check_end</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1303">
-        <servlet-name>insert_IVR_5919_DONATE_TRAN</servlet-name>
-        <servlet-class>flow.insert_IVR_5919_DONATE_TRAN</servlet-class>
-    </servlet>
     
     
     
     
     
-    <servlet id="SAGE-callflow-servlet_main_1368">
-        <servlet-name>insert_IVR_5919_DONATE_TRAN_Jointfundraising</servlet-name>
-        <servlet-class>flow.insert_IVR_5919_DONATE_TRAN_Jointfundraising</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1364">
-        <servlet-name>Jointfundraising</servlet-name>
-        <servlet-class>flow.Jointfundraising</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1355">
-        <servlet-name>check_end_Jointfundraising</servlet-name>
-        <servlet-class>flow.check_end_Jointfundraising</servlet-class>
-    </servlet>
     
     
     
@@ -2326,18 +2224,6 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_main_1397">
-        <servlet-name>DonationToChineseChristianReliefAssociation</servlet-name>
-        <servlet-class>flow.DonationToChineseChristianReliefAssociation</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1394">
-        <servlet-name>insert_IVR_5919_DONATE_TRAN_DonationToChineseChristianReliefAssociation</servlet-name>
-        <servlet-class>flow.insert_IVR_5919_DONATE_TRAN_DonationToChineseChristianReliefAssociation</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1387">
-        <servlet-name>check_end_DonationToChineseChristianReliefAssociation</servlet-name>
-        <servlet-class>flow.check_end_DonationToChineseChristianReliefAssociation</servlet-class>
-    </servlet>
     
     
     
@@ -2393,10 +2279,16 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_main_1424">
-        <servlet-name>insert_Menu_Log</servlet-name>
-        <servlet-class>flow.insert_Menu_Log</servlet-class>
-    </servlet>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <servlet id="SAGE-callflow-servlet_main_1543">
         <servlet-name>Disconnect</servlet-name>
         <servlet-class>flow.Disconnect</servlet-class>
@@ -2460,14 +2352,6 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>API_changeCIE-End</servlet-name>
         <servlet-class>flow.subflow.API_changeCIE.End</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1592">
-        <servlet-name>API_addCIE</servlet-name>
-        <servlet-class>flow.API_addCIE</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1596">
-        <servlet-name>assign_addCIE_result</servlet-name>
-        <servlet-class>flow.assign_addCIE_result</servlet-class>
-    </servlet>
     
     
     
@@ -2484,22 +2368,12 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_main_1605">
-        <servlet-name>API_changeCIE</servlet-name>
-        <servlet-class>flow.API_changeCIE</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1610">
-        <servlet-name>assign_changeCIEvariable</servlet-name>
-        <servlet-class>flow.assign_changeCIEvariable</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1622">
-        <servlet-name>API_changeCIE2</servlet-name>
-        <servlet-class>flow.API_changeCIE2</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1625">
-        <servlet-name>assign_changeCIEvariable2</servlet-name>
-        <servlet-class>flow.assign_changeCIEvariable2</servlet-class>
-    </servlet>
+    
+    
+    
+    
+    
+    
     <servlet id="SAGE-callflow-servlet_API_newTxnMstr_1">
         <servlet-name>API_newTxnMstr-Begin</servlet-name>
         <servlet-class>flow.subflow.API_newTxnMstr.Begin</servlet-class>
@@ -2536,10 +2410,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>select_FET_0809000811_STORE_LST-assign_FET_0809000811_STORE_LST</servlet-name>
         <servlet-class>flow.subflow.select_FET_0809000811_STORE_LST.assign_FET_0809000811_STORE_LST</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1685">
-        <servlet-name>getStoreList</servlet-name>
-        <servlet-class>flow.getStoreList</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_1690">
         <servlet-name>checkTenantID</servlet-name>
         <servlet-class>flow.checkTenantID</servlet-class>
@@ -2563,6 +2434,18 @@ Copyright 2004-2011 Avaya Inc.
     <servlet id="SAGE-callflow-servlet_main_1747">
         <servlet-name>voice_556022</servlet-name>
         <servlet-class>flow.voice_556022</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1754">
+        <servlet-name>select_FET_0809000811_STORE_LST</servlet-name>
+        <servlet-class>flow.select_FET_0809000811_STORE_LST</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_select_FET_0809000811_STORE_LST_21">
+        <servlet-name>select_FET_0809000811_STORE_LST-next</servlet-name>
+        <servlet-class>flow.subflow.select_FET_0809000811_STORE_LST.next</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_select_FET_0809000811_STORE_LST_15">
+        <servlet-name>select_FET_0809000811_STORE_LST-CF_selectDBAPI</servlet-name>
+        <servlet-class>flow.subflow.select_FET_0809000811_STORE_LST.CF_selectDBAPI</servlet-class>
     </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
@@ -2603,35 +2486,14 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>AdminVariableInfo</servlet-name>
         <url-pattern>/AdminVariableInfo</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_92">
-        <servlet-name>cticallinfo</servlet-name>
-        <url-pattern>/cticallinfo</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_89">
-        <servlet-name>get_BpId</servlet-name>
-        <url-pattern>/get_BpId</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_103">
-        <servlet-name>check_testModeAND_anilenght</servlet-name>
-        <url-pattern>/check_testModeAND_anilenght</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_116">
-        <servlet-name>AN_VDN</servlet-name>
-        <url-pattern>/AN_VDN</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_111">
-        <servlet-name>assign_VDN</servlet-name>
-        <url-pattern>/assign_VDN</url-pattern>
-    </servlet-mapping>
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_142">
-        <servlet-name>AN_991225</servlet-name>
-        <url-pattern>/AN_991225</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_135">
-        <servlet-name>assign_Variable</servlet-name>
-        <url-pattern>/assign_Variable</url-pattern>
-    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_CF_check_mobile_17">
         <servlet-name>CF_check_mobile-next</servlet-name>
         <url-pattern>/CF_check_mobile-next</url-pattern>
@@ -2692,30 +2554,12 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>CF_selectDBAPI-next</servlet-name>
         <url-pattern>/CF_selectDBAPI-next</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_341">
-        <servlet-name>ReInputCount</servlet-name>
-        <url-pattern>/ReInputCount</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_338">
-        <servlet-name>CF_check_mobile</servlet-name>
-        <url-pattern>/CF_check_mobile</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_380">
-        <servlet-name>ReAssign_ANI</servlet-name>
-        <url-pattern>/ReAssign_ANI</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_349">
-        <servlet-name>CheckAni</servlet-name>
-        <url-pattern>/CheckAni</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_385">
-        <servlet-name>AN_881018</servlet-name>
-        <url-pattern>/AN_881018</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_410">
-        <servlet-name>Check_VDN</servlet-name>
-        <url-pattern>/Check_VDN</url-pattern>
-    </servlet-mapping>
+    
+    
+    
+    
+    
+    
     
     
     
@@ -2881,10 +2725,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>CF_insetDBAPI-next</servlet-name>
         <url-pattern>/CF_insetDBAPI-next</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_437">
-        <servlet-name>DonationToRedCross</servlet-name>
-        <url-pattern>/DonationToRedCross</url-pattern>
-    </servlet-mapping>
+    
     
     
     
@@ -3086,26 +2927,6 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_503">
-        <servlet-name>DonationToTeacherChang</servlet-name>
-        <url-pattern>/DonationToTeacherChang</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_510">
-        <servlet-name>DonationToChildWelfareLeague</servlet-name>
-        <url-pattern>/DonationToChildWelfareLeague</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_517">
-        <servlet-name>DonationToPaperWindmillTroupe</servlet-name>
-        <url-pattern>/DonationToPaperWindmillTroupe</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_524">
-        <servlet-name>FarEastOneSmallAmount</servlet-name>
-        <url-pattern>/FarEastOneSmallAmount</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_542">
-        <servlet-name>ddlog4j</servlet-name>
-        <url-pattern>/ddlog4j</url-pattern>
-    </servlet-mapping>
     
     
     
@@ -3117,10 +2938,12 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_600">
-        <servlet-name>insert_StartTime</servlet-name>
-        <url-pattern>/insert_StartTime</url-pattern>
-    </servlet-mapping>
+    
+    
+    
+    
+    
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_insert_AIR_MENU_TBL_1">
         <servlet-name>insert_AIR_MENU_TBL-Begin</servlet-name>
         <url-pattern>/insert_AIR_MENU_TBL-Begin</url-pattern>
@@ -3136,10 +2959,7 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_672">
-        <servlet-name>Generate_TID</servlet-name>
-        <url-pattern>/Generate_TID</url-pattern>
-    </servlet-mapping>
+    
     
     
     
@@ -3342,10 +3162,7 @@ Copyright 2004-2011 Avaya Inc.
         <url-pattern>/API_getCashSubscriberInfoByKey-check_ReturnCode</url-pattern>
     </servlet-mapping>
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_728">
-        <servlet-name>insert_AIR_MENU_TBL</servlet-name>
-        <url-pattern>/insert_AIR_MENU_TBL</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_insert_AIR_MENU_TBL_14">
         <servlet-name>insert_AIR_MENU_TBL-insert_AIR_MENU_TBL</servlet-name>
         <url-pattern>/insert_AIR_MENU_TBL-insert_AIR_MENU_TBL</url-pattern>
@@ -3389,10 +3206,7 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_749">
-        <servlet-name>insert_CIE_Record_log</servlet-name>
-        <url-pattern>/insert_CIE_Record_log</url-pattern>
-    </servlet-mapping>
+    
     
     
     
@@ -3500,19 +3314,10 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_994">
-        <servlet-name>CIE_error_check</servlet-name>
-        <url-pattern>/CIE_error_check</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1008">
-        <servlet-name>get_CIEID_again</servlet-name>
-        <url-pattern>/get_CIEID_again</url-pattern>
-    </servlet-mapping>
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1063">
-        <servlet-name>insert_CIE_Record_log2</servlet-name>
-        <url-pattern>/insert_CIE_Record_log2</url-pattern>
-    </servlet-mapping>
+    
+    
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_API_CreateTxn_1">
         <servlet-name>API_CreateTxn-Begin</servlet-name>
         <url-pattern>/API_CreateTxn-Begin</url-pattern>
@@ -4595,35 +4400,11 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>CF_Menulog-Temp</servlet-name>
         <url-pattern>/CF_Menulog-Temp</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1281">
-        <servlet-name>DonationToHomeSupport</servlet-name>
-        <url-pattern>/DonationToHomeSupport</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1290">
-        <servlet-name>check_end</servlet-name>
-        <url-pattern>/check_end</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1303">
-        <servlet-name>insert_IVR_5919_DONATE_TRAN</servlet-name>
-        <url-pattern>/insert_IVR_5919_DONATE_TRAN</url-pattern>
-    </servlet-mapping>
     
     
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1368">
-        <servlet-name>insert_IVR_5919_DONATE_TRAN_Jointfundraising</servlet-name>
-        <url-pattern>/insert_IVR_5919_DONATE_TRAN_Jointfundraising</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1364">
-        <servlet-name>Jointfundraising</servlet-name>
-        <url-pattern>/Jointfundraising</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1355">
-        <servlet-name>check_end_Jointfundraising</servlet-name>
-        <url-pattern>/check_end_Jointfundraising</url-pattern>
-    </servlet-mapping>
     
     
     
@@ -4678,18 +4459,6 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1397">
-        <servlet-name>DonationToChineseChristianReliefAssociation</servlet-name>
-        <url-pattern>/DonationToChineseChristianReliefAssociation</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1394">
-        <servlet-name>insert_IVR_5919_DONATE_TRAN_DonationToChineseChristianReliefAssociation</servlet-name>
-        <url-pattern>/insert_IVR_5919_DONATE_TRAN_DonationToChineseChristianReliefAssociation</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1387">
-        <servlet-name>check_end_DonationToChineseChristianReliefAssociation</servlet-name>
-        <url-pattern>/check_end_DonationToChineseChristianReliefAssociation</url-pattern>
-    </servlet-mapping>
     
     
     
@@ -4745,10 +4514,16 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1424">
-        <servlet-name>insert_Menu_Log</servlet-name>
-        <url-pattern>/insert_Menu_Log</url-pattern>
-    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_1543">
         <servlet-name>Disconnect</servlet-name>
         <url-pattern>/Disconnect</url-pattern>
@@ -4811,14 +4586,6 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>API_changeCIE-End</servlet-name>
         <url-pattern>/API_changeCIE-End</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1592">
-        <servlet-name>API_addCIE</servlet-name>
-        <url-pattern>/API_addCIE</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1596">
-        <servlet-name>assign_addCIE_result</servlet-name>
-        <url-pattern>/assign_addCIE_result</url-pattern>
-    </servlet-mapping>
     
     
     
@@ -4835,22 +4602,12 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1605">
-        <servlet-name>API_changeCIE</servlet-name>
-        <url-pattern>/API_changeCIE</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1610">
-        <servlet-name>assign_changeCIEvariable</servlet-name>
-        <url-pattern>/assign_changeCIEvariable</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1622">
-        <servlet-name>API_changeCIE2</servlet-name>
-        <url-pattern>/API_changeCIE2</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1625">
-        <servlet-name>assign_changeCIEvariable2</servlet-name>
-        <url-pattern>/assign_changeCIEvariable2</url-pattern>
-    </servlet-mapping>
+    
+    
+    
+    
+    
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_API_newTxnMstr_1">
         <servlet-name>API_newTxnMstr-Begin</servlet-name>
         <url-pattern>/API_newTxnMstr-Begin</url-pattern>
@@ -4887,10 +4644,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>select_FET_0809000811_STORE_LST-assign_FET_0809000811_STORE_LST</servlet-name>
         <url-pattern>/select_FET_0809000811_STORE_LST-assign_FET_0809000811_STORE_LST</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1685">
-        <servlet-name>getStoreList</servlet-name>
-        <url-pattern>/getStoreList</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_1690">
         <servlet-name>checkTenantID</servlet-name>
         <url-pattern>/checkTenantID</url-pattern>
@@ -4914,6 +4668,18 @@ Copyright 2004-2011 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_main_1747">
         <servlet-name>voice_556022</servlet-name>
         <url-pattern>/voice_556022</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1754">
+        <servlet-name>select_FET_0809000811_STORE_LST</servlet-name>
+        <url-pattern>/select_FET_0809000811_STORE_LST</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_STORE_LST_21">
+        <servlet-name>select_FET_0809000811_STORE_LST-next</servlet-name>
+        <url-pattern>/select_FET_0809000811_STORE_LST-next</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_STORE_LST_15">
+        <servlet-name>select_FET_0809000811_STORE_LST-CF_selectDBAPI</servlet-name>
+        <url-pattern>/select_FET_0809000811_STORE_LST-CF_selectDBAPI</url-pattern>
     </servlet-mapping>
     
     

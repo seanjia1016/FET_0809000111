@@ -906,5 +906,27 @@ public class ResolveDBAPI {
 		
 	}
 	
+	public void FET_0809000811_STORE_LST(SCESession mySession,JSONObject ResponseJsonObject) {
+
+		IVariable TIDVarible = mySession.getVariable(IProjectVariables.S__TID);
+		IComplexVariable complexTID = TIDVarible.getComplexVariable();
+		
+		IVariableField TIDfield = complexTID.getField(IProjectVariables.S__TID_FIELD_TID);
+		String TID = TIDfield.getStringValue();
+		
+		String FET_0809000811_STORE_LST = "FET_0809000811_STORE_LST";
+		
+		JSONObject jsonObject = ResponseJsonObject.getJSONArray("data").getJSONObject(0);
+		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "Donation Count ResponseJsonObject Response(TID:["+TID+"]"+FET_0809000811_STORE_LST+"):" +ResponseJsonObject);	
+
+		
+		String ENTERPRISE = (String) this.ContainKeyAndGetObject(jsonObject, "ENTERPRISE");
+		IVariableField StoreList = mySession.getVariableField(
+						IProjectVariables.FET___0_8_0_9_0_0_0_8_1_1__STORE__LST,
+						IProjectVariables.FET___0_8_0_9_0_0_0_8_1_1__STORE__LST_FIELD_ENTERPRISE);
+		StoreList.setValue(ENTERPRISE);
+		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "@@StoreList Response(TID:["+TID+"]"+StoreList+"):" +StoreList);	
+		
+	}
 	
 }
