@@ -180,6 +180,8 @@ Copyright 2004-2011 Avaya Inc.
         <param-value>false</param-value>
         <description>Allows html mode in speech applications.</description>
     </context-param>
+    
+    
     <servlet id="avayadefaultdisconnecthandler-servlet">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <servlet-class>com.avaya.sce.runtime.DefaultDisconnect</servlet-class>
@@ -240,10 +242,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>assign_VDN</servlet-name>
         <servlet-class>flow.assign_VDN</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_130">
-        <servlet-name>AN_015333</servlet-name>
-        <servlet-class>flow.AN_015333</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_142">
         <servlet-name>AN_991225</servlet-name>
         <servlet-class>flow.AN_991225</servlet-class>
@@ -979,10 +978,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>insert_AIR_MENU_TBL-CF_insetDBAPI</servlet-name>
         <servlet-class>flow.subflow.insert_AIR_MENU_TBL.CF_insetDBAPI</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_740">
-        <servlet-name>insert_AIR_MENU_MASTER</servlet-name>
-        <servlet-class>flow.insert_AIR_MENU_MASTER</servlet-class>
-    </servlet>
+    
     
     
     
@@ -2520,6 +2516,26 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>API_newTxnMstr-assign_API_newTxnMstr</servlet-name>
         <servlet-class>flow.subflow.API_newTxnMstr.assign_API_newTxnMstr</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1648">
+        <servlet-name>Voice_556020</servlet-name>
+        <servlet-class>flow.Voice_556020</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1659">
+        <servlet-name>Voice_556021</servlet-name>
+        <servlet-class>flow.Voice_556021</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1671">
+        <servlet-name>assignTenantID</servlet-name>
+        <servlet-class>flow.assignTenantID</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_select_FET_0809000811_STORE_LST_1">
+        <servlet-name>select_FET_0809000811_STORE_LST-Begin</servlet-name>
+        <servlet-class>flow.subflow.select_FET_0809000811_STORE_LST.Begin</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_select_FET_0809000811_STORE_LST_4">
+        <servlet-name>select_FET_0809000811_STORE_LST-assign_FET_0809000811_STORE_LST</servlet-name>
+        <servlet-class>flow.subflow.select_FET_0809000811_STORE_LST.assign_FET_0809000811_STORE_LST</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -2579,10 +2595,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>assign_VDN</servlet-name>
         <url-pattern>/assign_VDN</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_130">
-        <servlet-name>AN_015333</servlet-name>
-        <url-pattern>/AN_015333</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_142">
         <servlet-name>AN_991225</servlet-name>
         <url-pattern>/AN_991225</url-pattern>
@@ -3314,10 +3327,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>insert_AIR_MENU_TBL-CF_insetDBAPI</servlet-name>
         <url-pattern>/insert_AIR_MENU_TBL-CF_insetDBAPI</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_740">
-        <servlet-name>insert_AIR_MENU_MASTER</servlet-name>
-        <url-pattern>/insert_AIR_MENU_MASTER</url-pattern>
-    </servlet-mapping>
+    
     
     
     
@@ -4828,6 +4838,26 @@ Copyright 2004-2011 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_API_newTxnMstr_10">
         <servlet-name>API_newTxnMstr-assign_API_newTxnMstr</servlet-name>
         <url-pattern>/API_newTxnMstr-assign_API_newTxnMstr</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1648">
+        <servlet-name>Voice_556020</servlet-name>
+        <url-pattern>/Voice_556020</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1659">
+        <servlet-name>Voice_556021</servlet-name>
+        <url-pattern>/Voice_556021</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1671">
+        <servlet-name>assignTenantID</servlet-name>
+        <url-pattern>/assignTenantID</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_STORE_LST_1">
+        <servlet-name>select_FET_0809000811_STORE_LST-Begin</servlet-name>
+        <url-pattern>/select_FET_0809000811_STORE_LST-Begin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_STORE_LST_4">
+        <servlet-name>select_FET_0809000811_STORE_LST-assign_FET_0809000811_STORE_LST</servlet-name>
+        <url-pattern>/select_FET_0809000811_STORE_LST-assign_FET_0809000811_STORE_LST</url-pattern>
     </servlet-mapping>
     
     
