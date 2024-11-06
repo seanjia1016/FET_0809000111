@@ -3,17 +3,17 @@
     <ApplicationFlow nextObjectId="41" package="flow.subflow.insert_IVR_5919_DONATE_TRAN" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubFlowRef" id="17" version="3.1">
-                <Property name="Name" value="CF_insetDBAPI"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="621"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="241"/>
                 <Property name="flowID" value="CF_insetDBAPI"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="621"/>
+                <Property name="Name" value="CF_insetDBAPI"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubFlowRef" id="18" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubExitPoint" id="19" version="1.2">
                             <ItemProperties>
-                                <Property name="Name" value="next"/>
                                 <Property name="LinkedNodeID" value="23"/>
+                                <Property name="Name" value="next"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -27,8 +27,8 @@
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="3" version="1.2">
                             <ItemProperties>
-                                <Property name="Name" value="Start"/>
                                 <Property name="LinkedNodeID" value="21"/>
+                                <Property name="Name" value="Start"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -36,24 +36,19 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="21" version="3.1">
-                <Property name="ReferencedNodeID" value="6"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="10"/>
                 <Property name="FlowNodeEditPart.WidgetX" value="122"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="10"/>
+                <Property name="ReferencedNodeID" value="6"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="5" version="3.1">
-                <Property name="Name" value="next"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="111"/>
                 <Property name="FlowNodeEditPart.WidgetX" value="32"/>
-            </FlowNode>
-            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="23" version="3.1">
-                <Property name="ReferencedNodeID" value="5"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="241"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="803"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="111"/>
+                <Property name="Name" value="next"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="6" version="3.1">
-                <Property name="Name" value="Assign_insert_IVR_5919_DONATE_TRAN"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="240"/>
                 <Property name="FlowNodeEditPart.WidgetX" value="32"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="240"/>
+                <Property name="Name" value="Assign_insert_IVR_5919_DONATE_TRAN"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="7" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -65,29 +60,29 @@
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="9" version="1.2">
                             <ItemProperties>
+                                <Property name="sourceFieldId" value="ANI"/>
                                 <Property name="sourceVarId" value="S_USERDATA"/>
+                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
                                 <Property name="destFieldId" value="MSISDN"/>
                                 <Property name="type" value="assign"/>
-                                <Property name="sourceFieldId" value="ANI"/>
-                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="10" version="1.2">
                             <ItemProperties>
+                                <Property name="sourceFieldId" value="audio"/>
                                 <Property name="sourceVarId" value="date"/>
+                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
                                 <Property name="destFieldId" value="DONATE_DATE"/>
                                 <Property name="type" value="assign"/>
-                                <Property name="sourceFieldId" value="audio"/>
-                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="33" version="1.2">
                             <ItemProperties>
-                                <Property name="RightConstOperand" value="1"/>
-                                <Property name="LeftOperandFieldID" value="utterance"/>
                                 <Property name="LeftOperandID" value="MN_016008"/>
+                                <Property name="LeftOperandFieldID" value="utterance"/>
+                                <Property name="RightConstOperand" value="1"/>
                             </ItemProperties>
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanOperator" id="38" version="1.2">
@@ -97,28 +92,26 @@
                                     <ChildItems>
                                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="39" version="1.2">
                                             <ItemProperties>
-                                                <Property name="RightConstOperand" value="1"/>
                                                 <Property name="Operator" value="Equal"/>
-                                                <Property name="LeftOperandFieldID" value="utterance"/>
                                                 <Property name="LeftOperandID" value="MN_016008"/>
+                                                <Property name="LeftOperandFieldID" value="utterance"/>
+                                                <Property name="RightConstOperand" value="1"/>
                                             </ItemProperties>
                                             <ChildItems/>
                                         </FlowItem>
                                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="40" version="1.2">
                                             <ItemProperties>
-                                                <Property name="RightConstOperand" value="1"/>
                                                 <Property name="Operator" value="Equal"/>
-                                                <Property name="LeftOperandID" value="MN_016016"/>
-                                                <Property name="LeftOperandFieldID" value="utterance"/>
+                                                <Property name="RightConstOperand" value="1"/>
                                             </ItemProperties>
                                             <ChildItems/>
                                         </FlowItem>
                                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="41" version="1.2">
                                             <ItemProperties>
-                                                <Property name="RightConstOperand" value="1"/>
                                                 <Property name="Operator" value="Equal"/>
-                                                <Property name="LeftOperandFieldID" value="utterance"/>
                                                 <Property name="LeftOperandID" value="MN_016023"/>
+                                                <Property name="LeftOperandFieldID" value="utterance"/>
+                                                <Property name="RightConstOperand" value="1"/>
                                             </ItemProperties>
                                             <ChildItems/>
                                         </FlowItem>
@@ -126,10 +119,10 @@
                                 </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="28" version="1.2">
                                     <ItemProperties>
-                                        <Property name="sourceConstant" value="Y"/>
+                                        <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
                                         <Property name="destFieldId" value="BUSINESS_ENTITY"/>
                                         <Property name="type" value="assign"/>
-                                        <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
+                                        <Property name="sourceConstant" value="Y"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -140,10 +133,10 @@
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="35" version="1.2">
                                     <ItemProperties>
-                                        <Property name="sourceConstant" value="N"/>
+                                        <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
                                         <Property name="destFieldId" value="BUSINESS_ENTITY"/>
                                         <Property name="type" value="assign"/>
-                                        <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
+                                        <Property name="sourceConstant" value="N"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -151,85 +144,90 @@
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="29" version="1.2">
                             <ItemProperties>
+                                <Property name="sourceFieldId" value="audio"/>
                                 <Property name="sourceVarId" value="time"/>
+                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
                                 <Property name="destFieldId" value="DONATE_TIME"/>
                                 <Property name="type" value="assign"/>
-                                <Property name="sourceFieldId" value="audio"/>
-                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="30" version="1.2">
                             <ItemProperties>
+                                <Property name="sourceFieldId" value="City"/>
                                 <Property name="sourceVarId" value="getContractByAccountIdOrSubscriberId_Output"/>
+                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
                                 <Property name="destFieldId" value="ADDRESS"/>
                                 <Property name="type" value="assign"/>
-                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
-                                <Property name="sourceFieldId" value="City"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="36" version="1.2">
                             <ItemProperties>
+                                <Property name="sourceFieldId" value="Region"/>
                                 <Property name="sourceVarId" value="getContractByAccountIdOrSubscriberId_Output"/>
+                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
                                 <Property name="destFieldId" value="ADDRESS"/>
                                 <Property name="type" value="concatenate"/>
-                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
-                                <Property name="sourceFieldId" value="Region"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="37" version="1.2">
                             <ItemProperties>
+                                <Property name="sourceFieldId" value="AddressLineOne"/>
                                 <Property name="sourceVarId" value="getContractByAccountIdOrSubscriberId_Output"/>
+                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
                                 <Property name="destFieldId" value="ADDRESS"/>
                                 <Property name="type" value="concatenate"/>
-                                <Property name="sourceFieldId" value="AddressLineOne"/>
-                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="31" version="1.2">
                             <ItemProperties>
+                                <Property name="sourceFieldId" value="LastName"/>
                                 <Property name="sourceVarId" value="getContractByAccountIdOrSubscriberId_Output"/>
+                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
                                 <Property name="destFieldId" value="NAME"/>
                                 <Property name="type" value="assign"/>
-                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
-                                <Property name="sourceFieldId" value="LastName"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="32" version="1.2">
                             <ItemProperties>
+                                <Property name="sourceFieldId" value="FE_MSIS_CB_ACCOUNT_ID"/>
                                 <Property name="sourceVarId" value="FE_MSIS_CB2_TBL"/>
+                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
                                 <Property name="destFieldId" value="ACCOUNT_ID"/>
                                 <Property name="type" value="assign"/>
-                                <Property name="destVarId" value="IVR_5919_DONATE_TRAN"/>
-                                <Property name="sourceFieldId" value="FE_MSIS_CB_ACCOUNT_ID"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="12" version="1.2">
                             <ItemProperties>
-                                <Property name="Name" value="Default"/>
                                 <Property name="LinkedNodeID" value="13"/>
+                                <Property name="Name" value="Default"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                     </ChildItems>
                 </FlowItem>
             </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="23" version="3.1">
+                <Property name="FlowNodeEditPart.WidgetX" value="803"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="241"/>
+                <Property name="ReferencedNodeID" value="5"/>
+            </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Servlet" id="13" version="3.1">
-                <Property name="Name" value="insert_IVR_DONATE_TRAN"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="240"/>
                 <Property name="FlowNodeEditPart.WidgetX" value="362"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="240"/>
+                <Property name="Name" value="insert_IVR_DONATE_TRAN"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Servlet" id="14" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="15" version="1.2">
                             <ItemProperties>
-                                <Property name="Name" value="Default"/>
                                 <Property name="LinkedNodeID" value="17"/>
+                                <Property name="Name" value="Default"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>

@@ -10,9 +10,7 @@
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="898" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_015061"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Choice" id="899" version="1.2">
@@ -326,96 +324,6 @@
                                     <ItemProperties>
                                         <Property name="trace.varId" value="CH_CIE"/>
                                         <Property name="trace.text" value="#####CIE:CIE_Create_error_Before#####"/>
-                                        <Property name="trace.fieldId" value="CIE_Create_error"/>
-                                        <Property name="trace.priority" value="info"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.TryBlock" id="549" version="1.2">
-                                    <ItemProperties/>
-                                    <ChildItems>
-                                        <FlowItem class="com.avaya.sce.callflow.extension.SimpleDataExtensionFlowItem" id="923" version="1.2">
-                                            <ItemProperties>
-                                                <Property name="ext.type.id" value="com.avaya.sce.webserviceoperations"/>
-                                                <Property name="Name" value="CIE_CreateService"/>
-                                            </ItemProperties>
-                                            <ChildItems/>
-                                        </FlowItem>
-                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.CatchBlock" id="551" version="1.2">
-                                            <ItemProperties/>
-                                            <ChildItems/>
-                                        </FlowItem>
-                                    </ChildItems>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="552" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="destVarId" value="CH_CIE"/>
-                                        <Property name="destFieldId" value="CIE_Create_error"/>
-                                        <Property name="type" value="assign"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="553" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="sourceFieldId" value="cieId"/>
-                                        <Property name="sourceVarId" value="CIE_CreateService_Output"/>
-                                        <Property name="destVarId" value="CH_CIE"/>
-                                        <Property name="destFieldId" value="CIEID"/>
-                                        <Property name="type" value="assign"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="554" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="sourceFieldId" value="cieDetailId"/>
-                                        <Property name="sourceVarId" value="CIE_CreateService_Output"/>
-                                        <Property name="destVarId" value="CH_CIE"/>
-                                        <Property name="destFieldId" value="CIEDETAILID"/>
-                                        <Property name="type" value="assign"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="555" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="sourceFieldId" value="subscriberContactId"/>
-                                        <Property name="sourceVarId" value="CIE_CreateService_Output"/>
-                                        <Property name="destVarId" value="CH_CIE"/>
-                                        <Property name="destFieldId" value="SUBSCRIBERCONTACTID"/>
-                                        <Property name="type" value="assign"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="556" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="trace.varId" value="CIE_CreateService_Output"/>
-                                        <Property name="trace.text" value="#####CIE_CreatService_Output_cieId#####"/>
-                                        <Property name="trace.fieldId" value="cieId"/>
-                                        <Property name="trace.priority" value="info"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="557" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="trace.varId" value="CIE_CreateService_Output"/>
-                                        <Property name="trace.text" value="#####CIE_CreatService_Output_DetailId#####"/>
-                                        <Property name="trace.fieldId" value="cieDetailId"/>
-                                        <Property name="trace.priority" value="info"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="558" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="trace.varId" value="CIE_CreateService_Output"/>
-                                        <Property name="trace.text" value="#####CIE_CreatService_Output_subscriberContactId#####"/>
-                                        <Property name="trace.fieldId" value="subscriberContactId"/>
-                                        <Property name="trace.priority" value="info"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="559" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="trace.varId" value="CH_CIE"/>
-                                        <Property name="trace.text" value="#####CIE:CIE_Create_error_After#####"/>
                                         <Property name="trace.fieldId" value="CIE_Create_error"/>
                                         <Property name="trace.priority" value="info"/>
                                     </ItemProperties>
@@ -1422,9 +1330,7 @@
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="914" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_015079"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Submit" id="915" version="1.2">
@@ -2706,9 +2612,7 @@
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="568" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_015060"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Submit" id="569" version="1.2">
@@ -4179,21 +4083,15 @@
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="132" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_015062"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="313" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_881008"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="314" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_881009"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Choice" id="133" version="1.2">
@@ -4274,9 +4172,7 @@
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="221" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_015080"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Submit" id="222" version="1.2">
@@ -4296,21 +4192,15 @@
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="138" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_015063"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="315" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_881008"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="316" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_881009"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Choice" id="139" version="1.2">
@@ -4470,21 +4360,15 @@
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="144" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_015064"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="317" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_881008"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="318" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_881009"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Choice" id="145" version="1.2">
@@ -4654,9 +4538,7 @@
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="238" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_015065"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Choice" id="239" version="1.2">
@@ -5614,9 +5496,7 @@
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="254" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Voice_015066"/>
-                            </ItemProperties>
+                            <ItemProperties/>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Submit" id="255" version="1.2">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="634" package="flow.subflow.CF_Check_FandKDataFor380" version="5.0">
+    <ApplicationFlow nextObjectId="642" package="flow.subflow.CF_Check_FandKDataFor380" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
                 <Property name="Name" value="Begin"/>
@@ -71,7 +71,7 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="556" version="1.2">
                             <ItemProperties>
                                 <Property name="Name" value="Default"/>
-                                <Property name="LinkedNodeID" value="574"/>
+                                <Property name="LinkedNodeID" value="635"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -239,30 +239,6 @@
                                     <ChildItems/>
                                 </FlowItem>
                             </ChildItems>
-                        </FlowItem>
-                    </ChildItems>
-                </FlowItem>
-            </FlowNode>
-            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubFlowRef" id="574" version="3.1">
-                <Property name="Name" value="API_getContractByAccountIdOrSubscriberId"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="33"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="1046"/>
-                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubFlowRef" id="575" version="1.2">
-                    <ItemProperties/>
-                    <ChildItems>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubExitPoint" id="577" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="End"/>
-                                <Property name="LinkedNodeID" value="623"/>
-                            </ItemProperties>
-                            <ChildItems/>
-                        </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubExitPoint" id="578" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="next"/>
-                                <Property name="LinkedNodeID" value="559"/>
-                            </ItemProperties>
-                            <ChildItems/>
                         </FlowItem>
                     </ChildItems>
                 </FlowItem>
@@ -651,8 +627,8 @@
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="476" version="3.1">
                 <Property name="Name" value="Set_Reason_StatusFail"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="569"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="1096"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="722"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1046"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="477" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -821,6 +797,31 @@
                 <Property name="ReferencedNodeID" value="283"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="307"/>
                 <Property name="FlowNodeEditPart.WidgetX" value="691"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubFlowRef" id="635" version="3.1">
+                <Property name="Name" value="API_getSubscriberAndAccountProfile"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="36"/>
+                <Property name="flowID" value="API_getSubscriberAndAccountProfile"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1033"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubFlowRef" id="636" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubExitPoint" id="638" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="End"/>
+                                <Property name="LinkedNodeID" value="623"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubExitPoint" id="639" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="next"/>
+                                <Property name="LinkedNodeID" value="559"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="453" version="3.1">
                 <Property name="Name" value="Set_Reason_DB_FAIL"/>
@@ -1464,18 +1465,6 @@
                 <Property name="Connection.SourceObjectID" value="569"/>
                 <Property name="Connection.TargetObjectID" value="549"/>
             </NodeConnection>
-            <NodeConnection id="579" version="1.2">
-                <SourceNode id="549"/>
-                <TargetNode id="574"/>
-                <Property name="Connection.SourceObjectID" value="556"/>
-                <Property name="Connection.TargetObjectID" value="574"/>
-            </NodeConnection>
-            <NodeConnection id="581" version="1.2">
-                <SourceNode id="574"/>
-                <TargetNode id="559"/>
-                <Property name="Connection.SourceObjectID" value="578"/>
-                <Property name="Connection.TargetObjectID" value="559"/>
-            </NodeConnection>
             <NodeConnection id="595" version="1.2">
                 <SourceNode id="591"/>
                 <TargetNode id="342"/>
@@ -1518,12 +1507,6 @@
                 <Property name="Connection.SourceObjectID" value="568"/>
                 <Property name="Connection.TargetObjectID" value="621"/>
             </NodeConnection>
-            <NodeConnection id="624" version="1.2">
-                <SourceNode id="574"/>
-                <TargetNode id="623"/>
-                <Property name="Connection.SourceObjectID" value="577"/>
-                <Property name="Connection.TargetObjectID" value="623"/>
-            </NodeConnection>
             <NodeConnection id="627" version="1.2">
                 <SourceNode id="318"/>
                 <TargetNode id="453"/>
@@ -1541,6 +1524,24 @@
                 <TargetNode id="507"/>
                 <Property name="Connection.SourceObjectID" value="632"/>
                 <Property name="Connection.TargetObjectID" value="507"/>
+            </NodeConnection>
+            <NodeConnection id="640" version="1.2">
+                <SourceNode id="549"/>
+                <TargetNode id="635"/>
+                <Property name="Connection.SourceObjectID" value="556"/>
+                <Property name="Connection.TargetObjectID" value="635"/>
+            </NodeConnection>
+            <NodeConnection id="641" version="1.2">
+                <SourceNode id="635"/>
+                <TargetNode id="559"/>
+                <Property name="Connection.SourceObjectID" value="639"/>
+                <Property name="Connection.TargetObjectID" value="559"/>
+            </NodeConnection>
+            <NodeConnection id="642" version="1.2">
+                <SourceNode id="635"/>
+                <TargetNode id="623"/>
+                <Property name="Connection.SourceObjectID" value="638"/>
+                <Property name="Connection.TargetObjectID" value="623"/>
             </NodeConnection>
         </FlowGraph>
         <ProjectEventTypes/>

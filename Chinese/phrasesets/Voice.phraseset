@@ -1,822 +1,156 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <phraseset audiolocation="external" filename="Voice" version="1.0">
     <phrase version="1.0">
-        <displayname>014033</displayname>
+        <displayname>556020</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>014033.wav</audiofile>
+        <audiofile>556020.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015605</displayname>
+        <displayname>556021</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015605.wav</audiofile>
+        <audiofile>556021.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015701</displayname>
+        <displayname>556022</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015701.wav</audiofile>
+        <audiofile>556022.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015703</displayname>
+        <displayname>556023</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015703.wav</audiofile>
+        <audiofile>556023.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015704</displayname>
+        <displayname>556024</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015704.wav</audiofile>
+        <audiofile>556024.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015714</displayname>
+        <displayname>556025</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015714.wav</audiofile>
+        <audiofile>556025.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015707</displayname>
+        <displayname>556026</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015707.wav</audiofile>
+        <audiofile>556026.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015081</displayname>
+        <displayname>556027</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015081.wav</audiofile>
+        <audiofile>556027.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015594</displayname>
+        <displayname>556028</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015594.wav</audiofile>
+        <audiofile>556028.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015610</displayname>
+        <displayname>556029</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015610.wav</audiofile>
+        <audiofile>556029.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015061</displayname>
+        <displayname>556030</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015061.wav</audiofile>
+        <audiofile>556030.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015062</displayname>
+        <displayname>556031</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015062.wav</audiofile>
+        <audiofile>556031.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015063</displayname>
+        <displayname>556032</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015063.wav</audiofile>
+        <audiofile>556032.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015064</displayname>
+        <displayname>556034</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015064.wav</audiofile>
+        <audiofile>556034.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015065</displayname>
+        <displayname>556035</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015065.wav</audiofile>
+        <audiofile>556035.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015831</displayname>
+        <displayname>556036</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015831.wav</audiofile>
+        <audiofile>556036.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>015835</displayname>
+        <displayname>556037</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>015835.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015705</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015705.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015706</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015706.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015071</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015071.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015072</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015072.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015074</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015074.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015075</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015075.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015076</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015076.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015077</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015077.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015600</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015600.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015623</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015623.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015624</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015624.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015625</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015625.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015606</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015606.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015622</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015622.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015626</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015626.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015627</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015627.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015601</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015601.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015602</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015602.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015608</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015608.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>888120</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>888120.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015708</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015708.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015604</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015604.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015721</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015721.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015720</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015720.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015700</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015700.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>881008</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>881008.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>881009</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>881009.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>888099</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>888099.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015836</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015836.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015709</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015709.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015595</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015595.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015596</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015596.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015073</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015073.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015080</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015080.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015079</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015079.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015066</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015066.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015609</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015609.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>881018</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>881018.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015333</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015333.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015716</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015716.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015715</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015715.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>991225</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>991225.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015832</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015832.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015833</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015833.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015834</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015834.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015603</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015603.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015070</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015070.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015830</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015830.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015060</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015060.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>015702</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>015702.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016000</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016000.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016002</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016002.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016003</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016003.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016004</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016004.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016005</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016005.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016006</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016006.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016007</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016007.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016008</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016008.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016009</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016009.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016001</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016001.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016018</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016018.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016019</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016019.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016020</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016020.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016021</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016021.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016022</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016022.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016023</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016023.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016017</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016017.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016010</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016010.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016011</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016011.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016012</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016012.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016013</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016013.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016014</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016014.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016015</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016015.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
-        <displayname>016016</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>016016.wav</audiofile>
+        <audiofile>556037.wav</audiofile>
     </phrase>
 </phraseset>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="243" package="flow.subflow.CF_InputAndCheckID" version="5.0">
+    <ApplicationFlow nextObjectId="244" package="flow.subflow.CF_InputAndCheckID" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
                 <Property name="Name" value="Begin"/>
@@ -68,6 +68,14 @@
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="244" version="1.2">
+                            <ItemProperties>
+                                <Property name="destFieldId" value="MENU_ID"/>
+                                <Property name="type" value="assign"/>
+                                <Property name="destVarId" value="AIR_MENU"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="243" version="1.2">
                             <ItemProperties>
                                 <Property name="sourceVarId" value="S_OD"/>
@@ -130,15 +138,6 @@
                             <ItemProperties>
                                 <Property name="Name" value="Default"/>
                                 <Property name="LinkedNodeID" value="57"/>
-                            </ItemProperties>
-                            <ChildItems/>
-                        </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="241" version="1.2">
-                            <ItemProperties>
-                                <Property name="sourceConstant" value="380"/>
-                                <Property name="destFieldId" value="DetailTemp"/>
-                                <Property name="type" value="assign"/>
-                                <Property name="destVarId" value="S_OD"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>

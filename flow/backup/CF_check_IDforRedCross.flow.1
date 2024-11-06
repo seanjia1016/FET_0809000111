@@ -42,9 +42,11 @@
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="764" version="1.2">
                             <ItemProperties>
+                                <Property name="sourceVarId" value="AN_015603_2"/>
                                 <Property name="destFieldId" value="IDENTIFIER"/>
                                 <Property name="type" value="assign"/>
                                 <Property name="destVarId" value="S_USERDATA"/>
+                                <Property name="sourceFieldId" value="utterance"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -84,7 +86,7 @@
                                 <Property name="Operator" value="="/>
                                 <Property name="RightVarOperandFieldID" value="IDENTIFIER"/>
                                 <Property name="LeftOperandID" value="FE_CUST_CB2_TBL"/>
-                                <Property name="LeftOperandFieldID" value="FE_CUST_SOCIAL_NUM"/>
+                                <Property name="LeftOperandFieldID" value="FE_CUST_SOCIAL_NUM_2"/>
                             </ItemProperties>
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="762" version="1.2">

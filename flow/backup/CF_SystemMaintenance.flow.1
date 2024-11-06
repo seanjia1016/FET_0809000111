@@ -2,11 +2,6 @@
 <AppFlowDoc>
     <ApplicationFlow nextObjectId="142" package="flow.subflow.CF_SystemMaintenance" version="5.0">
         <FlowGraph>
-            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="103" version="3.1">
-                <Property name="ReferencedNodeID" value="31"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="26"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="853"/>
-            </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
                 <Property name="Name" value="Begin"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubEntry" id="2" version="1.2">
@@ -22,18 +17,23 @@
                     </ChildItems>
                 </FlowItem>
             </FlowNode>
-            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Label" id="32" version="3.1">
-                <Property name="Name" value="Next"/>
-                <Property name="FlowNodeEditPart.Width" value="71"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="108"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="119"/>
-                <Property name="FlowNodeEditPart.Height" value="37"/>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="103" version="3.1">
+                <Property name="ReferencedNodeID" value="31"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="26"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="853"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Label" id="19" version="3.1">
                 <Property name="Name" value="掛斷"/>
                 <Property name="FlowNodeEditPart.Width" value="64"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="106"/>
                 <Property name="FlowNodeEditPart.WidgetX" value="11"/>
+                <Property name="FlowNodeEditPart.Height" value="37"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Label" id="32" version="3.1">
+                <Property name="Name" value="Next"/>
+                <Property name="FlowNodeEditPart.Width" value="71"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="108"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="119"/>
                 <Property name="FlowNodeEditPart.Height" value="37"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="18" version="3.1">
@@ -59,8 +59,8 @@
                                 <Property name="sourceVarId" value="time"/>
                                 <Property name="destFieldId" value="Operation_time_Now"/>
                                 <Property name="type" value="assign"/>
-                                <Property name="destVarId" value="S_OD"/>
                                 <Property name="sourceFieldId" value="audio"/>
+                                <Property name="destVarId" value="S_OD"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -69,8 +69,8 @@
                                 <Property name="sourceVarId" value="date"/>
                                 <Property name="destFieldId" value="Operation_date_Start"/>
                                 <Property name="type" value="assign"/>
-                                <Property name="sourceFieldId" value="audio"/>
                                 <Property name="destVarId" value="S_OD"/>
+                                <Property name="sourceFieldId" value="audio"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -113,8 +113,8 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="112" version="1.2">
                             <ItemProperties>
                                 <Property name="Operator" value="IsEmpty"/>
-                                <Property name="LeftOperandID" value="IVR_OPERATION_CTRL"/>
                                 <Property name="LeftOperandFieldID" value="CTRL_START_TIME"/>
+                                <Property name="LeftOperandID" value="IVR_OPERATION_CTRL"/>
                             </ItemProperties>
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="110" version="1.2">
@@ -131,8 +131,8 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="113" version="1.2">
                             <ItemProperties>
                                 <Property name="Operator" value="IsEmpty"/>
-                                <Property name="LeftOperandID" value="IVR_OPERATION_CTRL"/>
                                 <Property name="LeftOperandFieldID" value="CTRL_FINISH_TIME"/>
+                                <Property name="LeftOperandID" value="IVR_OPERATION_CTRL"/>
                             </ItemProperties>
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="111" version="1.2">
@@ -177,8 +177,8 @@
                             <ItemProperties>
                                 <Property name="RightConstOperand" value="1"/>
                                 <Property name="Operator" value="&lt;"/>
-                                <Property name="LeftOperandID" value="IVR_OPERATION_CTRL"/>
                                 <Property name="LeftOperandFieldID" value="count"/>
+                                <Property name="LeftOperandID" value="IVR_OPERATION_CTRL"/>
                             </ItemProperties>
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="137" version="1.2">
@@ -195,8 +195,8 @@
                                 <Property name="sourceVarId" value="S_OD"/>
                                 <Property name="destFieldId" value="Operation_date_Start"/>
                                 <Property name="type" value="concatenate"/>
-                                <Property name="destVarId" value="S_OD"/>
                                 <Property name="sourceFieldId" value="Operation_time_Now"/>
+                                <Property name="destVarId" value="S_OD"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -205,8 +205,8 @@
                                 <Property name="sourceVarId" value="IVR_OPERATION_CTRL"/>
                                 <Property name="destFieldId" value="CTRL_START_DATE"/>
                                 <Property name="type" value="concatenate"/>
-                                <Property name="destVarId" value="IVR_OPERATION_CTRL"/>
                                 <Property name="sourceFieldId" value="CTRL_START_TIME"/>
+                                <Property name="destVarId" value="IVR_OPERATION_CTRL"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -215,8 +215,8 @@
                                 <Property name="sourceVarId" value="IVR_OPERATION_CTRL"/>
                                 <Property name="destFieldId" value="CTRL_FINISH_DATE"/>
                                 <Property name="type" value="concatenate"/>
-                                <Property name="destVarId" value="IVR_OPERATION_CTRL"/>
                                 <Property name="sourceFieldId" value="CTRL_FINISH_TIME"/>
+                                <Property name="destVarId" value="IVR_OPERATION_CTRL"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -275,8 +275,8 @@
                                             <ItemProperties>
                                                 <Property name="RightConstOperand" value="ON"/>
                                                 <Property name="Operator" value="Equal"/>
-                                                <Property name="LeftOperandID" value="IVR_OPERATION_CTRL"/>
                                                 <Property name="LeftOperandFieldID" value="OPERATION_CTRL_FLAG"/>
+                                                <Property name="LeftOperandID" value="IVR_OPERATION_CTRL"/>
                                             </ItemProperties>
                                             <ChildItems/>
                                         </FlowItem>
@@ -288,20 +288,20 @@
                                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="133" version="1.2">
                                                     <ItemProperties>
                                                         <Property name="RightVarOperandID" value="IVR_OPERATION_CTRL"/>
-                                                        <Property name="Operator" value="&lt;"/>
+                                                        <Property name="Operator" value="&gt;"/>
                                                         <Property name="RightVarOperandFieldID" value="CTRL_START_DATE"/>
-                                                        <Property name="LeftOperandID" value="S_OD"/>
                                                         <Property name="LeftOperandFieldID" value="Operation_date_Start"/>
+                                                        <Property name="LeftOperandID" value="S_OD"/>
                                                     </ItemProperties>
                                                     <ChildItems/>
                                                 </FlowItem>
                                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="134" version="1.2">
                                                     <ItemProperties>
                                                         <Property name="RightVarOperandID" value="IVR_OPERATION_CTRL"/>
-                                                        <Property name="Operator" value="&gt;"/>
+                                                        <Property name="Operator" value="&lt;"/>
                                                         <Property name="RightVarOperandFieldID" value="CTRL_FINISH_DATE"/>
-                                                        <Property name="LeftOperandID" value="S_OD"/>
                                                         <Property name="LeftOperandFieldID" value="Operation_date_Start"/>
+                                                        <Property name="LeftOperandID" value="S_OD"/>
                                                     </ItemProperties>
                                                     <ChildItems/>
                                                 </FlowItem>
@@ -348,8 +348,8 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubFlowRef" id="42" version="3.1">
                 <Property name="Name" value="select_IVR_Operation_CTRL"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="10"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="176"/>
                 <Property name="flowID" value="select_IVR_Operation_CTRL"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="176"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubFlowRef" id="43" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
