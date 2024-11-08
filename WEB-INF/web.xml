@@ -2462,10 +2462,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>checkICCard</servlet-name>
         <servlet-class>flow.checkICCard</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_API_queryVoucherCard_1">
-        <servlet-name>API_queryVoucherCard-Begin</servlet-name>
-        <servlet-class>flow.subflow.API_queryVoucherCard.Begin</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_API_checkICCard_1">
         <servlet-name>API_checkICCard-Begin</servlet-name>
         <servlet-class>flow.subflow.API_checkICCard.Begin</servlet-class>
@@ -2474,10 +2471,9 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>API_checkICCard-queryVoucherCard</servlet-name>
         <servlet-class>flow.subflow.API_checkICCard.queryVoucherCard</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_API_queryVoucherCard_4">
-        <servlet-name>API_queryVoucherCard-untitledServlet1</servlet-name>
-        <servlet-class>flow.subflow.API_queryVoucherCard.untitledServlet1</servlet-class>
-    </servlet>
+    
+    
+    
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -4725,10 +4721,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>checkICCard</servlet-name>
         <url-pattern>/checkICCard</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_API_queryVoucherCard_1">
-        <servlet-name>API_queryVoucherCard-Begin</servlet-name>
-        <url-pattern>/API_queryVoucherCard-Begin</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_API_checkICCard_1">
         <servlet-name>API_checkICCard-Begin</servlet-name>
         <url-pattern>/API_checkICCard-Begin</url-pattern>
@@ -4737,10 +4730,9 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>API_checkICCard-queryVoucherCard</servlet-name>
         <url-pattern>/API_checkICCard-queryVoucherCard</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_API_queryVoucherCard_4">
-        <servlet-name>API_queryVoucherCard-untitledServlet1</servlet-name>
-        <url-pattern>/API_queryVoucherCard-untitledServlet1</url-pattern>
-    </servlet-mapping>
+    
+    
+    
     
     
     
