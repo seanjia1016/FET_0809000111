@@ -112,16 +112,16 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 			String timeLongSecStr = String.valueOf(timeLong / 1000);
 			
 			// 讀取回傳值
-			String returnCode = "", exception = "", remarkResponse = "";
+			String status = "", exception = "";
 			// 檢查 "voucher" 是否存在並包含 "status" 欄位
 			if (responseJsonObject.has("voucher")) {
 			    JSONObject voucher = responseJsonObject.getJSONObject("voucher");
 			    if (voucher.has("status")) {
-			        returnCode = voucher.getString("status"); // 取得 status 的值
+			    	status = voucher.getString("status"); // 取得 status 的值
 			        Utils.setFieldString(mySession,
-			                IProjectVariables.CREATE_TXN__OUTPUT,
-			                IProjectVariables.CREATE_TXN__OUTPUT_FIELD_RETURN_CODE,
-			                returnCode);
+			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT,
+			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_STATUS,
+			                status);
 			    }
 			}
 

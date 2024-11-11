@@ -2490,6 +2490,22 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>API_queryVoucherCard</servlet-name>
         <servlet-class>flow.API_queryVoucherCard</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1834">
+        <servlet-name>Voice_556029</servlet-name>
+        <servlet-class>flow.Voice_556029</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1849">
+        <servlet-name>Voice_556031</servlet-name>
+        <servlet-class>flow.Voice_556031</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1856">
+        <servlet-name>Voice_556036</servlet-name>
+        <servlet-class>flow.Voice_556036</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1871">
+        <servlet-name>ToAgent</servlet-name>
+        <servlet-class>flow.ToAgent</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -4761,6 +4777,22 @@ Copyright 2004-2011 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_main_1822">
         <servlet-name>API_queryVoucherCard</servlet-name>
         <url-pattern>/API_queryVoucherCard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1834">
+        <servlet-name>Voice_556029</servlet-name>
+        <url-pattern>/Voice_556029</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1849">
+        <servlet-name>Voice_556031</servlet-name>
+        <url-pattern>/Voice_556031</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1856">
+        <servlet-name>Voice_556036</servlet-name>
+        <url-pattern>/Voice_556036</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1871">
+        <servlet-name>ToAgent</servlet-name>
+        <url-pattern>/ToAgent</url-pattern>
     </servlet-mapping>
     
     
