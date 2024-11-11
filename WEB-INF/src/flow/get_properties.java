@@ -100,13 +100,13 @@ public class get_properties extends com.avaya.sce.runtime.BasicServlet {
 					e.printStackTrace();
 				}
 				
-				String test_mode = props.getProperty("test_mode");
-				IVariableField variable_test_mode = mySession
+				String vdn = props.getProperty("FET_0809000811");
+				IVariableField variable_vdn = mySession
 						.getVariableField(
 								IProjectVariables.CH__PROPERTIES,
-								IProjectVariables.CH__PROPERTIES_FIELD_TEST__MODE);
-				variable_test_mode.setValue(test_mode);
-				mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "test_mode Response:" +test_mode);
+								IProjectVariables.CH__PROPERTIES_FIELD_VDN);
+				variable_vdn.setValue(vdn);
+				mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "test_mode Response:" +vdn);
 				
 
 				String channel = props.getProperty("Channel");
@@ -122,43 +122,9 @@ public class get_properties extends com.avaya.sce.runtime.BasicServlet {
 				IVariableField variable_MIDDLEWARE__IP = mySession
 						.getVariableField(
 								IProjectVariables.CH__PROPERTIES,
-								IProjectVariables.CH__PROPERTIES_FIELD_MIDDLEWARE__IP);
+								IProjectVariables.CH__PROPERTIES_FIELD_MIDDLEWARE_IP);
 				variable_MIDDLEWARE__IP.setValue(MIDDLEWARE__IP);
 				mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "MIDDLEWARE__IP Response:" +MIDDLEWARE__IP);
-				
-				
-				String DB_API_IP = props.getProperty("DB_API_IP");
-				IVariableField variable_DB_API_IP = mySession
-						.getVariableField(
-								IProjectVariables.CH__PROPERTIES,
-								IProjectVariables.CH__PROPERTIES_FIELD_DB__API__IP);
-				variable_DB_API_IP.setValue(DB_API_IP);
-				mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "DB_API_IP Response:" +DB_API_IP);
-				
-				
-				String channelForCfg = props.getProperty("channelForCfg");
-				IVariableField variable_channelForCfg = mySession.getVariableField(
-						IProjectVariables.CH__PROPERTIES,
-						IProjectVariables.CH__PROPERTIES_FIELD_CHANNEL_FOR_CFG);
-				variable_channelForCfg.setValue(channelForCfg);
-				mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "channelForCfg Response:" +channelForCfg);
-				
-				
-				String JNDINAME = props.getProperty("JNDINAME");
-				IVariableField variable_JNDINAME = mySession.getVariableField(
-						IProjectVariables.CH__PROPERTIES,
-						IProjectVariables.CH__PROPERTIES_FIELD_JNDINAME);
-				variable_JNDINAME.setValue(JNDINAME);
-				mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "JNDINAME Response:" +JNDINAME);
-				
-				
-				String FloWName = props.getProperty("FloWName");
-				IVariableField variable_FloWName = mySession.getVariableField(
-						IProjectVariables.CH__PROPERTIES,
-						IProjectVariables.CH__PROPERTIES_FIELD_FLO_WNAME);
-				variable_FloWName.setValue(FloWName);
-				mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "FloWName Response:" +FloWName);
-				
 				
 				
 	}
