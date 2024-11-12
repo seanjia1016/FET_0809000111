@@ -64,8 +64,7 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 		final String TID = Utils.TID(mySession);
 		String apiName = "updateVoucherStatusFilter";
 		final String IP = Utils.IP(mySession);
-		String url = "http://" + IP + "/FET_IVR_MiddleWare/" + apiName;
-		final String flowname = Utils.getFieldString(mySession, IProjectVariables.PROPERTIES, IProjectVariables.PROPERTIES_FIELD_FLOW_NAME);
+		String url = "http://" + IP + "/FET_IVR_MiddleWare/" + apiName;;
 		
 		// API開始時間
 		long apiStartTimeInMillis = Calendar.getInstance().getTimeInMillis();
