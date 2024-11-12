@@ -21,7 +21,7 @@ public class Input_ID_9 extends com.avaya.sce.runtime.Grammar {
         setBuiltin(true);
         setBuiltinMode("dtmf");
         setType("digits");
-        setOptions("length=9");
+        setOptions("maxlength=3");
 		//}}END:CLASS:CONSTRUCTOR
     }
 
