@@ -1,5 +1,8 @@
 package flow;
 
+import com.avaya.sce.runtimecommon.IVariableField;
+import com.crm.utils.Utils;
+
 /**
  * A basic servlet which allows a user to define their code, generate
  * any output, and to select where to transition to next.
@@ -39,8 +42,34 @@ public class getUUI extends com.avaya.sce.runtime.BasicServlet {
 	 */
 	public void servletImplementation(com.avaya.sce.runtimecommon.SCESession mySession) {
 
-		// TODO: Add your code here!
+		String ANI = Utils.getFieldString(mySession, IProjectVariables.CH__USERDATA, IProjectVariables.CH__USERDATA_FIELD_ANI);
+		
+		String VDN = Utils.getFieldString(mySession, IProjectVariables.CH__PROPERTIES, IProjectVariables.CH__PROPERTIES_FIELD_VDN);
 
+		String MSISDN = Utils.getFieldString(mySession, IProjectVariables.CH__USERDATA, IProjectVariables.CH__USERDATA_FIELD_ANI);
+		
+		String IN_SURVERY_ID = "00000000000000000";
+		
+		String LastService = "Voice_556036";
+		
+		String CIEID = "0000000000000000000";
+		
+		String UUI = ANI + "," + VDN + "," + MSISDN + "," + IN_SURVERY_ID + "," + LastService + "," + CIEID ;
+		
+		int a = 120 - UUI.length();
+		
+		StringBuilder zeros = new StringBuilder();
+		for (int i = 0; i < a; i++) {
+		    zeros.append('0');
+		}
+		UUI = UUI + zeros.toString();
+		
+		IVariableField variable_uui = mySession
+				.getVariableField(
+						IProjectVariables.CH__USERDATA,
+						IProjectVariables.CH__USERDATA_FIELD_UUI);
+		variable_uui.setValue(UUI);
+						
 	}
 	/**
 	 * Builds the list of branches that are defined for this servlet object.

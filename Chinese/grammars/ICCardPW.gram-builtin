@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <grammar>
     <properties>
-        <mode value="dtmf"/>
+        <mode value="voice"/>
         <type value="static"/>
     </properties>
     <data>
-        <options value="bWF4bGVuZ3RoPTM="/>
-        <builtintype value="digits"/>
+        <options value=""/>
+        <builtintype value="number"/>
         <builtinversion value="1"/>
     </data>
 </grammar>
