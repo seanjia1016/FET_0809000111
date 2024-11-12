@@ -1480,6 +1480,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
+    <variable factoryID="" name="TASK_0809000811_TBL:PinCode" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="TASK_380_TBL:AMT" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="TASK_380_TBL:ANI" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="TASK_380_TBL:COUNT" owner="" type="" value="" version="1.0"/>
