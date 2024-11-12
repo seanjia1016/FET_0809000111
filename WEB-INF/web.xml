@@ -2544,6 +2544,10 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>API_updateVoucherStatus-API_getCashSubscriberInfoByKey</servlet-name>
         <servlet-class>flow.subflow.API_updateVoucherStatus.API_getCashSubscriberInfoByKey</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_API_updateVoucherStatus_14">
+        <servlet-name>API_updateVoucherStatus-End</servlet-name>
+        <servlet-class>flow.subflow.API_updateVoucherStatus.End</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -4867,6 +4871,10 @@ Copyright 2004-2011 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_API_updateVoucherStatus_9">
         <servlet-name>API_updateVoucherStatus-API_getCashSubscriberInfoByKey</servlet-name>
         <url-pattern>/API_updateVoucherStatus-API_getCashSubscriberInfoByKey</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_API_updateVoucherStatus_14">
+        <servlet-name>API_updateVoucherStatus-End</servlet-name>
+        <url-pattern>/API_updateVoucherStatus-End</url-pattern>
     </servlet-mapping>
     
     
