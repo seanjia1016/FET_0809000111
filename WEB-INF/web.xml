@@ -2552,10 +2552,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>API_updateVoucherStatus-API_updateVoucherStatus</servlet-name>
         <servlet-class>flow.subflow.API_updateVoucherStatus.API_updateVoucherStatus</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_select_FET_0809000811_CheckTenantID_PASSWORD_1">
-        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-Begin</servlet-name>
-        <servlet-class>flow.subflow.select_FET_0809000811_CheckTenantID_PASSWORD.Begin</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_select_FET_0809000811_checkTenantID_PASSWORD_1">
         <servlet-name>select_FET_0809000811_checkTenantID_PASSWORD-Begin</servlet-name>
         <servlet-class>flow.subflow.select_FET_0809000811_checkTenantID_PASSWORD.Begin</servlet-class>
@@ -2568,17 +2565,28 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>select_FET_0809000811_checkTenantID_PASSWORD-next</servlet-name>
         <servlet-class>flow.subflow.select_FET_0809000811_checkTenantID_PASSWORD.next</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_select_FET_0809000811_CheckTenantID_PASSWORD_7">
-        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-assign_FET_0809000811_CheckTenantIDAndPassword</servlet-name>
-        <servlet-class>flow.subflow.select_FET_0809000811_CheckTenantID_PASSWORD.assign_FET_0809000811_CheckTenantIDAndPassword</servlet-class>
+    
+    
+    
+    <servlet id="SAGE-callflow-servlet_select_FET_0809000811_CheckTenantIDAndPassword_1">
+        <servlet-name>select_FET_0809000811_CheckTenantIDAndPassword-Begin</servlet-name>
+        <servlet-class>flow.subflow.select_FET_0809000811_CheckTenantIDAndPassword.Begin</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_select_FET_0809000811_CheckTenantID_PASSWORD_16">
-        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-untitledSubReturn1</servlet-name>
-        <servlet-class>flow.subflow.select_FET_0809000811_CheckTenantID_PASSWORD.untitledSubReturn1</servlet-class>
+    <servlet id="SAGE-callflow-servlet_API_1">
+        <servlet-name>API-Begin</servlet-name>
+        <servlet-class>flow.subflow.API.Begin</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_select_FET_0809000811_CheckTenantID_PASSWORD_11">
-        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-untitledSubFlowRef1</servlet-name>
-        <servlet-class>flow.subflow.select_FET_0809000811_CheckTenantID_PASSWORD.untitledSubFlowRef1</servlet-class>
+    <servlet id="SAGE-callflow-servlet_API_18">
+        <servlet-name>API-next</servlet-name>
+        <servlet-class>flow.subflow.API.next</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_API_22">
+        <servlet-name>API-assign_FET_0809000811_CheckTenantIDAndPassword</servlet-name>
+        <servlet-class>flow.subflow.API.assign_FET_0809000811_CheckTenantIDAndPassword</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_API_25">
+        <servlet-name>API-CF_selectDBAPI</servlet-name>
+        <servlet-class>flow.subflow.API.CF_selectDBAPI</servlet-class>
     </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
@@ -4912,10 +4920,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>API_updateVoucherStatus-API_updateVoucherStatus</servlet-name>
         <url-pattern>/API_updateVoucherStatus-API_updateVoucherStatus</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_CheckTenantID_PASSWORD_1">
-        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-Begin</servlet-name>
-        <url-pattern>/select_FET_0809000811_CheckTenantID_PASSWORD-Begin</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_checkTenantID_PASSWORD_1">
         <servlet-name>select_FET_0809000811_checkTenantID_PASSWORD-Begin</servlet-name>
         <url-pattern>/select_FET_0809000811_checkTenantID_PASSWORD-Begin</url-pattern>
@@ -4928,18 +4933,29 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>select_FET_0809000811_checkTenantID_PASSWORD-next</servlet-name>
         <url-pattern>/select_FET_0809000811_checkTenantID_PASSWORD-next</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_CheckTenantID_PASSWORD_7">
-        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-assign_FET_0809000811_CheckTenantIDAndPassword</servlet-name>
-        <url-pattern>/select_FET_0809000811_CheckTenantID_PASSWORD-assign_FET_0809000811_CheckTenantIDAndPassword</url-pattern>
+    <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_CheckTenantIDAndPassword_1">
+        <servlet-name>select_FET_0809000811_CheckTenantIDAndPassword-Begin</servlet-name>
+        <url-pattern>/select_FET_0809000811_CheckTenantIDAndPassword-Begin</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_CheckTenantID_PASSWORD_16">
-        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-untitledSubReturn1</servlet-name>
-        <url-pattern>/select_FET_0809000811_CheckTenantID_PASSWORD-untitledSubReturn1</url-pattern>
+    <servlet-mapping id="SAGE-callflow-servletmapping_API_1">
+        <servlet-name>API-Begin</servlet-name>
+        <url-pattern>/API-Begin</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_CheckTenantID_PASSWORD_11">
-        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-untitledSubFlowRef1</servlet-name>
-        <url-pattern>/select_FET_0809000811_CheckTenantID_PASSWORD-untitledSubFlowRef1</url-pattern>
+    <servlet-mapping id="SAGE-callflow-servletmapping_API_18">
+        <servlet-name>API-next</servlet-name>
+        <url-pattern>/API-next</url-pattern>
     </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_API_22">
+        <servlet-name>API-assign_FET_0809000811_CheckTenantIDAndPassword</servlet-name>
+        <url-pattern>/API-assign_FET_0809000811_CheckTenantIDAndPassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_API_25">
+        <servlet-name>API-CF_selectDBAPI</servlet-name>
+        <url-pattern>/API-CF_selectDBAPI</url-pattern>
+    </servlet-mapping>
+    
+    
+    
     
     
     

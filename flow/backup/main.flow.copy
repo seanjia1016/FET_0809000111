@@ -181,12 +181,6 @@
                                 </FlowItem>
                             </ChildItems>
                         </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.OnDisconnect" id="76" version="1.2">
-                            <ItemProperties>
-                                <Property name="LinkedNodeID" value="1317"/>
-                            </ItemProperties>
-                            <ChildItems/>
-                        </FlowItem>
                     </ChildItems>
                 </FlowItem>
             </FlowNode>
@@ -1357,13 +1351,6 @@
                     </ChildItems>
                 </FlowItem>
             </FlowNode>
-            <NodeConnection id="1318" version="1.2">
-                <SourceNode id="1"/>
-                <TargetNode id="1317"/>
-                <Property name="Connection.SourceObjectID" value="76"/>
-                <Property name="Connection.TargetObjectID" value="1317"/>
-                <Bendpoint x="286" y="70"/>
-            </NodeConnection>
             <NodeConnection id="1551" version="1.2">
                 <SourceNode id="1543"/>
                 <TargetNode id="33"/>
