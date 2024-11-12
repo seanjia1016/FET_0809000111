@@ -2506,6 +2506,18 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>ToAgent</servlet-name>
         <servlet-class>flow.ToAgent</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1880">
+        <servlet-name>get_properties</servlet-name>
+        <servlet-class>flow.get_properties</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1898">
+        <servlet-name>get_CallInfo</servlet-name>
+        <servlet-class>flow.get_CallInfo</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1935">
+        <servlet-name>getUUI</servlet-name>
+        <servlet-class>flow.getUUI</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -4793,6 +4805,18 @@ Copyright 2004-2011 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_main_1871">
         <servlet-name>ToAgent</servlet-name>
         <url-pattern>/ToAgent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1880">
+        <servlet-name>get_properties</servlet-name>
+        <url-pattern>/get_properties</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1898">
+        <servlet-name>get_CallInfo</servlet-name>
+        <url-pattern>/get_CallInfo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1935">
+        <servlet-name>getUUI</servlet-name>
+        <url-pattern>/getUUI</url-pattern>
     </servlet-mapping>
     
     

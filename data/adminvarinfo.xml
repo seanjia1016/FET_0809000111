@@ -26,6 +26,24 @@
                     <FieldAccessLevel>1</FieldAccessLevel>
                     <FieldScope>Local</FieldScope>
                 </PageletField>
+                <PageletField>
+                    <FieldOrderID>999</FieldOrderID>
+                    <FieldName>DOAMINID:ID</FieldName>
+                    <FieldDisplayName/>
+                    <FieldType>String</FieldType>
+                    <FieldValidation>
+                        <StringValidation>
+                            <MinLength>0</MinLength>
+                            <MaxLength>2147483647</MaxLength>
+                        </StringValidation>
+                    </FieldValidation>
+                    <FieldDefaultValue/>
+                    <IsFieldTemplatable>true</IsFieldTemplatable>
+                    <IsFieldMandatory>false</IsFieldMandatory>
+                    <FieldDescription/>
+                    <FieldAccessLevel>1</FieldAccessLevel>
+                    <FieldScope>Local</FieldScope>
+                </PageletField>
             </PageletFields>
         </PageletBody>
     </DataPagelet>
