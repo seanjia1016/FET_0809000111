@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="3" package="flow.subflow.API_updateVoucherStatus" version="5.0">
+    <ApplicationFlow nextObjectId="12" package="flow.subflow.API_updateVoucherStatus" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
                 <Property name="Name" value="Begin"/>
@@ -9,6 +9,7 @@
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="3" version="1.2">
                             <ItemProperties>
+                                <Property name="LinkedNodeID" value="9"/>
                                 <Property name="Name" value="Start"/>
                             </ItemProperties>
                             <ChildItems/>
@@ -16,6 +17,28 @@
                     </ChildItems>
                 </FlowItem>
             </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Servlet" id="9" version="3.1">
+                <Property name="FlowNodeEditPart.WidgetX" value="182"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="19"/>
+                <Property name="Name" value="API_getCashSubscriberInfoByKey"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Servlet" id="10" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="11" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Default"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <NodeConnection id="12" version="1.2">
+                <SourceNode id="1"/>
+                <TargetNode id="9"/>
+                <Property name="Connection.SourceObjectID" value="3"/>
+                <Property name="Connection.TargetObjectID" value="9"/>
+            </NodeConnection>
         </FlowGraph>
         <ProjectEventTypes/>
     </ApplicationFlow>
