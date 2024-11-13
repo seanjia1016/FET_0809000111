@@ -50,20 +50,17 @@ public class assign_FET_0809000811_STORE_LST extends com.avaya.sce.runtime.Basic
 		IComplexVariable complexTID = TIDVarible.getComplexVariable();
 		IVariableField TIDfield = complexTID.getField(IProjectVariables.S__TID_FIELD_TID);
 		String TID = TIDfield.getStringValue();
-		String Select_FE_MSIS_CB2_TBL="Select FE_MSIS_CB2_TBL";
+	
 		
 		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "## TID Response## :"+TID);
 
-		IVariable tenantVarible = mySession.getVariable(IProjectVariables.FET___0_8_0_9_0_0_0_8_1_1__STORE__LST);
+		IVariable tenantVarible = mySession.getVariable(IProjectVariables.TENANT);
 		IComplexVariable complexVarible = tenantVarible.getComplexVariable();
 		
-		IVariableField tenantfield = complexVarible.getField(IProjectVariables.FET___0_8_0_9_0_0_0_8_1_1__STORE__LST_FIELD_ENTERPRISE);
+		IVariableField tenantfield = complexVarible.getField(IProjectVariables.TENANT_FIELD_TENANT_ID);
 		String tenantID = tenantfield.getStringValue();
 		
-		//4G
-		//String SQL="SELECT fe_msis_cb_account_id, FE_MSIS_CB_CUSTOMER_ID, fe_msis_status, fe_msis_cb_service_type, fe_msis_cb_hybrid_flag FROM FE_MSIS_CB2_TBL WHERE FE_MSIS_TELE_NUMB = '"+ ANI +"' and FE_MSIS_STATUS ='1' and fe_msis_cb_service_type in ('6','J')";
-		
-		//5G修改?���?
+		//查詢公司代號
 		String SQL= "SELECT STORENO FROM FET_0809000811_STORE_LST WHERE STORENO = '"+ tenantID +"' ";
 		
 		String Table="FET_0809000811_STORE_LST";
@@ -74,7 +71,7 @@ public class assign_FET_0809000811_STORE_LST extends com.avaya.sce.runtime.Basic
 						IProjectVariables.S__DB__API,
 						IProjectVariables.S__DB__API_FIELD_SQL);
 		SQL_varible.setValue(SQL);
-		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "SQL Response(["+TID+"]"+Select_FE_MSIS_CB2_TBL+"):" +SQL);
+		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "SQL Response(["+TID+"]查詢公司代號的SQL:)" +SQL);
 		
 		
 		IVariableField Table_varible = mySession
@@ -82,10 +79,7 @@ public class assign_FET_0809000811_STORE_LST extends com.avaya.sce.runtime.Basic
 						IProjectVariables.S__DB__API,
 						IProjectVariables.S__DB__API_FIELD_TABLE);
 		Table_varible.setValue(Table);
-		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "Table Response(["+TID+"]"+Select_FE_MSIS_CB2_TBL+"):" +Table);
-		
-		
-		
+		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "Table Response(["+TID+"]查詢公司代號的資料表:)"+Table);
 		
 		
 	}

@@ -2568,10 +2568,7 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_select_FET_0809000811_CheckTenantIDAndPassword_1">
-        <servlet-name>select_FET_0809000811_CheckTenantIDAndPassword-Begin</servlet-name>
-        <servlet-class>flow.subflow.select_FET_0809000811_CheckTenantIDAndPassword.Begin</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_API_1">
         <servlet-name>API-Begin</servlet-name>
         <servlet-class>flow.subflow.API.Begin</servlet-class>
@@ -2587,6 +2584,47 @@ Copyright 2004-2011 Avaya Inc.
     <servlet id="SAGE-callflow-servlet_API_25">
         <servlet-name>API-CF_selectDBAPI</servlet-name>
         <servlet-class>flow.subflow.API.CF_selectDBAPI</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_select_FET_0809000811_CheckTenantID_PASSWORD_16">
+        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-next</servlet-name>
+        <servlet-class>flow.subflow.select_FET_0809000811_CheckTenantID_PASSWORD.next</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_select_FET_0809000811_CheckTenantID_PASSWORD_1">
+        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-Begin</servlet-name>
+        <servlet-class>flow.subflow.select_FET_0809000811_CheckTenantID_PASSWORD.Begin</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_select_FET_0809000811_CheckTenantID_PASSWORD_7">
+        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-assign_FET_0809000811_CheckTenantIDAndPassword</servlet-name>
+        <servlet-class>flow.subflow.select_FET_0809000811_CheckTenantID_PASSWORD.assign_FET_0809000811_CheckTenantIDAndPassword</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_select_FET_0809000811_CheckTenantID_PASSWORD_11">
+        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-CF_selectDBAPI</servlet-name>
+        <servlet-class>flow.subflow.select_FET_0809000811_CheckTenantID_PASSWORD.CF_selectDBAPI</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_main_1992">
+        <servlet-name>checkPassword</servlet-name>
+        <servlet-class>flow.checkPassword</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1999">
+        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD</servlet-name>
+        <servlet-class>flow.select_FET_0809000811_CheckTenantID_PASSWORD</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_2006">
+        <servlet-name>ReinputPinCode</servlet-name>
+        <servlet-class>flow.ReinputPinCode</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_2018">
+        <servlet-name>Voice_556035</servlet-name>
+        <servlet-class>flow.Voice_556035</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_2027">
+        <servlet-name>API_updateVoucherStatus</servlet-name>
+        <servlet-class>flow.API_updateVoucherStatus</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_2044">
+        <servlet-name>Voice_556037</servlet-name>
+        <servlet-class>flow.Voice_556037</servlet-class>
     </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
@@ -4933,10 +4971,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>select_FET_0809000811_checkTenantID_PASSWORD-next</servlet-name>
         <url-pattern>/select_FET_0809000811_checkTenantID_PASSWORD-next</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_CheckTenantIDAndPassword_1">
-        <servlet-name>select_FET_0809000811_CheckTenantIDAndPassword-Begin</servlet-name>
-        <url-pattern>/select_FET_0809000811_CheckTenantIDAndPassword-Begin</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_API_1">
         <servlet-name>API-Begin</servlet-name>
         <url-pattern>/API-Begin</url-pattern>
@@ -4952,6 +4987,47 @@ Copyright 2004-2011 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_API_25">
         <servlet-name>API-CF_selectDBAPI</servlet-name>
         <url-pattern>/API-CF_selectDBAPI</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_CheckTenantID_PASSWORD_16">
+        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-next</servlet-name>
+        <url-pattern>/select_FET_0809000811_CheckTenantID_PASSWORD-next</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_CheckTenantID_PASSWORD_1">
+        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-Begin</servlet-name>
+        <url-pattern>/select_FET_0809000811_CheckTenantID_PASSWORD-Begin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_CheckTenantID_PASSWORD_7">
+        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-assign_FET_0809000811_CheckTenantIDAndPassword</servlet-name>
+        <url-pattern>/select_FET_0809000811_CheckTenantID_PASSWORD-assign_FET_0809000811_CheckTenantIDAndPassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_select_FET_0809000811_CheckTenantID_PASSWORD_11">
+        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD-CF_selectDBAPI</servlet-name>
+        <url-pattern>/select_FET_0809000811_CheckTenantID_PASSWORD-CF_selectDBAPI</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1992">
+        <servlet-name>checkPassword</servlet-name>
+        <url-pattern>/checkPassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1999">
+        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD</servlet-name>
+        <url-pattern>/select_FET_0809000811_CheckTenantID_PASSWORD</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_2006">
+        <servlet-name>ReinputPinCode</servlet-name>
+        <url-pattern>/ReinputPinCode</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_2018">
+        <servlet-name>Voice_556035</servlet-name>
+        <url-pattern>/Voice_556035</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_2027">
+        <servlet-name>API_updateVoucherStatus</servlet-name>
+        <url-pattern>/API_updateVoucherStatus</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_2044">
+        <servlet-name>Voice_556037</servlet-name>
+        <url-pattern>/Voice_556037</url-pattern>
     </servlet-mapping>
     
     

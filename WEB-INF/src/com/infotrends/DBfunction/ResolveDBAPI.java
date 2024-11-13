@@ -929,4 +929,33 @@ public class ResolveDBAPI {
 		
 	}
 	
+	public void TASK_0809000811_TBL(SCESession mySession,JSONObject ResponseJsonObject) {
+
+		IVariable TIDVarible = mySession.getVariable(IProjectVariables.S__TID);
+		IComplexVariable complexTID = TIDVarible.getComplexVariable();
+		
+		IVariableField TIDfield = complexTID.getField(IProjectVariables.S__TID_FIELD_TID);
+		String TID = TIDfield.getStringValue();
+		
+		String TASK_0809000811_TBL = "TASK_0809000811_TBL";
+		
+		JSONObject jsonObject = ResponseJsonObject.getJSONArray("data").getJSONObject(0);
+
+
+		String PinCode = (String) this.ContainKeyAndGetObject(jsonObject, "PinCode");
+		IVariableField pinCodeField = mySession.getVariableField(
+						IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL,
+						IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL_FIELD_PIN_CODE);
+		pinCodeField.setValue(PinCode);
+		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "@@PinCode Response(TID:["+TID+"]"+TASK_0809000811_TBL+"):" +PinCode);	
+		
+		String ENTERPRISE = (String) this.ContainKeyAndGetObject(jsonObject, "ENTERPRISE");
+		IVariableField StoreList = mySession.getVariableField(
+						IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL,
+						IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL_FIELD_ENTERPRISE);
+		StoreList.setValue(ENTERPRISE);
+		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "@@ENTERPRISE Response(TID:["+TID+"]"+TASK_0809000811_TBL+"):" +ENTERPRISE);	
+		
+	}
+	
 }

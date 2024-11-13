@@ -65,8 +65,10 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 		String apiName = "updateVoucherStatusFilter";
 		final String IP = Utils.IP(mySession);
 		String url = "http://" + IP + "/FET_IVR_MiddleWare/" + apiName;;
+		Utils.LogsINFO(mySession, "updateVoucherStatusFilter網址為:" +url);
 		
 		// API開始時間
+		Utils.LogsINFO(mySession, "---------updateVoucherStatusFilter開始---------");
 		long apiStartTimeInMillis = Calendar.getInstance().getTimeInMillis();
 		try {
 			URL obj = new URL(url);
@@ -120,10 +122,12 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 			            bdip);
 			}
 			
+			Utils.LogsINFO(mySession, "bdip(TID:["+TID+"]"+apiName+"):" +bdip);
+			
 			// 讀取回傳值
 			String status = "", exception = "", returnCode="", pinCode="", voucherNumber="", seqNo="";
 			
-			// 檢查 "returnCode" 是否存在
+			
 			if (responseJsonObject.has("returnCode")) {
 			    returnCode = responseJsonObject.getString("returnCode"); // 取得 returnCode 的值
 			    Utils.setFieldString(mySession,
@@ -132,40 +136,48 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 			            returnCode);
 			}
 			
-			// 檢查 "voucher" 是否存在並包含 "status" 欄位
-			if (responseJsonObject.has("voucher")) {
-			    JSONObject voucher = responseJsonObject.getJSONObject("voucher");
-			    if (voucher.has("status")) {
-			    	status = voucher.getString("status"); // 取得 status 的值
+			Utils.LogsINFO(mySession, "returnCode (TID:["+TID+"]"+apiName+"):" +returnCode);
+			
+			
+			    if (responseJsonObject.has("status")) {
+			    	status = responseJsonObject.getString("status"); // 取得 status 的值
 			        Utils.setFieldString(mySession,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_STATUS,
 			                status);
 			    }
-			    if (voucher.has("pinCode")) {
-			        pinCode = voucher.getString("pinCode"); // 取得 pinCode 的值
+			    Utils.LogsINFO(mySession, "status (TID:["+TID+"]"+apiName+"):" +status);   
+			    
+			    if (responseJsonObject.has("pinCode")) {
+			        pinCode = responseJsonObject.getString("pinCode"); // 取得 pinCode 的值
 			        Utils.setFieldString(mySession,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_PIN_CODE,
 			                pinCode);
 			    }
-			    if (voucher.has("voucherNumber")) {
-			    	voucherNumber = voucher.getString("voucherNumber"); // 取得 voucherNumber 的值
+			    Utils.LogsINFO(mySession, "pinCode (TID:["+TID+"]"+apiName+"):" +pinCode);   
+			    
+			    if (responseJsonObject.has("voucherNumber")) {
+			    	voucherNumber = responseJsonObject.getString("voucherNumber"); // 取得 voucherNumber 的值
 			        Utils.setFieldString(mySession,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_VOUCHER_NUMBER,
 			                voucherNumber);
 			    }
-			    if (voucher.has("seqNo")) {
-			    	seqNo = voucher.getString("seqNo"); // 取得 pinCode 的值
+			    Utils.LogsINFO(mySession, "voucherNumber (TID:["+TID+"]"+apiName+"):" +voucherNumber);
+			    
+			    if (responseJsonObject.has("seqNo")) {
+			    	seqNo = responseJsonObject.getString("seqNo"); // 取得 seqNo 的值
 			        Utils.setFieldString(mySession,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_SEQ_NO,
 			                seqNo);
 			    }
-			}
+			    Utils.LogsINFO(mySession, "seqNo (TID:["+TID+"]"+apiName+"):" +seqNo);
+			
 
-
+			Utils.LogsINFO(mySession, "---------updateVoucherStatusFilter結束---------");
+			
 			if (responseJsonObject.has("exception")) {
 				exception = responseJsonObject.getString("exception");
 				Utils.setFieldString(mySession,
@@ -190,6 +202,7 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 			Utils.LogsINFO(mySession, apiName + " END" );
 		}
 	}
+	
 	
 	private String buildParam(com.avaya.sce.runtimecommon.SCESession mySession) {
 		
