@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="2066" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="2070" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="1920" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="948"/>
@@ -206,7 +206,7 @@
                             <ItemProperties>
                                 <Property name="ActivateDTMF" value="1"/>
                                 <Property name="LinkedNodeID" value="1813"/>
-                                <Property name="Name" value="1"/>
+                                <Property name="Name" value="Success"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -214,7 +214,7 @@
                             <ItemProperties>
                                 <Property name="ActivateDTMF" value="2"/>
                                 <Property name="LinkedNodeID" value="1819"/>
-                                <Property name="Name" value="2"/>
+                                <Property name="Name" value="Fail"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -327,14 +327,19 @@
                 <Property name="FlowNodeEditPart.WidgetY" value="425"/>
                 <Property name="Name" value="DB找出來的公司代碼跟客戶輸入的是否匹配"/>
             </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Label" id="2067" version="3.1">
+                <Property name="FlowNodeEditPart.WidgetX" value="-2"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="966"/>
+                <Property name="Name" value="check儲存卡序號狀態"/>
+            </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Label" id="1940" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="1061"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="859"/>
                 <Property name="Name" value="專人進線"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="1813" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="675"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="896"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="590"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="722"/>
                 <Property name="ReferencedNodeID" value="1822"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="1941" version="3.1">
@@ -362,8 +367,8 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="1814" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="252"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="1063"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="196"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="1064"/>
                 <Property name="Name" value="checkICCard"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="1815" version="1.2">
                     <ItemProperties/>
@@ -374,22 +379,21 @@
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="1828" version="1.2">
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="2068" version="1.2">
                             <ItemProperties>
-                                <Property name="Operator" value="Equal"/>
-                                <Property name="LeftOperandID" value="queryVoucherCardService_Output"/>
-                                <Property name="LeftOperandFieldID" value="status"/>
-                                <Property name="RightConstOperand" value="USED"/>
+                                <Property name="Operator" value="EqualsIgnoreCase"/>
+                                <Property name="LeftOperandID" value="getCashSubscriberInfoByKey_Output"/>
+                                <Property name="LeftOperandFieldID" value="returnCode"/>
+                                <Property name="RightConstOperand" value="ESB-006-029-01000"/>
                             </ItemProperties>
-                            <ChildItems>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="1831" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="LinkedNodeID" value="1834"/>
-                                        <Property name="Name" value="USED"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                            </ChildItems>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="1831" version="1.2">
+                            <ItemProperties>
+                                <Property name="LinkedNodeID" value="1834"/>
+                                <Property name="Name" value="USED"/>
+                            </ItemProperties>
+                            <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.ElseIfCondition" id="1829" version="1.2">
                             <ItemProperties>
@@ -398,27 +402,34 @@
                                 <Property name="LeftOperandFieldID" value="status"/>
                                 <Property name="RightConstOperand" value="NEW"/>
                             </ItemProperties>
-                            <ChildItems>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="1832" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="LinkedNodeID" value="1941"/>
-                                        <Property name="Name" value="NEW"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                            </ChildItems>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="1832" version="1.2">
+                            <ItemProperties>
+                                <Property name="LinkedNodeID" value="1941"/>
+                                <Property name="Name" value="NEW"/>
+                            </ItemProperties>
+                            <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.ElseCondition" id="1830" version="1.2">
                             <ItemProperties/>
-                            <ChildItems>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="1833" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="LinkedNodeID" value="1946"/>
-                                        <Property name="Name" value="ERROR"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                            </ChildItems>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="1828" version="1.2">
+                            <ItemProperties>
+                                <Property name="Operator" value="Equal"/>
+                                <Property name="LeftOperandID" value="queryVoucherCardService_Output"/>
+                                <Property name="LeftOperandFieldID" value="status"/>
+                                <Property name="RightConstOperand" value="USED"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="1833" version="1.2">
+                            <ItemProperties>
+                                <Property name="LinkedNodeID" value="1946"/>
+                                <Property name="Name" value="ERROR"/>
+                            </ItemProperties>
+                            <ChildItems/>
                         </FlowItem>
                     </ChildItems>
                 </FlowItem>
@@ -507,13 +518,13 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="1819" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="706"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="971"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="648"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="789"/>
                 <Property name="ReferencedNodeID" value="1764"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubFlowRef" id="1822" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="8"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="1115"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="-7"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="1064"/>
                 <Property name="flowID" value="API_queryVoucherCard"/>
                 <Property name="Name" value="API_queryVoucherCard"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubFlowRef" id="1823" version="1.2">
