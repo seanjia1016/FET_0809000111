@@ -947,14 +947,14 @@ public class ResolveDBAPI {
 						IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL,
 						IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL_FIELD_PIN_CODE);
 		pinCodeField.setValue(PinCode);
-		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "@@PinCode Response(TID:["+TID+"]"+TASK_0809000811_TBL+"):" +PinCode);	
+		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "@@PinCode Response(TID:["+TID+"]DB上儲值卡末三碼密碼:" +PinCode);	
 		
 		String ENTERPRISE = (String) this.ContainKeyAndGetObject(jsonObject, "ENTERPRISE");
 		IVariableField StoreList = mySession.getVariableField(
 						IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL,
 						IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL_FIELD_ENTERPRISE);
 		StoreList.setValue(ENTERPRISE);
-		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "@@ENTERPRISE Response(TID:["+TID+"]"+TASK_0809000811_TBL+"):" +ENTERPRISE);	
+		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "@@ENTERPRISE Response(TID:["+TID+"]DB上公司代碼:"+ENTERPRISE);	
 		
 	}
 	
