@@ -20,8 +20,8 @@ public class inputTenantID extends com.avaya.sce.runtime.Grammar {
         setMode("voice");
         setBuiltin(true);
         setBuiltinMode("grammar");
-        setType("number");
-        setOptions("");
+        setType("digits");
+        setOptions("length=7");
 		//}}END:CLASS:CONSTRUCTOR
     }
 
