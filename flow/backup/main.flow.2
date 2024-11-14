@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="2082" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="2084" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="31"/>
@@ -251,7 +251,7 @@
                             <ItemProperties>
                                 <Property name="sourceFieldId" value="utterance"/>
                                 <Property name="destVarId" value="Tenant"/>
-                                <Property name="sourceVarId" value="Voice_556021"/>
+                                <Property name="sourceVarId" value="FET_0809000811_Voice_556021"/>
                                 <Property name="destFieldId" value="tenantID"/>
                                 <Property name="type" value="assign"/>
                             </ItemProperties>
@@ -259,7 +259,7 @@
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="2064" version="1.2">
                             <ItemProperties>
-                                <Property name="trace.varId" value="Voice_556021"/>
+                                <Property name="trace.varId" value="FET_0809000811_Voice_556021"/>
                                 <Property name="trace.text" value="####客戶輸入的公司代碼#####"/>
                                 <Property name="trace.fieldId" value="utterance"/>
                                 <Property name="trace.priority" value="info"/>
@@ -789,6 +789,7 @@
                                 </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Grammar" id="1970" version="1.2">
                                     <ItemProperties>
+                                        <Property name="gram.weight" value="10.0"/>
                                         <Property name="language" value="Chinese"/>
                                         <Property name="Name" value="ICCardPW"/>
                                     </ItemProperties>
@@ -1570,30 +1571,27 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="1659" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="222"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="174"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="promptandcollect.gif"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="306"/>
-                <Property name="Name" value="Voice_556021"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="302"/>
+                <Property name="Name" value="FET_0809000811_Voice_556021"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="1660" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Field" id="1661" version="1.2">
                             <ItemProperties>
                                 <Property name="name.bound" value="true"/>
-                                <Property name="Name" value="Voice_556021"/>
+                                <Property name="Name" value="FET_0809000811_Voice_556021"/>
                             </ItemProperties>
                             <ChildItems>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="1662" version="1.2">
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="2084" version="1.2">
                                     <ItemProperties>
-                                        <Property name="language" value="Chinese"/>
                                         <Property name="Name" value="Voice_556021"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Grammar" id="1683" version="1.2">
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Grammar" id="2083" version="1.2">
                                     <ItemProperties>
-                                        <Property name="gram.weight" value="10.0"/>
-                                        <Property name="language" value="Chinese"/>
                                         <Property name="Name" value="inputTenantID"/>
                                     </ItemProperties>
                                     <ChildItems/>
@@ -1626,7 +1624,7 @@
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="2082" version="1.2">
                             <ItemProperties>
-                                <Property name="trace.varId" value="Voice_556021"/>
+                                <Property name="trace.varId" value="FET_0809000811_Voice_556021"/>
                                 <Property name="trace.fieldId" value="utterance"/>
                                 <Property name="trace.text" value="####輸入的公司代碼為####"/>
                                 <Property name="trace.priority" value="info"/>
