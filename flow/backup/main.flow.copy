@@ -3,8 +3,8 @@
     <ApplicationFlow nextObjectId="2081" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="98"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="46"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="31"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="55"/>
                 <Property name="Name" value="AppRoot"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.AppRoot" id="2" version="1.2">
                     <ItemProperties>
@@ -1253,6 +1253,7 @@
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="1767" version="1.2">
                                     <ItemProperties>
+                                        <Property name="language" value="Chinese"/>
                                         <Property name="Name" value="Voice_556024"/>
                                     </ItemProperties>
                                     <ChildItems/>
@@ -1260,7 +1261,7 @@
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Grammar" id="1768" version="1.2">
                                     <ItemProperties>
                                         <Property name="language" value="Chinese"/>
-                                        <Property name="Name" value="ReInputPhoneNumber"/>
+                                        <Property name="Name" value="InputICCard"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -1545,7 +1546,6 @@
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="1821" version="1.2">
                             <ItemProperties>
-                                <Property name="language" value="Chinese"/>
                                 <Property name="Name" value="Voice_556025"/>
                             </ItemProperties>
                             <ChildItems/>
@@ -1814,6 +1814,7 @@
                 <TargetNode id="1814"/>
                 <Property name="Connection.SourceObjectID" value="1825"/>
                 <Property name="Connection.TargetObjectID" value="1814"/>
+                <Bendpoint x="178" y="1071"/>
             </NodeConnection>
             <NodeConnection id="1838" version="1.2">
                 <SourceNode id="1814"/>
