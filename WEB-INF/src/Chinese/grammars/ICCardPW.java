@@ -20,8 +20,8 @@ public class ICCardPW extends com.avaya.sce.runtime.Grammar {
         setMode("voice");
         setBuiltin(true);
         setBuiltinMode("grammar");
-        setType("digits");
-        setOptions("length=3");
+        setType("number");
+        setOptions("");
 		//}}END:CLASS:CONSTRUCTOR
     }
 

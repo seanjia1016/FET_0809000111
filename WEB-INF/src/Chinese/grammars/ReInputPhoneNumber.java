@@ -20,8 +20,8 @@ public class ReInputPhoneNumber extends com.avaya.sce.runtime.Grammar {
         setMode("dtmf");
         setBuiltin(true);
         setBuiltinMode("dtmf");
-        setType("digits");
-        setOptions("length=10");
+        setType("number");
+        setOptions("");
 		//}}END:CLASS:CONSTRUCTOR
     }
 

@@ -20,8 +20,8 @@ public class InputICCard extends com.avaya.sce.runtime.Grammar {
         setMode("dtmf");
         setBuiltin(true);
         setBuiltinMode("dtmf");
-        setType("digits");
-        setOptions("length=14");
+        setType("number");
+        setOptions("");
 		//}}END:CLASS:CONSTRUCTOR
     }
 
