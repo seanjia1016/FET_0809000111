@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="2104" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="2105" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="31"/>
@@ -187,7 +187,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Menu" id="1798" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="417"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="774"/>
-                <Property name="Name" value="Voice_556026"/>
+                <Property name="Name" value="DN_556026"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Menu" id="1799" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -287,11 +287,6 @@
                 <Property name="FlowNodeEditPart.WidgetY" value="1751"/>
                 <Property name="ReferencedNodeID" value="1543"/>
             </FlowNode>
-            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="1679" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="534"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="283"/>
-                <Property name="ReferencedNodeID" value="1543"/>
-            </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Servlet" id="1935" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="1168"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="824"/>
@@ -338,7 +333,7 @@
                 <Property name="FlowNodeEditPart.WidgetX" value="556"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1127"/>
-                <Property name="Name" value="Voice_556030"/>
+                <Property name="Name" value="DN_556030"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="1942" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -508,7 +503,7 @@
                 <Property name="FlowNodeEditPart.WidgetX" value="428"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1183"/>
-                <Property name="Name" value="Voice_556027"/>
+                <Property name="Name" value="DN_556027"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="1947" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -573,7 +568,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Menu" id="1951" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="821"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1223"/>
-                <Property name="Name" value="Voice_556032"/>
+                <Property name="Name" value="DN_556032"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Menu" id="1952" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -652,7 +647,7 @@
                 <Property name="FlowNodeEditPart.WidgetX" value="274"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="523"/>
-                <Property name="Name" value="Voice_556023"/>
+                <Property name="Name" value="DN_556023"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="1704" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -672,9 +667,9 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="2089" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="242"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="236"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="promptandcollect.gif"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="309"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="308"/>
                 <Property name="Name" value="DN_556021"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="2090" version="1.2">
                     <ItemProperties/>
@@ -697,39 +692,16 @@
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.NoInput" id="2094" version="1.2">
-                                    <ItemProperties/>
-                                    <ChildItems>
-                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="2095" version="1.2">
-                                            <ItemProperties/>
-                                            <ChildItems/>
-                                        </FlowItem>
-                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="2099" version="1.2">
-                                            <ItemProperties>
-                                                <Property name="LinkedNodeID" value="1679"/>
-                                                <Property name="ActivateIteration" value="3"/>
-                                            </ItemProperties>
-                                            <ChildItems/>
-                                        </FlowItem>
-                                    </ChildItems>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.NoMatch" id="2096" version="1.2">
-                                    <ItemProperties/>
-                                    <ChildItems>
-                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="2097" version="1.2">
-                                            <ItemProperties/>
-                                            <ChildItems/>
-                                        </FlowItem>
-                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="2100" version="1.2">
-                                            <ItemProperties>
-                                                <Property name="LinkedNodeID" value="1679"/>
-                                                <Property name="ActivateIteration" value="3"/>
-                                            </ItemProperties>
-                                            <ChildItems/>
-                                        </FlowItem>
-                                    </ChildItems>
-                                </FlowItem>
                             </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="2105" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.varId" value="DN_556021"/>
+                                <Property name="trace.text" value="###偵測公司代碼輸入為###"/>
+                                <Property name="trace.fieldId" value="utterance"/>
+                                <Property name="trace.priority" value="info"/>
+                            </ItemProperties>
+                            <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Submit" id="2098" version="1.2">
                             <ItemProperties>
@@ -744,7 +716,7 @@
                 <Property name="FlowNodeEditPart.WidgetX" value="408"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1020"/>
-                <Property name="Name" value="Voice_556029"/>
+                <Property name="Name" value="DN_556029"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="1835" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -772,14 +744,14 @@
                 <Property name="FlowNodeEditPart.WidgetX" value="493"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="promptandcollect.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="522"/>
-                <Property name="Name" value="Voice_556021_2"/>
+                <Property name="Name" value="DN_556021_2"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="1710" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Field" id="1711" version="1.2">
                             <ItemProperties>
                                 <Property name="name.bound" value="true"/>
-                                <Property name="Name" value="Voice_556021_2"/>
+                                <Property name="Name" value="DN_556021_2"/>
                             </ItemProperties>
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="1712" version="1.2">
@@ -833,14 +805,14 @@
                 <Property name="FlowNodeEditPart.WidgetX" value="-19"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="promptandcollect.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1465"/>
-                <Property name="Name" value="Voice_556034"/>
+                <Property name="Name" value="DN_556034"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="1967" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Field" id="1968" version="1.2">
                             <ItemProperties>
                                 <Property name="name.bound" value="true"/>
-                                <Property name="Name" value="Voice_556034"/>
+                                <Property name="Name" value="DN_556034"/>
                             </ItemProperties>
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="1969" version="1.2">
@@ -898,7 +870,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Menu" id="1849" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="592"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1019"/>
-                <Property name="Name" value="Voice_556031"/>
+                <Property name="Name" value="DN_556031"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Menu" id="1850" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -1027,7 +999,7 @@
                 <Property name="FlowNodeEditPart.WidgetX" value="950"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="824"/>
-                <Property name="Name" value="Voice_556036"/>
+                <Property name="Name" value="DN_556036"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="1857" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -1065,7 +1037,7 @@
                                 <Property name="LeftOperandID" value="TASK_0809000811_TBL"/>
                                 <Property name="RightVarOperandFieldID" value="utterance"/>
                                 <Property name="LeftOperandFieldID" value="PinCode"/>
-                                <Property name="RightVarOperandID" value="Voice_556034"/>
+                                <Property name="RightVarOperandID" value="DN_556034"/>
                             </ItemProperties>
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="1998" version="1.2">
@@ -1152,7 +1124,7 @@
                 <Property name="FlowNodeEditPart.WidgetX" value="1088"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="566"/>
-                <Property name="Name" value="voice_556022"/>
+                <Property name="Name" value="DN_556022"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="1748" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -1281,7 +1253,7 @@
                 <Property name="FlowNodeEditPart.WidgetX" value="1159"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1420"/>
-                <Property name="Name" value="Voice_556035"/>
+                <Property name="Name" value="DN_556035"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="2019" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -1309,14 +1281,14 @@
                 <Property name="FlowNodeEditPart.WidgetX" value="2"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="promptandcollect.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="746"/>
-                <Property name="Name" value="Voice_556024"/>
+                <Property name="Name" value="DN_556024"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="1765" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Field" id="1766" version="1.2">
                             <ItemProperties>
                                 <Property name="name.bound" value="true"/>
-                                <Property name="Name" value="Voice_556024"/>
+                                <Property name="Name" value="DN_556024"/>
                             </ItemProperties>
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="1767" version="1.2">
@@ -1579,7 +1551,7 @@
                 <Property name="FlowNodeEditPart.WidgetX" value="20"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="307"/>
-                <Property name="Name" value="Voice_556020"/>
+                <Property name="Name" value="DN_556020"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="1649" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -1608,7 +1580,7 @@
                 <Property name="FlowNodeEditPart.WidgetX" value="236"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="775"/>
-                <Property name="Name" value="Voice_556025"/>
+                <Property name="Name" value="DN_556025"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="1783" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -1630,7 +1602,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Menu" id="2044" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="271"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1726"/>
-                <Property name="Name" value="Voice_556037"/>
+                <Property name="Name" value="DN_556037"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Menu" id="2045" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -1711,6 +1683,7 @@
                 <TargetNode id="1709"/>
                 <Property name="Connection.SourceObjectID" value="1706"/>
                 <Property name="Connection.TargetObjectID" value="1709"/>
+                <Bendpoint x="442" y="529"/>
             </NodeConnection>
             <NodeConnection id="1737" version="1.2">
                 <SourceNode id="1709"/>
@@ -2026,18 +1999,6 @@
                 <TargetNode id="2080"/>
                 <Property name="Connection.SourceObjectID" value="1918"/>
                 <Property name="Connection.TargetObjectID" value="2080"/>
-            </NodeConnection>
-            <NodeConnection id="2101" version="1.2">
-                <SourceNode id="2089"/>
-                <TargetNode id="1679"/>
-                <Property name="Connection.SourceObjectID" value="2099"/>
-                <Property name="Connection.TargetObjectID" value="1679"/>
-            </NodeConnection>
-            <NodeConnection id="2102" version="1.2">
-                <SourceNode id="2089"/>
-                <TargetNode id="1679"/>
-                <Property name="Connection.SourceObjectID" value="2100"/>
-                <Property name="Connection.TargetObjectID" value="1679"/>
             </NodeConnection>
             <NodeConnection id="2103" version="1.2">
                 <SourceNode id="2089"/>

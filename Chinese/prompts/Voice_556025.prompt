@@ -21,7 +21,7 @@
                         <Property name="Field" value="utterance"/>
                         <Property name="format" value="digits"/>
                         <Property name="numbertype" value="Nn"/>
-                        <Property name="Name" value="Voice_556024"/>
+                        <Property name="Name" value="DN_556024"/>
                         <Property name="inflection" value="Crmm"/>
                     </Properties>
                     <ChildItems/>
