@@ -689,7 +689,7 @@
                                 </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Grammar" id="2093" version="1.2">
                                     <ItemProperties>
-                                        <Property name="Name" value="inputTenantID"/>
+                                        <Property name="Name" value="inputVouncherNum"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -763,7 +763,7 @@
                                 </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Grammar" id="2086" version="1.2">
                                     <ItemProperties>
-                                        <Property name="Name" value="inputTenantID"/>
+                                        <Property name="Name" value="inputVouncherNum"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="2104" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="2105" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="31"/>
@@ -285,11 +285,6 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="2060" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="994"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1751"/>
-                <Property name="ReferencedNodeID" value="1543"/>
-            </FlowNode>
-            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="1679" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="534"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="283"/>
                 <Property name="ReferencedNodeID" value="1543"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Servlet" id="1935" version="3.1">
@@ -682,6 +677,7 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Field" id="2091" version="1.2">
                             <ItemProperties>
                                 <Property name="name.bound" value="true"/>
+                                <Property name="recordUtterance" value="true"/>
                                 <Property name="Name" value="DN_556021"/>
                             </ItemProperties>
                             <ChildItems>
@@ -693,35 +689,20 @@
                                 </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Grammar" id="2093" version="1.2">
                                     <ItemProperties>
-                                        <Property name="Name" value="inputTenantID"/>
+                                        <Property name="Name" value="inputVouncherNum"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.NoInput" id="2094" version="1.2">
-                                    <ItemProperties/>
-                                    <ChildItems>
-                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="2099" version="1.2">
-                                            <ItemProperties>
-                                                <Property name="LinkedNodeID" value="1679"/>
-                                                <Property name="ActivateIteration" value="3"/>
-                                            </ItemProperties>
-                                            <ChildItems/>
-                                        </FlowItem>
-                                    </ChildItems>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.NoMatch" id="2096" version="1.2">
-                                    <ItemProperties/>
-                                    <ChildItems>
-                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="2100" version="1.2">
-                                            <ItemProperties>
-                                                <Property name="LinkedNodeID" value="1679"/>
-                                                <Property name="ActivateIteration" value="3"/>
-                                            </ItemProperties>
-                                            <ChildItems/>
-                                        </FlowItem>
-                                    </ChildItems>
-                                </FlowItem>
                             </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="2105" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.varId" value="DN_556021"/>
+                                <Property name="trace.text" value="###偵測公司代碼輸入為###"/>
+                                <Property name="trace.fieldId" value="utterance"/>
+                                <Property name="trace.priority" value="info"/>
+                            </ItemProperties>
+                            <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Submit" id="2098" version="1.2">
                             <ItemProperties>
@@ -781,9 +762,7 @@
                                     <ChildItems/>
                                 </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Grammar" id="2086" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="Name" value="inputTenantID"/>
-                                    </ItemProperties>
+                                    <ItemProperties/>
                                     <ChildItems/>
                                 </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.NoInput" id="1714" version="1.2">
@@ -2019,18 +1998,6 @@
                 <TargetNode id="2080"/>
                 <Property name="Connection.SourceObjectID" value="1918"/>
                 <Property name="Connection.TargetObjectID" value="2080"/>
-            </NodeConnection>
-            <NodeConnection id="2101" version="1.2">
-                <SourceNode id="2089"/>
-                <TargetNode id="1679"/>
-                <Property name="Connection.SourceObjectID" value="2099"/>
-                <Property name="Connection.TargetObjectID" value="1679"/>
-            </NodeConnection>
-            <NodeConnection id="2102" version="1.2">
-                <SourceNode id="2089"/>
-                <TargetNode id="1679"/>
-                <Property name="Connection.SourceObjectID" value="2100"/>
-                <Property name="Connection.TargetObjectID" value="1679"/>
             </NodeConnection>
             <NodeConnection id="2103" version="1.2">
                 <SourceNode id="2089"/>
