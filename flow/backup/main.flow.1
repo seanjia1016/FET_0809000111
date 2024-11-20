@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="2112" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="2113" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="31"/>
@@ -366,11 +366,19 @@
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="2113" version="1.2">
+                            <ItemProperties>
+                                <Property name="trace.varId" value="queryVoucherCardService_Output"/>
+                                <Property name="trace.text" value="###returnCode為###"/>
+                                <Property name="trace.fieldId" value="returncode"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="2068" version="1.2">
                             <ItemProperties>
                                 <Property name="Operator" value="EqualsIgnoreCase"/>
-                                <Property name="LeftOperandID" value="getCashSubscriberInfoByKey_Output"/>
-                                <Property name="LeftOperandFieldID" value="returnCode"/>
+                                <Property name="LeftOperandID" value="queryVoucherCardService_Output"/>
+                                <Property name="LeftOperandFieldID" value="returncode"/>
                                 <Property name="RightConstOperand" value="ESB-006-029-01000"/>
                             </ItemProperties>
                             <ChildItems>
@@ -699,6 +707,7 @@
                                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="2108" version="1.2">
                                             <ItemProperties>
                                                 <Property name="LinkedNodeID" value="2110"/>
+                                                <Property name="ActivateIteration" value="3"/>
                                             </ItemProperties>
                                             <ChildItems/>
                                         </FlowItem>
@@ -710,6 +719,7 @@
                                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="2109" version="1.2">
                                             <ItemProperties>
                                                 <Property name="LinkedNodeID" value="2110"/>
+                                                <Property name="ActivateIteration" value="3"/>
                                             </ItemProperties>
                                             <ChildItems/>
                                         </FlowItem>
