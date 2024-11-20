@@ -1995,6 +1995,7 @@
                 <TargetNode id="2055"/>
                 <Property name="Connection.SourceObjectID" value="2049"/>
                 <Property name="Connection.TargetObjectID" value="2055"/>
+                <Bendpoint x="876" y="1731"/>
             </NodeConnection>
             <NodeConnection id="2057" version="1.2">
                 <SourceNode id="2027"/>
