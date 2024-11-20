@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="2113" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="2120" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="31"/>
@@ -249,7 +249,9 @@
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="1684" version="1.2">
                             <ItemProperties>
+                                <Property name="sourceFieldId" value="utterance"/>
                                 <Property name="destVarId" value="Tenant"/>
+                                <Property name="sourceVarId" value="DN_556021"/>
                                 <Property name="destFieldId" value="tenantID"/>
                                 <Property name="type" value="assign"/>
                             </ItemProperties>
@@ -463,29 +465,17 @@
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="1694" version="1.2">
-                            <ItemProperties/>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="2119" version="1.2">
+                            <ItemProperties>
+                                <Property name="Operator" value="Equal"/>
+                                <Property name="LeftOperandID" value="Tenant"/>
+                                <Property name="RightVarOperandFieldID" value="ENTERPRISE"/>
+                                <Property name="LeftOperandFieldID" value="tenantID"/>
+                                <Property name="RightVarOperandID" value="FET_0809000811_STORE_LST"/>
+                            </ItemProperties>
                             <ChildItems>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanOperator" id="1695" version="1.2">
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="2120" version="1.2">
                                     <ItemProperties>
-                                        <Property name="Operator" value="AND"/>
-                                    </ItemProperties>
-                                    <ChildItems>
-                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="1696" version="1.2">
-                                            <ItemProperties>
-                                                <Property name="Operator" value="Equal"/>
-                                                <Property name="LeftOperandID" value="Tenant"/>
-                                                <Property name="RightVarOperandFieldID" value="ENTERPRISE"/>
-                                                <Property name="LeftOperandFieldID" value="tenantID"/>
-                                                <Property name="RightVarOperandID" value="FET_0809000811_STORE_LST"/>
-                                            </ItemProperties>
-                                            <ChildItems/>
-                                        </FlowItem>
-                                    </ChildItems>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="1693" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="LinkedNodeID" value="1742"/>
                                         <Property name="Name" value="TenantCheckSuccess"/>
                                     </ItemProperties>
                                     <ChildItems/>
@@ -630,7 +620,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Label" id="2079" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="-17"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1681"/>
-                <Property name="Name" value="系統進行索卡作業"/>
+                <Property name="Name" value="系統進行鎖卡作業"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="2080" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="937"/>
@@ -888,7 +878,7 @@
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Submit" id="1975" version="1.2">
                             <ItemProperties>
-                                <Property name="LinkedNodeID" value="1999"/>
+                                <Property name="LinkedNodeID" value="1992"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -992,8 +982,7 @@
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="1732" version="1.2">
                             <ItemProperties>
-                                <Property name="op1FieldId" value="ReInputTenantIDCount"/>
-                                <Property name="op1VarId" value="G_error_count"/>
+                                <Property name="op1Constant" value="0"/>
                                 <Property name="destVarId" value="G_error_count"/>
                                 <Property name="destFieldId" value="ReInputTenantIDCount"/>
                                 <Property name="type" value="add"/>
@@ -1057,8 +1046,8 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="1992" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="657"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="1496"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="378"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="1487"/>
                 <Property name="Name" value="checkPassword"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="1993" version="1.2">
                     <ItemProperties/>
@@ -1072,9 +1061,9 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="1996" version="1.2">
                             <ItemProperties>
                                 <Property name="Operator" value="Equal"/>
-                                <Property name="LeftOperandID" value="TASK_0809000811_TBL"/>
+                                <Property name="LeftOperandID" value="queryVoucherCardService_Output"/>
                                 <Property name="RightVarOperandFieldID" value="utterance"/>
-                                <Property name="LeftOperandFieldID" value="PinCode"/>
+                                <Property name="LeftOperandFieldID" value="lastPinCode"/>
                                 <Property name="RightVarOperandID" value="DN_556034"/>
                             </ItemProperties>
                             <ChildItems>
@@ -1129,24 +1118,6 @@
                                 <Property name="dial.address.var.id" value="CH_PROPERTIES"/>
                                 <Property name="Name" value="toAgent"/>
                                 <Property name="held.callid.var.id" value="cticallinfo"/>
-                            </ItemProperties>
-                            <ChildItems/>
-                        </FlowItem>
-                    </ChildItems>
-                </FlowItem>
-            </FlowNode>
-            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubFlowRef" id="1999" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="206"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="1496"/>
-                <Property name="flowID" value="select_FET_0809000811_CheckTenantID_PASSWORD"/>
-                <Property name="Name" value="select_FET_0809000811_CheckTenantID_PASSWORD"/>
-                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubFlowRef" id="2000" version="1.2">
-                    <ItemProperties/>
-                    <ChildItems>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubExitPoint" id="2002" version="1.2">
-                            <ItemProperties>
-                                <Property name="LinkedNodeID" value="1992"/>
-                                <Property name="Name" value="next"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -1729,12 +1700,6 @@
                 <Property name="Connection.SourceObjectID" value="1718"/>
                 <Property name="Connection.TargetObjectID" value="1728"/>
             </NodeConnection>
-            <NodeConnection id="1743" version="1.2">
-                <SourceNode id="1690"/>
-                <TargetNode id="1742"/>
-                <Property name="Connection.SourceObjectID" value="1693"/>
-                <Property name="Connection.TargetObjectID" value="1742"/>
-            </NodeConnection>
             <NodeConnection id="1746" version="1.2">
                 <SourceNode id="1728"/>
                 <TargetNode id="1745"/>
@@ -1898,6 +1863,7 @@
                 <TargetNode id="1941"/>
                 <Property name="Connection.SourceObjectID" value="1832"/>
                 <Property name="Connection.TargetObjectID" value="1941"/>
+                <Bendpoint x="432" y="1109"/>
             </NodeConnection>
             <NodeConnection id="1950" version="1.2">
                 <SourceNode id="1814"/>
@@ -1942,23 +1908,11 @@
                 <Property name="Connection.TargetObjectID" value="1983"/>
                 <Bendpoint x="122" y="1252"/>
             </NodeConnection>
-            <NodeConnection id="2005" version="1.2">
-                <SourceNode id="1999"/>
-                <TargetNode id="1992"/>
-                <Property name="Connection.SourceObjectID" value="2002"/>
-                <Property name="Connection.TargetObjectID" value="1992"/>
-            </NodeConnection>
             <NodeConnection id="2014" version="1.2">
                 <SourceNode id="1992"/>
                 <TargetNode id="2006"/>
                 <Property name="Connection.SourceObjectID" value="1995"/>
                 <Property name="Connection.TargetObjectID" value="2006"/>
-            </NodeConnection>
-            <NodeConnection id="2015" version="1.2">
-                <SourceNode id="1966"/>
-                <TargetNode id="1999"/>
-                <Property name="Connection.SourceObjectID" value="1975"/>
-                <Property name="Connection.TargetObjectID" value="1999"/>
             </NodeConnection>
             <NodeConnection id="2017" version="1.2">
                 <SourceNode id="1951"/>
@@ -1995,6 +1949,7 @@
                 <TargetNode id="2055"/>
                 <Property name="Connection.SourceObjectID" value="2049"/>
                 <Property name="Connection.TargetObjectID" value="2055"/>
+                <Bendpoint x="876" y="1731"/>
             </NodeConnection>
             <NodeConnection id="2057" version="1.2">
                 <SourceNode id="2027"/>
@@ -2061,6 +2016,12 @@
                 <TargetNode id="2110"/>
                 <Property name="Connection.SourceObjectID" value="2109"/>
                 <Property name="Connection.TargetObjectID" value="2110"/>
+            </NodeConnection>
+            <NodeConnection id="2114" version="1.2">
+                <SourceNode id="1966"/>
+                <TargetNode id="1992"/>
+                <Property name="Connection.SourceObjectID" value="1975"/>
+                <Property name="Connection.TargetObjectID" value="1992"/>
             </NodeConnection>
         </FlowGraph>
         <ProjectEventTypes>

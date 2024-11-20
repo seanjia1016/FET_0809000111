@@ -2603,10 +2603,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>checkPassword</servlet-name>
         <servlet-class>flow.checkPassword</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1999">
-        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD</servlet-name>
-        <servlet-class>flow.select_FET_0809000811_CheckTenantID_PASSWORD</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_2006">
         <servlet-name>ReinputPinCode</servlet-name>
         <servlet-class>flow.ReinputPinCode</servlet-class>
@@ -5007,10 +5004,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>checkPassword</servlet-name>
         <url-pattern>/checkPassword</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1999">
-        <servlet-name>select_FET_0809000811_CheckTenantID_PASSWORD</servlet-name>
-        <url-pattern>/select_FET_0809000811_CheckTenantID_PASSWORD</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_2006">
         <servlet-name>ReinputPinCode</servlet-name>
         <url-pattern>/ReinputPinCode</url-pattern>
