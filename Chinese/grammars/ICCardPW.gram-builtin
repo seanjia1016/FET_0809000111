@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <grammar>
     <properties>
-        <mode value="voice"/>
+        <mode value="dtmf"/>
         <type value="static"/>
     </properties>
     <data>
