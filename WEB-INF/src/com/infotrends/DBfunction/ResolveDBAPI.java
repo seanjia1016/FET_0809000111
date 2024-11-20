@@ -920,7 +920,7 @@ public class ResolveDBAPI {
 		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "Donation Count ResponseJsonObject Response(TID:["+TID+"]"+FET_0809000811_STORE_LST+"):" +ResponseJsonObject);	
 
 		
-		String ENTERPRISE = (String) this.ContainKeyAndGetObject(jsonObject, "ENTERPRISE");
+		String ENTERPRISE = (String) this.ContainKeyAndGetObject(jsonObject, "storeno");
 		IVariableField StoreList = mySession.getVariableField(
 						IProjectVariables.FET___0_8_0_9_0_0_0_8_1_1__STORE__LST,
 						IProjectVariables.FET___0_8_0_9_0_0_0_8_1_1__STORE__LST_FIELD_ENTERPRISE);
@@ -949,12 +949,7 @@ public class ResolveDBAPI {
 		pinCodeField.setValue(PinCode);
 		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "@@PinCode Response(TID:["+TID+"]DB上儲值卡末三碼密碼:" +PinCode);	
 		
-		String ENTERPRISE = (String) this.ContainKeyAndGetObject(jsonObject, "ENTERPRISE");
-		IVariableField StoreList = mySession.getVariableField(
-						IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL,
-						IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL_FIELD_ENTERPRISE);
-		StoreList.setValue(ENTERPRISE);
-		mySession.getTraceOutput().writeln(ITraceInfo.TRACE_LEVEL_INFO, "@@ENTERPRISE Response(TID:["+TID+"]DB上公司代碼:"+ENTERPRISE);	
+
 		
 	}
 	
