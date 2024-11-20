@@ -18,6 +18,7 @@ import com.avaya.sce.runtimecommon.ITraceInfo;
 import com.avaya.sce.runtimecommon.IVariable;
 import com.avaya.sce.runtimecommon.IVariableField;
 import com.crm.utils.Utils;
+import com.google.gson.JsonObject;
 import com.infortrends.APIfunction.GetCashSubscriberInfoByKey;
 
 import flow.IProjectVariables;
@@ -108,7 +109,52 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 			Utils.LogsINFO(mySession, "確認回傳值是否符合json格式" +response);	
 			
 			JSONObject responseJsonObject = new JSONObject(response.toString());
-			Utils.LogsINFO(mySession, "ResponseJsonObject Response(TID:["+TID+"]"+apiName+"):" +responseJsonObject);
+			
+			String status = "";
+	        String pinCode = "";
+	        String seqNo = "";
+	        String voucherNumber2 = "";
+	        String returnCode = "";
+	        String exception = "";
+	        String transBpId = "";
+			 // 确保 "Data" 和 "xml-fragment" 存在
+            if (responseJsonObject.has("Data") && responseJsonObject.getJSONObject("Data").has("xml-fragment")) {
+                JSONObject xmlFragment = responseJsonObject.getJSONObject("Data").getJSONObject("xml-fragment");
+
+                // 访问 "voucherList" 对象
+                if (xmlFragment.has("ns0:voucherList")) {
+                    JSONObject voucherList = xmlFragment.getJSONObject("ns0:voucherList");
+                    status = voucherList.optJSONObject("ns1:status").optString("content", ""); // 使用 optString 获取值，提供默认值
+                    pinCode = voucherList.optJSONObject("ns1:pinCode").optString("content", "");
+                    seqNo = voucherList.optJSONObject("ns1:seqNo").optString("content", "");
+                    voucherNumber2 = voucherList.optJSONObject("ns1:voucherNo").optString("ns1:voucherNumber", "");
+                }
+
+                // 访问 "returnHeader" 对象
+                if (xmlFragment.has("ns0:returnHeader")) {
+                    JSONObject returnHeader = xmlFragment.getJSONObject("ns0:returnHeader");
+                    returnCode = returnHeader.optJSONObject("ns1:returnCode").optString("content", "");
+                }
+            }
+            
+         // 取得dbip
+            transBpId = responseJsonObject.optString("dbip", "");
+
+            // 访问 "Exception" 属性
+            exception = responseJsonObject.optString("Exception", "");
+            
+            JSONObject ResponseJsonObject = new JSONObject();
+            
+            ResponseJsonObject.put("status",status);
+            ResponseJsonObject.put("pinCode",pinCode);
+            ResponseJsonObject.put("seqNo",seqNo);
+            ResponseJsonObject.put("voucherNumber",voucherNumber2);
+            ResponseJsonObject.put("returnCode",returnCode);
+            ResponseJsonObject.put("exception",exception);
+            ResponseJsonObject.put("bdip",transBpId);
+			
+			
+			Utils.LogsINFO(mySession, "ResponseJsonObject Response(TID:["+TID+"]"+apiName+"):" +ResponseJsonObject);
 			// API結束時間
 			long apiEndTimeInMillis = Calendar.getInstance().getTimeInMillis();
 			long timeLong = apiEndTimeInMillis - apiStartTimeInMillis;
@@ -116,8 +162,8 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 			
 			//BpID是在此API產生的
 			String bdip = "";
-			if (responseJsonObject.has("bdip")) {
-				bdip = responseJsonObject.getString("bdip"); // 取得 returnCode 的值
+			if (ResponseJsonObject.has("bdip")) {
+				bdip = ResponseJsonObject.getString("bdip"); // 取得 returnCode 的值
 			    Utils.setFieldString(mySession,
 			            IProjectVariables.GET_CASH_SUBSCRIBER_INFO_BY_KEY__INPUT,
 			            IProjectVariables.GET_CASH_SUBSCRIBER_INFO_BY_KEY__INPUT_FIELD_TRANS_BP_ID,
@@ -127,11 +173,11 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 			Utils.LogsINFO(mySession, "bdip(TID:["+TID+"]"+apiName+"):" +bdip);
 			
 			// 讀取回傳值
-			String status = "", exception = "", returnCode="", pinCode="", voucherNumber="", seqNo="";
+			String voucherNumber="";
 			
 			
-			if (responseJsonObject.has("returnCode")) {
-			    returnCode = responseJsonObject.getString("returnCode"); // 取得 returnCode 的值
+			if (ResponseJsonObject.has("returnCode")) {
+			    returnCode = ResponseJsonObject.getString("returnCode"); // 取得 returnCode 的值
 			    Utils.setFieldString(mySession,
 			            IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT,
 			            IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_RETURNCODE,
@@ -141,8 +187,8 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 			Utils.LogsINFO(mySession, "returnCode (TID:["+TID+"]"+apiName+"):" +returnCode);
 			
 			
-			    if (responseJsonObject.has("status")) {
-			    	status = responseJsonObject.getString("status"); // 取得 status 的值
+			    if (ResponseJsonObject.has("status")) {
+			    	status = ResponseJsonObject.getString("status"); // 取得 status 的值
 			        Utils.setFieldString(mySession,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_STATUS,
@@ -150,8 +196,8 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 			    }
 			    Utils.LogsINFO(mySession, "status (TID:["+TID+"]"+apiName+"):" +status);   
 			    
-			    if (responseJsonObject.has("pinCode")) {
-			        pinCode = responseJsonObject.getString("pinCode"); // 取得 pinCode 的值
+			    if (ResponseJsonObject.has("pinCode")) {
+			        pinCode = ResponseJsonObject.getString("pinCode"); // 取得 pinCode 的值
 			        Utils.setFieldString(mySession,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_PIN_CODE,
@@ -159,8 +205,8 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 			    }
 			    Utils.LogsINFO(mySession, "pinCode (TID:["+TID+"]"+apiName+"):" +pinCode);   
 			    
-			    if (responseJsonObject.has("voucherNumber")) {
-			    	voucherNumber = responseJsonObject.getString("voucherNumber"); // 取得 voucherNumber 的值
+			    if (ResponseJsonObject.has("voucherNumber")) {
+			    	voucherNumber = ResponseJsonObject.getString("voucherNumber"); // 取得 voucherNumber 的值
 			        Utils.setFieldString(mySession,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_VOUCHER_NUMBER,
@@ -168,8 +214,8 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 			    }
 			    Utils.LogsINFO(mySession, "voucherNumber (TID:["+TID+"]"+apiName+"):" +voucherNumber);
 			    
-			    if (responseJsonObject.has("seqNo")) {
-			    	seqNo = responseJsonObject.getString("seqNo"); // 取得 seqNo 的值
+			    if (ResponseJsonObject.has("seqNo")) {
+			    	seqNo = ResponseJsonObject.getString("seqNo"); // 取得 seqNo 的值
 			        Utils.setFieldString(mySession,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT,
 			                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_SEQ_NO,
@@ -178,10 +224,10 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 			    Utils.LogsINFO(mySession, "seqNo (TID:["+TID+"]"+apiName+"):" +seqNo);
 			
 
-			Utils.LogsINFO(mySession, "---------updateVoucherStatusFilter結束---------");
+			Utils.LogsINFO(mySession, "---------queryVoucherCardFilter結束---------");
 			
-			if (responseJsonObject.has("exception")) {
-				exception = responseJsonObject.getString("exception");
+			if (ResponseJsonObject.has("exception")) {
+				exception = ResponseJsonObject.getString("exception");
 				Utils.setFieldString(mySession,
 						IProjectVariables.CREATE_TXN__OUTPUT,
 						IProjectVariables.CREATE_TXN__OUTPUT_FIELD_EXCEPTION,
@@ -234,7 +280,7 @@ public class QueryVoucherCardService extends com.avaya.sce.runtime.BasicServlet 
 	 * @return a Collection of <code>com.avaya.sce.runtime.Goto</code>
 	 * objects that will be evaluated at runtime.  If there are no gotos
 	 * defined in the Servlet node, then this returns null.
-	 * Last generated by Orchestration Designer at: 2024年11月19日 下午02時57分16秒
+	 * Last generated by Orchestration Designer at: 2024年11月20日 上午09時49分01秒
 	 */
 	public java.util.Collection getBranches(com.avaya.sce.runtimecommon.SCESession mySession) {
 		java.util.List list = null;

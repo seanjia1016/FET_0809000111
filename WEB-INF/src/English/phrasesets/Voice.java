@@ -23,56 +23,56 @@ public class Voice extends com.avaya.sce.runtime.Phraseset {
 		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(34);
 		com.avaya.sce.runtime.Phrase phrase;
 
-		// phrase: Voice_556020
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556020", "Voice_556020.wav", ""); 
+		// phrase: 556020
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556020", "556020.wav", ""); 
 
-		// phrase: Voice_556021
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556021", "Voice_556021.wav", ""); 
+		// phrase: 556021
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556021", "556021.wav", ""); 
 
-		// phrase: Voice_556022
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556022", "Voice_556022.wav", ""); 
+		// phrase: 556022
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556022", "556022.wav", ""); 
 
-		// phrase: Voice_556023
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556023", "Voice_556023.wav", ""); 
+		// phrase: 556023
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556023", "556023.wav", ""); 
 
-		// phrase: Voice_556024
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556024", "Voice_556024.wav", ""); 
+		// phrase: 556024
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556024", "556024.wav", ""); 
 
-		// phrase: Voice_556025
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556025", "Voice_556025.wav", ""); 
+		// phrase: 556025
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556025", "556025.wav", ""); 
 
-		// phrase: Voice_556026
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556026", "Voice_556026.wav", ""); 
+		// phrase: 556026
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556026", "556026.wav", ""); 
 
-		// phrase: Voice_556027
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556027", "Voice_556027.wav", ""); 
+		// phrase: 556027
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556027", "556027.wav", ""); 
 
-		// phrase: Voice_556028
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556028", "Voice_556028.wav", ""); 
+		// phrase: 556028
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556028", "556028.wav", ""); 
 
-		// phrase: Voice_556029
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556029", "Voice_556029.wav", ""); 
+		// phrase: 556029
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556029", "556029.wav", ""); 
 
-		// phrase: Voice_556030
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556030", "Voice_556030.wav", ""); 
+		// phrase: 556030
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556030", "556030.wav", ""); 
 
-		// phrase: Voice_556031
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556031", "Voice_556031.wav", ""); 
+		// phrase: 556031
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556031", "556031.wav", ""); 
 
-		// phrase: Voice_556036
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556036", "Voice_556036.wav", ""); 
+		// phrase: 556036
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556036", "556036.wav", ""); 
 
-		// phrase: Voice_556032
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556032", "Voice_556032.wav", ""); 
+		// phrase: 556032
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556032", "556032.wav", ""); 
 
-		// phrase: Voice_556034
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556034", "Voice_556034.wav", ""); 
+		// phrase: 556034
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556034", "556034.wav", ""); 
 
-		// phrase: Voice_556035
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556035", "Voice_556035.wav", ""); 
+		// phrase: 556035
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556035", "556035.wav", ""); 
 
-		// phrase: Voice_556037
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "Voice_556037", "Voice_556037.wav", ""); 
+		// phrase: 556037
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "English.phraseset.Voice.urlbase", "556037", "556037.wav", ""); 
 
 		//}}END:PHRASESET:STATIC
 	}
@@ -84,7 +84,7 @@ public class Voice extends com.avaya.sce.runtime.Phraseset {
 	 * This method is generated automatically by the code generator
 	 * and should not be manually edited.  Manual edits may be overwritten
 	 * by the code generator.
-	 * Last generated by Orchestration Designer at: 2024年11月19日 下午02時57分15秒
+	 * Last generated by Orchestration Designer at: 2024年11月20日 上午09時49分00秒
 	 * @see com.avaya.sce.runtime.Phraseset#getPhrase(String) 
 	 */ 
 	public com.avaya.sce.runtime.Phrase getPhrase(String phraseName) {
