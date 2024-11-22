@@ -2629,6 +2629,22 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>ReinputVoucherCard</servlet-name>
         <servlet-class>flow.ReinputVoucherCard</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_insert_TASK_0809000811_TBL_1">
+        <servlet-name>insert_TASK_0809000811_TBL-Begin</servlet-name>
+        <servlet-class>flow.subflow.insert_TASK_0809000811_TBL.Begin</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_insert_TASK_0809000811_TBL_5">
+        <servlet-name>insert_TASK_0809000811_TBL-insert_TASK_0809000811_TBL</servlet-name>
+        <servlet-class>flow.subflow.insert_TASK_0809000811_TBL.insert_TASK_0809000811_TBL</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_insert_TASK_0809000811_TBL_9">
+        <servlet-name>insert_TASK_0809000811_TBL-CF_insetDBAPI</servlet-name>
+        <servlet-class>flow.subflow.insert_TASK_0809000811_TBL.CF_insetDBAPI</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_insert_TASK_0809000811_TBL_14">
+        <servlet-name>insert_TASK_0809000811_TBL-next</servlet-name>
+        <servlet-class>flow.subflow.insert_TASK_0809000811_TBL.next</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -5034,6 +5050,22 @@ Copyright 2004-2011 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_main_2131">
         <servlet-name>ReinputVoucherCard</servlet-name>
         <url-pattern>/ReinputVoucherCard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_insert_TASK_0809000811_TBL_1">
+        <servlet-name>insert_TASK_0809000811_TBL-Begin</servlet-name>
+        <url-pattern>/insert_TASK_0809000811_TBL-Begin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_insert_TASK_0809000811_TBL_5">
+        <servlet-name>insert_TASK_0809000811_TBL-insert_TASK_0809000811_TBL</servlet-name>
+        <url-pattern>/insert_TASK_0809000811_TBL-insert_TASK_0809000811_TBL</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_insert_TASK_0809000811_TBL_9">
+        <servlet-name>insert_TASK_0809000811_TBL-CF_insetDBAPI</servlet-name>
+        <url-pattern>/insert_TASK_0809000811_TBL-CF_insetDBAPI</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_insert_TASK_0809000811_TBL_14">
+        <servlet-name>insert_TASK_0809000811_TBL-next</servlet-name>
+        <url-pattern>/insert_TASK_0809000811_TBL-next</url-pattern>
     </servlet-mapping>
     
     

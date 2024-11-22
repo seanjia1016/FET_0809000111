@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AppFlowDoc>
+    <ApplicationFlow nextObjectId="12" package="flow.subflow.insert_TASK_0809000811_TBL" version="5.0">
+        <FlowGraph>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
+                <Property name="FlowNodeEditPart.WidgetX" value="18"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="64"/>
+                <Property name="Name" value="Begin"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubEntry" id="2" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="3" version="1.2">
+                            <ItemProperties>
+                                <Property name="LinkedNodeID" value="5"/>
+                                <Property name="Name" value="Start"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Label" id="4" version="3.1">
+                <Property name="FlowNodeEditPart.WidgetX" value="36"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="19"/>
+                <Property name="Name" value="寫入紀錄到TASK_0809000811_TBL"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Servlet" id="5" version="3.1">
+                <Property name="FlowNodeEditPart.WidgetX" value="162"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="64"/>
+                <Property name="Name" value="insert_TASK_0809000811_TBL"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Servlet" id="6" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="7" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Default"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubFlowRef" id="9" version="3.1">
+                <Property name="FlowNodeEditPart.WidgetX" value="453"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="62"/>
+                <Property name="flowID" value="CF_insetDBAPI"/>
+                <Property name="Name" value="CF_insetDBAPI"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubFlowRef" id="10" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubExitPoint" id="12" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="next"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <NodeConnection id="8" version="1.2">
+                <SourceNode id="1"/>
+                <TargetNode id="5"/>
+                <Property name="Connection.SourceObjectID" value="3"/>
+                <Property name="Connection.TargetObjectID" value="5"/>
+            </NodeConnection>
+        </FlowGraph>
+        <ProjectEventTypes/>
+    </ApplicationFlow>
+</AppFlowDoc>
