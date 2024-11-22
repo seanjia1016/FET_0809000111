@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="24" package="flow.subflow.insert_TASK_0809000811_TBL" version="5.0">
+    <ApplicationFlow nextObjectId="29" package="flow.subflow.insert_TASK_0809000811_TBL" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="16" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="145"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="191"/>
-                <Property name="Name" value="untitledData1"/>
+                <Property name="Name" value="assignInserValue"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="17" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -65,8 +65,19 @@
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="27" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceFieldId" value="utterance"/>
+                                <Property name="destVarId" value="TASK_0809000811_TBL"/>
+                                <Property name="sourceVarId" value="DN_556021"/>
+                                <Property name="destFieldId" value="ENTERPRISE"/>
+                                <Property name="type" value="assign"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="19" version="1.2">
                             <ItemProperties>
+                                <Property name="LinkedNodeID" value="5"/>
                                 <Property name="Name" value="Default"/>
                             </ItemProperties>
                             <ChildItems/>
@@ -83,7 +94,7 @@
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="3" version="1.2">
                             <ItemProperties>
-                                <Property name="LinkedNodeID" value="5"/>
+                                <Property name="LinkedNodeID" value="16"/>
                                 <Property name="Name" value="Start"/>
                             </ItemProperties>
                             <ChildItems/>
@@ -136,12 +147,6 @@
                 <Property name="FlowNodeEditPart.WidgetY" value="63"/>
                 <Property name="Name" value="next"/>
             </FlowNode>
-            <NodeConnection id="8" version="1.2">
-                <SourceNode id="1"/>
-                <TargetNode id="5"/>
-                <Property name="Connection.SourceObjectID" value="3"/>
-                <Property name="Connection.TargetObjectID" value="5"/>
-            </NodeConnection>
             <NodeConnection id="13" version="1.2">
                 <SourceNode id="5"/>
                 <TargetNode id="9"/>
@@ -153,6 +158,18 @@
                 <TargetNode id="14"/>
                 <Property name="Connection.SourceObjectID" value="12"/>
                 <Property name="Connection.TargetObjectID" value="14"/>
+            </NodeConnection>
+            <NodeConnection id="28" version="1.2">
+                <SourceNode id="1"/>
+                <TargetNode id="16"/>
+                <Property name="Connection.SourceObjectID" value="3"/>
+                <Property name="Connection.TargetObjectID" value="16"/>
+            </NodeConnection>
+            <NodeConnection id="29" version="1.2">
+                <SourceNode id="16"/>
+                <TargetNode id="5"/>
+                <Property name="Connection.SourceObjectID" value="19"/>
+                <Property name="Connection.TargetObjectID" value="5"/>
             </NodeConnection>
         </FlowGraph>
         <ProjectEventTypes/>

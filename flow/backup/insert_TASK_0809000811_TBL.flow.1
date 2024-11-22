@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="22" package="flow.subflow.insert_TASK_0809000811_TBL" version="5.0">
+    <ApplicationFlow nextObjectId="27" package="flow.subflow.insert_TASK_0809000811_TBL" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="16" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="145"/>
@@ -41,6 +41,35 @@
                                 <Property name="destVarId" value="TASK_0809000811_TBL"/>
                                 <Property name="sourceVarId" value="queryVoucherCardService_Output"/>
                                 <Property name="destFieldId" value="voucherPinCode"/>
+                                <Property name="type" value="assign"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="23" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceFieldId" value="status"/>
+                                <Property name="destVarId" value="TASK_0809000811_TBL"/>
+                                <Property name="sourceVarId" value="queryVoucherCardService_Output"/>
+                                <Property name="destFieldId" value="reason"/>
+                                <Property name="type" value="assign"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="24" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceFieldId" value="returncode"/>
+                                <Property name="destVarId" value="TASK_0809000811_TBL"/>
+                                <Property name="sourceVarId" value="queryVoucherCardService_Output"/>
+                                <Property name="destFieldId" value="ret_code"/>
+                                <Property name="type" value="assign"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="27" version="1.2">
+                            <ItemProperties>
+                                <Property name="destVarId" value="TASK_0809000811_TBL"/>
+                                <Property name="sourceVarId" value="DN_556021"/>
+                                <Property name="destFieldId" value="ENTERPRISE"/>
                                 <Property name="type" value="assign"/>
                             </ItemProperties>
                             <ChildItems/>
