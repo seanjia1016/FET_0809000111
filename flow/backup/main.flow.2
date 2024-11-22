@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="2164" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="2165" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="31"/>
@@ -182,7 +182,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="1925" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="1455"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1034"/>
-                <Property name="ReferencedNodeID" value="-1"/>
+                <Property name="ReferencedNodeID" value="2147"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Menu" id="1798" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="417"/>
@@ -277,7 +277,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="2055" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="1336"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1708"/>
-                <Property name="ReferencedNodeID" value="-1"/>
+                <Property name="ReferencedNodeID" value="2147"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="2058" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="1437"/>
@@ -1411,7 +1411,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="2025" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="1207"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1543"/>
-                <Property name="ReferencedNodeID" value="-1"/>
+                <Property name="ReferencedNodeID" value="2147"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="1898" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="741"/>
@@ -1513,6 +1513,16 @@
                                 <Property name="destVarId" value="CH_phonenum"/>
                                 <Property name="destFieldId" value="length"/>
                                 <Property name="type" value="length"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="2165" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceFieldId" value="ani"/>
+                                <Property name="destVarId" value="TASK_0809000811_TBL"/>
+                                <Property name="sourceVarId" value="cticallinfo"/>
+                                <Property name="destFieldId" value="ani"/>
+                                <Property name="type" value="assign"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
