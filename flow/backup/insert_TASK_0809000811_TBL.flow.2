@@ -1,7 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="13" package="flow.subflow.insert_TASK_0809000811_TBL" version="5.0">
+    <ApplicationFlow nextObjectId="23" package="flow.subflow.insert_TASK_0809000811_TBL" version="5.0">
         <FlowGraph>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="16" version="3.1">
+                <Property name="FlowNodeEditPart.WidgetX" value="145"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="191"/>
+                <Property name="Name" value="untitledData1"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="17" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.LocalVariables" id="18" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="LocalVariables"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="20" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceFieldId" value="transBpId"/>
+                                <Property name="destVarId" value="TASK_0809000811_TBL"/>
+                                <Property name="sourceVarId" value="getCashSubscriberInfoByKey_Input"/>
+                                <Property name="destFieldId" value="bdip"/>
+                                <Property name="type" value="assign"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="21" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceFieldId" value="voucherNumber"/>
+                                <Property name="destVarId" value="TASK_0809000811_TBL"/>
+                                <Property name="sourceVarId" value="queryVoucherCardService_Output"/>
+                                <Property name="destFieldId" value="voucherNumber"/>
+                                <Property name="type" value="assign"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="22" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceFieldId" value="pinCode"/>
+                                <Property name="destVarId" value="TASK_0809000811_TBL"/>
+                                <Property name="sourceVarId" value="queryVoucherCardService_Output"/>
+                                <Property name="destFieldId" value="voucherPinCode"/>
+                                <Property name="type" value="assign"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="23" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceFieldId" value="status"/>
+                                <Property name="destVarId" value="TASK_0809000811_TBL"/>
+                                <Property name="sourceVarId" value="queryVoucherCardService_Output"/>
+                                <Property name="destFieldId" value="reason"/>
+                                <Property name="type" value="assign"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="19" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Default"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="18"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="64"/>
@@ -51,12 +113,18 @@
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubExitPoint" id="12" version="1.2">
                             <ItemProperties>
+                                <Property name="LinkedNodeID" value="14"/>
                                 <Property name="Name" value="next"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                     </ChildItems>
                 </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="14" version="3.1">
+                <Property name="FlowNodeEditPart.WidgetX" value="667"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="63"/>
+                <Property name="Name" value="next"/>
             </FlowNode>
             <NodeConnection id="8" version="1.2">
                 <SourceNode id="1"/>
@@ -69,6 +137,12 @@
                 <TargetNode id="9"/>
                 <Property name="Connection.SourceObjectID" value="7"/>
                 <Property name="Connection.TargetObjectID" value="9"/>
+            </NodeConnection>
+            <NodeConnection id="15" version="1.2">
+                <SourceNode id="9"/>
+                <TargetNode id="14"/>
+                <Property name="Connection.SourceObjectID" value="12"/>
+                <Property name="Connection.TargetObjectID" value="14"/>
             </NodeConnection>
         </FlowGraph>
         <ProjectEventTypes/>
