@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="2146" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="2148" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="31"/>
@@ -1450,6 +1450,24 @@
                                 <Property name="sourceVarId" value="cticallinfo"/>
                                 <Property name="destVarId" value="CH_USERDATA"/>
                                 <Property name="destFieldId" value="PhoneNumber"/>
+                                <Property name="type" value="assign"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="2147" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceFieldId" value="audio"/>
+                                <Property name="destVarId" value="insertStartDate"/>
+                                <Property name="sourceVarId" value="date"/>
+                                <Property name="type" value="assign"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="2148" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceFieldId" value="audio"/>
+                                <Property name="destVarId" value="insert_StartTime"/>
+                                <Property name="sourceVarId" value="time"/>
                                 <Property name="type" value="assign"/>
                             </ItemProperties>
                             <ChildItems/>
