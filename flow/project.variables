@@ -1905,6 +1905,10 @@
     <variable factoryID="" name="TASK_0809000811_TBL:eTime" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="TASK_0809000811_TBL:PinCode" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="TASK_0809000811_TBL:sTime" owner="" type="" value="" version="1.0"/>
+<<<<<<< HEAD
+=======
+    <variable factoryID="" name="TASK_0809000811_TBL:untitled1" owner="" type="" value="" version="1.0"/>
+>>>>>>> 1ce24f429fccbcab12844b062c4f9e73875b8a9b
     <variable factoryID="" name="TASK_380_TBL:AMT" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="TASK_380_TBL:ANI" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="TASK_380_TBL:COUNT" owner="" type="" value="" version="1.0"/>
