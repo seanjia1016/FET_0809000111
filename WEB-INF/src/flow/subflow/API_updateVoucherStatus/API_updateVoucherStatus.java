@@ -63,12 +63,21 @@ public class API_updateVoucherStatus extends com.avaya.sce.runtime.BasicServlet 
 		final String TID = Utils.TID(mySession);
 		
 		String apiName = "updateVoucherStatus";
+		Utils.setFieldString(mySession,
+	            IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL,
+	            IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL_FIELD_JOB,
+	            apiName);
 
 		final String IP = Utils.IP(mySession);
 		String url = "http://" + IP + "/SOA_CRM_CRMRPLBizService/" + apiName;
 		
 		// API開始時間
-				long apiStartTimeInMillis = Calendar.getInstance().getTimeInMillis();
+		Utils.LogsINFO(mySession, "---------updateVoucherStatus開始---------");
+		long apiStartTimeInMillis = Calendar.getInstance().getTimeInMillis();
+		Utils.setFieldString(mySession,
+		            IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL,
+		            IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL_FIELD_S__TIME,
+		            String.valueOf(apiStartTimeInMillis));
 				try {
 					URL obj = new URL(url);
 					HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -108,48 +117,51 @@ public class API_updateVoucherStatus extends com.avaya.sce.runtime.BasicServlet 
 					Utils.LogsINFO(mySession, "ResponseJsonObject Response(TID:["+TID+"]"+apiName+"):" +responseJsonObject);
 					// API結束時間
 					long apiEndTimeInMillis = Calendar.getInstance().getTimeInMillis();
+					Utils.setFieldString(mySession,
+				            IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL,
+				            IProjectVariables.TASK___0_8_0_9_0_0_0_8_1_1__TBL_FIELD_E__TIME,
+				            String.valueOf(apiEndTimeInMillis));
 					long timeLong = apiEndTimeInMillis - apiStartTimeInMillis;
 					String timeLongSecStr = String.valueOf(timeLong / 1000);
 					
 					// 讀取回傳值
-					String status = "", exception = "",returnCode="",pinCode="";
+					String returnCode="";
 					
-					// 檢查 "returnCode" 是否存在
-					if (responseJsonObject.has("returnCode")) {
-					    returnCode = responseJsonObject.getString("returnCode"); // 取得 returnCode 的值
-					    Utils.setFieldString(mySession,
-					            IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT,
-					            IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_RETURNCODE,
-					            returnCode);
-					}
+					 if (responseJsonObject.has("Data") && responseJsonObject.getJSONObject("Data").has("xml-fragment")) {
+			                JSONObject xmlFragment = responseJsonObject.getJSONObject("Data").getJSONObject("xml-fragment");
+
+			                // 访问 "returnHeader" 对象
+			                if (xmlFragment.has("ns0:returnHeader")) {
+			                    JSONObject returnHeader = xmlFragment.getJSONObject("ns0:returnHeader");
+			                    returnCode = returnHeader.optJSONObject("ns1:returnCode").optString("content", "");
+			                }
+			            }
 					
-					// 檢查 "voucher" 是否存在並包含 "status" 欄位
-					if (responseJsonObject.has("voucher")) {
-					    JSONObject voucher = responseJsonObject.getJSONObject("voucher");
-					    if (voucher.has("status")) {
-					    	status = voucher.getString("status"); // 取得 status 的值
-					        Utils.setFieldString(mySession,
+					 JSONObject ResponseJsonObject = new JSONObject();
+			            
+					 ResponseJsonObject.put("returnCode",returnCode);
+					 
+					 if (ResponseJsonObject.has("returnCode")) {
+						    returnCode = ResponseJsonObject.getString("returnCode"); // 取得 returnCode 的值
+						    Utils.setFieldString(mySession,
+						            IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT,
+						            IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_RETURNCODE,
+						            returnCode);
+						}
+					 
+					 Utils.LogsINFO(mySession, "returnCode (TID:["+TID+"]"+apiName+"):" +returnCode);
+					 
+					 if (returnCode == "ESB-006-029-03000") {
+					    	Utils.setFieldString(mySession,
 					                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT,
 					                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_STATUS,
-					                status);
-					    }
-					    if (voucher.has("pinCode")) {
-					        pinCode = voucher.getString("pinCode"); // 取得 pinCode 的值
-					        Utils.setFieldString(mySession,
+					                "S");
+					    }else {
+					    	Utils.setFieldString(mySession,
 					                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT,
-					                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_PIN_CODE,
-					                pinCode);
+					                IProjectVariables.QUERY_VOUCHER_CARD_SERVICE__OUTPUT_FIELD_STATUS,
+					                "F");
 					    }
-					}
-
-
-					if (responseJsonObject.has("exception")) {
-						exception = responseJsonObject.getString("exception");
-						Utils.setFieldString(mySession,
-								IProjectVariables.CREATE_TXN__OUTPUT,
-								IProjectVariables.CREATE_TXN__OUTPUT_FIELD_EXCEPTION,
-								exception);
-					}
 				}
 				catch (ArithmeticException e) {
 					Utils.LogsERROR(mySession, Utils.getStackTrace(e));
@@ -203,7 +215,7 @@ public class API_updateVoucherStatus extends com.avaya.sce.runtime.BasicServlet 
 	 * @return a Collection of <code>com.avaya.sce.runtime.Goto</code>
 	 * objects that will be evaluated at runtime.  If there are no gotos
 	 * defined in the Servlet node, then this returns null.
-	 * Last generated by Orchestration Designer at: 2024年11月22日 下午09時46分14秒
+	 * Last generated by Orchestration Designer at: 2024年11月23日 下午08時43分45秒
 	 */
 	public java.util.Collection getBranches(com.avaya.sce.runtimecommon.SCESession mySession) {
 		java.util.List list = null;
