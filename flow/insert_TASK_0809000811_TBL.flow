@@ -45,16 +45,6 @@
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="23" version="1.2">
-                            <ItemProperties>
-                                <Property name="sourceFieldId" value="status"/>
-                                <Property name="destVarId" value="TASK_0809000811_TBL"/>
-                                <Property name="sourceVarId" value="queryVoucherCardService_Output"/>
-                                <Property name="destFieldId" value="reason"/>
-                                <Property name="type" value="assign"/>
-                            </ItemProperties>
-                            <ChildItems/>
-                        </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="24" version="1.2">
                             <ItemProperties>
                                 <Property name="sourceFieldId" value="returncode"/>
